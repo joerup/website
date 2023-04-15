@@ -35,15 +35,22 @@ export default function Home ({ allPostsData }) {
       </section>
 
       <br/>
-      <br/>
-      <br/>
+
+      <h1 className={styles.headingXl}>Hello!</h1>
+
+      <p className={styles.desc}>
+      My name is Joe and welcome to my portfolio. 
+      I’m a self-taught Apple developer with experience creating iOS apps using SwiftUI. 
+      I’m a creative individual with a passion for app development, and I also love photography, art, and design. 
+      Thanks for visiting and I look forward to connecting with you!
+      </p>
 
       <article>
 
         <div className={styles.claim}>
           <h4 className={styles.claimIcon}>📙</h4>
           <div>
-            <h1 className={styles.headingXl}>Princeton University</h1>
+            <h1 className={styles.headingXl}>Student @ Princeton University</h1>
             <h1 className={styles.headingLg}>Electrical and Computer Engineering '26</h1>
           </div>
         </div>
@@ -52,7 +59,7 @@ export default function Home ({ allPostsData }) {
           <h4 className={styles.claimIcon}>📱</h4>
           <div>
             <h1 className={styles.headingXl}>iOS App Developer</h1>
-            <h1 className={styles.headingLg}>3 Apps Available on App Store</h1>
+            <h1 className={styles.headingLg}>3 apps available on the App Store</h1>
           </div>
         </div>
 
@@ -65,6 +72,11 @@ export default function Home ({ allPostsData }) {
         </div>
 
       </article>
+
+      <br/>
+      <br/>
+
+      <h1 className={styles.heading2Xl}>My Apps</h1>
 
       <br/>
       <br/>
