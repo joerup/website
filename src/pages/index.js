@@ -3,6 +3,8 @@ import Layout, { siteTitle } from '../components/layout'
 import styles from '../styles/utils.module.css'
 import { useState } from "react"
 import Link from 'next/link'
+import AppLink from '../components/applink';
+import Bullet from '../components/bullet';
 
 export default function Home ({ allPostsData }) { 
   // Delcare what category should be shown
@@ -39,44 +41,40 @@ export default function Home ({ allPostsData }) {
       <h1 className={styles.headingXl}>Hello!</h1>
 
       <p className={styles.desc}>
-      My name is Joe and welcome to my portfolio. 
-      I’m a self-taught Apple developer with experience creating iOS apps using SwiftUI. 
-      I’m a creative individual with a passion for app development, and I also love photography, art, and design. 
-      Thanks for visiting and I look forward to connecting with you!
+      My name is Joe and welcome to my portfolio. I am an undergraduate student at Princeton and a self-taught Apple developer with experience creating iOS apps using SwiftUI. I’m a creative individual with a passion for app development, and I also love photography, art, and design. Thanks for visiting and I look forward to connecting with you!
       </p>
 
       <article>
-
-        <div className={styles.claim}>
-          <h4 className={styles.claimIcon}>📙</h4>
-          <div>
-            <h1 className={styles.headingXl}>Student @ Princeton University</h1>
-            <h1 className={styles.headingLg}>Electrical and Computer Engineering '26</h1>
-          </div>
-        </div>
-
-        <div className={styles.claim}>
-          <h4 className={styles.claimIcon}>📱</h4>
-          <div>
-            <h1 className={styles.headingXl}>iOS App Developer</h1>
-            <h1 className={styles.headingLg}>3 apps available on the App Store</h1>
-          </div>
-        </div>
-
-        <div className={styles.claim}>
-          <h4 className={styles.claimIcon}>🎖️</h4>
-          <div>
-            <h1 className={styles.headingXl}>Swift Student Challenge Winner</h1>
-            <h1 className={styles.headingLg}>WWDC21</h1>
-          </div>
-        </div>
-
+        <Bullet icon="📙" title="Student @ Princeton University" subtitle="Electrical and Computer Engineering '26"/>
+        <Bullet icon="📱" title="iOS App Developer" subtitle="3 apps available on the App Store"/>
+        <Bullet icon="🎖️" title="Swift Student Challenge Winner" subtitle="WWDC21"/>
       </article>
 
       <br/>
       <br/>
 
       <h1 className={styles.heading2Xl}>My Apps</h1>
+
+      <div className={styles.appgroup}>
+        <AppLink 
+          name="Omega Calculator"
+          icon="/images/Omega_Classic_Blue.png"
+          link="https://www.omegacalculator.com/"
+          desc="An intuitive and powerful calculator that can be used for any mathematical computation you need to perform."
+        />
+        <AppLink 
+          name="Planetaria"
+          icon="/images/Planetaria.png"
+          link="https://planetaria.app/"
+          desc="An interactive Solar System simulator that allows you to explore the heavens above right from your fingertips."
+        />
+        <AppLink 
+          name="Bits & Bobs"
+          icon="/images/BitsAndBobs.png"
+          link="https://github.com/joerup2004/bits-bobs"
+          desc="A simple app for keeping track of collections."
+        />
+      </div>
 
       <br/>
       <br/>

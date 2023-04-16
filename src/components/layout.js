@@ -11,6 +11,9 @@ export default function Layout({ children, home, top, bottom, article }) {
     <div className={article ? styles.container2 : styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap" rel="stylesheet"/>
         <meta
           name="description"
           content="Joe Rupertus"
