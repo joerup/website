@@ -5,13 +5,6 @@
   align-content: center;
 }
 
-.container2 {
-  max-width: 40rem;
-  padding: 0 1rem;
-  margin: 3rem auto 0;
-  align-content: center;
-}
-
 .header {
   display: flex;
   flex-direction: column;

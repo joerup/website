@@ -5,7 +5,7 @@ body {
   font-family: 'Outfit', sans-serif;
   line-height: 1.6;
   font-size: 18px;
-  background:  linear-gradient(180deg, rgba(33,179,139,1) 0%, rgba(31,152,145,1) 50%, rgba(6,98,92,1) 100%);
+  background: linear-gradient(180deg, rgba(33,179,139,1) 0%, rgba(31,152,145,1) 50%, rgba(6,98,92,1) 100%);
   position: relative;
 }
 

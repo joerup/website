@@ -8,7 +8,7 @@ export const siteTitle = 'Joe Rupertus'
 
 export default function Layout({ children, home, top, bottom, article }) {
   return (
-    <div className={article ? styles.container2 : styles.container}>
+    <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
