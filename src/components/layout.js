@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import Socials from './socials.js'
 
 const name = 'Joe Rupertus'
 export const siteTitle = 'Joe Rupertus'
@@ -45,7 +46,9 @@ export default function Layout({ children, home, top, bottom, article }) {
       <main>{children}</main>
 
       <footer className={styles.footer}>
-        <h2 className={utilStyles.headingMd}>The end.</h2>
+        <h2 className={utilStyles.headingMd}>Contact me at <a href="mailto:joerup@princeton.edu">joerup@princeton.edu</a><br/>or at one of the places below:</h2>
+        <Socials/>
+        <p className={utilStyles.footnote}>Copyright 2023 Joseph Rupertus.</p>
       </footer>
     </div>
   )

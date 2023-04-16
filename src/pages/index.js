@@ -2,9 +2,9 @@ import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import styles from '../styles/utils.module.css'
 import { useState } from "react"
-import Link from 'next/link'
 import AppLink from '../components/applink';
 import Bullet from '../components/bullet';
+import Socials from '../components/socials';
 
 export default function Home ({ allPostsData }) { 
   // Delcare what category should be shown
@@ -16,25 +16,7 @@ export default function Home ({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
 
-      <section className={styles.socials}>
-        <div>
-          <Link href="https://www.twitter.com/joerup2004/">
-            <img src="https://img.icons8.com/android/60/000000/twitter.png"/>
-          </Link>
-          <Link href="https://www.instagram.com/joerup2004/">
-            <img src="https://img.icons8.com/metro/60/000000/instagram-new.png"/>
-          </Link>
-          <Link href="mailto:joerup2004@gmail.com">
-            <img src="https://img.icons8.com/ios/60/000000/new-post.png"/>
-          </Link>
-          <Link href="https://www.linkedin.com/in/joseph-rupertus-359b5a20a/">
-            <img src="https://img.icons8.com/android/96/000000/linkedin.png"/>
-          </Link>
-          <Link href="https://github.com/joerup2004">
-            <img src="https://img.icons8.com/ios-glyphs/60/000000/github.png"/>    
-          </Link>
-        </div>
-      </section>
+      <Socials/>
 
       <br/>
 
@@ -54,7 +36,7 @@ export default function Home ({ allPostsData }) {
       <br/>
       <br/>
 
-      <h1 className={styles.headingXl}>My Personal Projects</h1>
+      <h1 className={styles.headingXl}>Personal Projects</h1>
 
       <div className={styles.appgroup}>
         <AppLink 
@@ -84,7 +66,7 @@ export default function Home ({ allPostsData }) {
       <br/>
       <br/>
 
-      <h1 className={styles.headingXl}>Projects I'm Involved With</h1>
+      <h1 className={styles.headingXl}>Other Projects</h1>
 
       <div className={styles.appgroup}>
         <AppLink 
