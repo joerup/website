@@ -8,7 +8,7 @@ export const siteTitle = 'Joe Rupertus'
 
 export default function Layout({ children, home, top, bottom, article }) {
   return (
-    <div>
+    <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -28,43 +28,19 @@ export default function Layout({ children, home, top, bottom, article }) {
         <meta name="twitter:card" content="summary_large_image"/>
       </Head>
 
-      {/* <header className={styles.header}>
-        {home ? (
-          <>
-            <div className={styles.emojihead}>
-              <p> 🌎 ⌚️ 🚂 🌴 </p>
-              <img
-                src="/images/Profile2.jpeg"
-                className={`${styles.headerImage} ${styles.borderCircle}`}
-                alt={name}
-              />
-              <p> 🏃‍♂️ 🚀 🪐 🐢 </p>
-            </div>
-            <h1 className={utilStyles.heading4Xl}>{name}</h1>
-            <h1 className={utilStyles.headingLg}>19 • NJ</h1>
-          </>
-        ) : top ? (
-          <>
-            <br/>
-            <Link href="/">
-              <a>
-                <img
-                  src="/images/Profile2.jpeg"
-                  className={`${styles.footerImage} ${styles.borderCircle}`}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
-          </>
-        ) : (
-          <></>
-        )}
-      </header> */}
+      <header className={styles.header}>
+        <div className={styles.emojihead}>
+          <p> 🌎 ⌚️ 🚂 🌴 </p>
+          <img
+            src="/images/Profile2.jpeg"
+            className={`${styles.headerImage} ${styles.borderCircle}`}
+            alt={name}
+          />
+          <p> 🏃‍♂️ 🚀 🪐 🐢 </p>
+        </div>
+        <h1 className={utilStyles.heading4Xl}>{name}</h1>
+        <h1 className={utilStyles.headingLg}>19 • NJ</h1>
+      </header>
 
       <main>{children}</main>
 
