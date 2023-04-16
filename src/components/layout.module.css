@@ -1,14 +1,14 @@
 .container {
   max-width: 65rem;
   padding: 0 1rem;
-  margin: 3rem auto 6rem;
+  margin: 3rem auto 0;
   align-content: center;
 }
 
 .container2 {
   max-width: 40rem;
   padding: 0 1rem;
-  margin: 3rem auto 6rem;
+  margin: 3rem auto 0;
   align-content: center;
 }
 

@@ -68,27 +68,7 @@ export default function Layout({ children, home, top, bottom, article }) {
       <main>{children}</main>
 
       <footer className={styles.footer}>
-        {bottom ? (
-          <>
-            <br/>
-            <Link href="/">
-              <a>
-                <img
-                  src="/images/Profile2.jpeg"
-                  className={`${styles.footerImage} ${styles.borderCircle}`}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
-          </>
-        ) : (
-          <></>
-        )}
+        Hello
       </footer>
     </div>
   )
