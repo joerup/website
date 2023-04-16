@@ -90,8 +90,8 @@
   align-items: center;
 }
 .socials img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   padding: 10px;
 }
 .socials img:hover {
@@ -106,7 +106,7 @@
 }
 
 .icon {
-  font-size: 70px;
+  font-size: 75px;
   width: 120px;
   height: 120px;
   border-radius: 9999px;
