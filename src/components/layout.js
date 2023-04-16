@@ -29,7 +29,7 @@ export default function Layout({ children, home, top, bottom, article }) {
       </Head>
 
       <header className={styles.header}>
-        <div className={styles.emojihead}>
+        {/* <div className={styles.emojihead}>
           <p> 🌎 ⌚️ 🚂 🌴 </p>
           <img
             src="/images/Profile2.jpeg"
@@ -37,7 +37,7 @@ export default function Layout({ children, home, top, bottom, article }) {
             alt={name}
           />
           <p> 🏃‍♂️ 🚀 🪐 🐢 </p>
-        </div>
+        </div> */}
         <h1 className={utilStyles.heading4Xl}>{name}</h1>
         <h1 className={utilStyles.headingLg}>19 • NJ</h1>
       </header>
