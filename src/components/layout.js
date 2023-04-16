@@ -28,7 +28,7 @@ export default function Layout({ children, home, top, bottom, article }) {
         <meta name="twitter:card" content="summary_large_image"/>
       </Head>
 
-      <header className={styles.header}>
+      {/* <header className={styles.header}>
         {home ? (
           <>
             <div className={styles.emojihead}>
@@ -64,7 +64,7 @@ export default function Layout({ children, home, top, bottom, article }) {
         ) : (
           <></>
         )}
-      </header>
+      </header> */}
 
       <main>{children}</main>
 
