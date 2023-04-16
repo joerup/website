@@ -18,6 +18,7 @@
 .emojihead {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 .emojihead p {
   font-size: 2.5rem;
