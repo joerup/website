@@ -1,4 +1,5 @@
 .container {
+  max-width: 64rem;
   padding: 0 1rem;
   margin: 3rem auto 0;
   align-content: center;
