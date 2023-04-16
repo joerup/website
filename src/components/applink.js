@@ -1,13 +1,18 @@
 import React from 'react';
 import styles from '../styles/utils.module.css'
 
-const AppLink = ({ name, icon, link, desc }) => {
+const AppLink = ({ name, subtitle, icon, link, desc }) => {
   return (
     <div className={styles.applink}>
-      <img className={styles.appicon} src={icon}/>
-      <h2 className={styles.heading2Xl}>{name}</h2>
-      <p className={styles.desc}>{desc}</p>
-      <a href={link}>Visit {name}</a>
+      <div className={styles.appheader}>
+        <img className={styles.appicon} src={icon}/>
+        <div>
+         <h2 className={styles.headingXl}>{name}</h2>
+         <h3 className={styles.appsubtitle}>{subtitle}</h3>
+        </div>
+      </div>
+      <p className={styles.appdesc}>{desc}</p>
+      <a className={styles.learnmore} href={link}>Learn More</a>
     </div>
   );
 };

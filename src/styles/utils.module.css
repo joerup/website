@@ -153,8 +153,37 @@
   padding: 20px;
 }
 
+.appheader {
+  display: flex;
+  align-items: center;
+}
+
+.appdesc {
+  font-weight: 1rem;
+  color: #ffffff;
+  letter-spacing: 0.02rem;
+}
+
 .appicon {
   max-width: 80px;
   max-height: 80px;
   border-radius: 15%;
+  margin-right: 20px;
+}
+
+.appsubtitle {
+  color: #eeeeee;
+  margin-top: -0.2rem;
+  margin-bottom: -0.05rem;
+  font-size: 0.9rem;
+  padding-left: 2px;
+  opacity: 0.7;
+}
+
+.learnmore {
+  color: rgb(62, 255, 194);
+  font-size: 1.2rem;
+  text-align: center;
+  margin: auto;
+  display: table;
 }

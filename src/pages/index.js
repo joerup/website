@@ -52,29 +52,50 @@ export default function Home ({ allPostsData }) {
 
       <br/>
       <br/>
+      <br/>
 
-      <h1 className={styles.heading2Xl}>My Apps</h1>
+      <h1 className={styles.headingXl}>My Personal Projects</h1>
 
       <div className={styles.appgroup}>
         <AppLink 
           name="Omega Calculator"
+          subtitle="iOS App"
           icon="/images/Omega_Classic_Blue.png"
           link="https://www.omegacalculator.com/"
           desc="An intuitive and powerful calculator that can be used for any mathematical computation you need to perform."
         />
         <AppLink 
           name="Planetaria"
+          subtitle="iOS App"
           icon="/images/Planetaria.png"
           link="https://planetaria.app/"
           desc="An interactive Solar System simulator that allows you to explore the heavens above right from your fingertips."
         />
         <AppLink 
           name="Bits & Bobs"
+          subtitle="iOS App"
           icon="/images/BitsAndBobs.png"
           link="https://github.com/joerup2004/bits-bobs"
           desc="A simple app for keeping track of collections."
         />
       </div>
+
+      <br/>
+      <br/>
+      <br/>
+
+      <h1 className={styles.headingXl}>Projects I'm Involved With</h1>
+
+      <div className={styles.appgroup}>
+        <AppLink 
+          name="Asculta Technologies"
+          subtitle="Deep Tech Startup"
+          icon="/images/AscultaIcon.png"
+          link="https://www.ascultatech.com/"
+          desc="I am a member of the software team of Asculta Technologies, a startup founded by fellow Princeton students that produces ultrasonic plasma acoustic emissions sensors. I created a website for the company and designed the logo, other branding, and merchandise."
+        />
+      </div>
+      
 
       <br/>
       <br/>
