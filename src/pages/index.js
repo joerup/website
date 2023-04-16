@@ -11,10 +11,10 @@ export default function Home ({ allPostsData }) {
   const [viewCategory, setCategory] = useState('all');
 
   return (
-    <Layout home>
-      <Head>
+    <div>
+      {/* <Head>
         <title>{siteTitle}</title>
-      </Head>
+      </Head> */}
 
       <section className={styles.socials}>
         <div>
@@ -101,6 +101,6 @@ export default function Home ({ allPostsData }) {
       <br/>
       <br/>
       <br/>
-    </Layout>
+    </div>
   )
 }
