@@ -17,7 +17,7 @@ const Socials = () => {
           <Link href="https://www.linkedin.com/in/joerup/">
             <img src="https://img.icons8.com/android/96/000000/linkedin.png"/>
           </Link>
-          <Link href="https://github.com/joerup2004">
+          <Link href="https://github.com/joerup">
             <img src="https://img.icons8.com/ios-glyphs/60/000000/github.png"/>    
           </Link>
         </div>
