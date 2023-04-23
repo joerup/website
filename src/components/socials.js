@@ -5,10 +5,10 @@ const Socials = () => {
   return (
     <section className={styles.socials}>
         <div>
-          <Link href="https://www.twitter.com/joerup2004/">
+          <Link href="https://www.twitter.com/joerupertus/">
             <img src="https://img.icons8.com/android/60/000000/twitter.png"/>
           </Link>
-          <Link href="https://www.instagram.com/joerup2004/">
+          <Link href="https://www.instagram.com/joerupertus/">
             <img src="https://img.icons8.com/metro/60/000000/instagram-new.png"/>
           </Link>
           <Link href="mailto:joerup2004@gmail.com">
