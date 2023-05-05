@@ -6,7 +6,15 @@ import AppLink from '../components/applink';
 import Bullet from '../components/bullet';
 import Socials from '../components/socials';
 
-export default function Home ({ allPostsData }) { 
+export async function getStaticProps() {
+  return {
+    props: {
+      
+    }
+  }
+}
+
+export default function Home ({  }) { 
   // Delcare what category should be shown
   const [viewCategory, setCategory] = useState('all');
 
@@ -77,7 +85,31 @@ export default function Home ({ allPostsData }) {
           desc="I am a member of the software team of Asculta Technologies, a startup founded by fellow Princeton students that produces ultrasonic plasma acoustic emissions sensors. I created a website for the company and designed the logo, other branding, and merchandise."
         />
       </div>
-      
+
+      <br/>
+      <br/>
+      <br/>
+
+      {/* <h1 className={styles.headingXl}>Updates</h1> */}
+
+      {/* <div>
+        {allUpdatesData.map(({ id, category, subject, title, date, image, desc }) => (
+          <li className={styles.listItem} key={id} style={{display: "block"}}>
+            <a href={`/updates/${id}`}>
+              <div className={styles.horizontal}>
+                <div className={styles.image}>
+                  <img src={image}/>
+                </div>
+                <div>
+                  <h2>{title}</h2>
+                  <h3>{desc}</h3>
+                  <h4><Date dateString={date}/></h4>
+                </div>
+              </div>
+            </a>
+          </li>
+        ))}
+      </div> */}
 
       <br/>
       <br/>

@@ -40,7 +40,6 @@ export default function Layout({ children, home, top, bottom, article }) {
           <p> 🏃‍♂️ 🚀 🪐 🐢 </p>
         </div>
         <h1 className={utilStyles.heading4Xl}>{name}</h1>
-        <h1 className={utilStyles.headingLg}>19 • NJ</h1>
       </header>
 
       <main>{children}</main>
