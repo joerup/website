@@ -52,21 +52,21 @@ export default function Home ({  }) {
           subtitle="iOS App"
           icon="/images/Omega_Classic_Blue.png"
           link="https://www.omegacalculator.com/"
-          desc="An intuitive and powerful calculator that can be used for any mathematical computation you need to perform."
+          desc="Developed an intuitive scientific calculator app with advanced computing capabilities."
         />
         <AppLink 
           name="Planetaria"
           subtitle="iOS App"
           icon="/images/Planetaria.png"
           link="https://planetaria.app/"
-          desc="An interactive Solar System simulator that allows you to explore the heavens above right from your fingertips."
+          desc="Created a solar system simulator app using real-time NASA positioning data and augmented reality."
         />
         <AppLink 
           name="Bits & Bobs"
           subtitle="iOS App"
           icon="/images/BitsAndBobs.png"
           link="https://github.com/joerup2004/bits-bobs"
-          desc="A simple app for keeping track of collections."
+          desc="Developed a comprehensive collection tracker app using Core Data persistence framework."
         />
       </div>
 
