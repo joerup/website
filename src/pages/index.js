@@ -74,7 +74,7 @@ export default function Home ({  }) {
       <br/>
       <br/>
 
-      <h1 className={styles.headingXl}>Other Projects</h1>
+      {/* <h1 className={styles.headingXl}>Other Projects</h1>
 
       <div className={styles.appgroup}>
         <AppLink 
@@ -88,7 +88,7 @@ export default function Home ({  }) {
 
       <br/>
       <br/>
-      <br/>
+      <br/> */}
 
       {/* <h1 className={styles.headingXl}>Updates</h1> */}
 

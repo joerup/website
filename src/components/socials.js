@@ -11,7 +11,7 @@ const Socials = () => {
           <Link href="https://www.instagram.com/joerupertus/">
             <img src="https://img.icons8.com/metro/60/000000/instagram-new.png"/>
           </Link>
-          <Link href="mailto:joerup2004@gmail.com">
+          <Link href="mailto:joerup@princeton.edu">
             <img src="https://img.icons8.com/ios/60/000000/new-post.png"/>
           </Link>
           <Link href="https://www.linkedin.com/in/joerup/">

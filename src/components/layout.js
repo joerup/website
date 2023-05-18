@@ -47,7 +47,7 @@ export default function Layout({ children, home, top, bottom, article }) {
       <footer className={styles.footer}>
         <h2 className={utilStyles.headingMd}>Contact me at <a href="mailto:joerup@princeton.edu">joerup@princeton.edu</a><br/>or at one of the places below:</h2>
         <Socials/>
-        <p className={utilStyles.footnote}>Copyright 2023 Joseph Rupertus.</p>
+        <p className={utilStyles.footnote}>Copyright 2023 Joseph Rupertus</p>
       </footer>
     </div>
   )
