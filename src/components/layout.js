@@ -33,7 +33,7 @@ export default function Layout({ children, home, top, bottom, article }) {
         <div className={styles.emojihead}>
           <p> 🌎 ⌚️ 🚂 🌴 </p>
           <img
-            src="/images/Profile2.jpeg"
+            src="/images/Profile3.jpeg"
             className={`${styles.headerImage} ${styles.borderCircle}`}
             alt={name}
           />
