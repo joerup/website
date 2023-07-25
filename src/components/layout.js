@@ -1,7 +1,7 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
-import Link from 'next/link'
 import Socials from './socials.js'
 
 const name = 'Joe Rupertus'
@@ -29,25 +29,38 @@ export default function Layout({ children, home, top, bottom, article }) {
         <meta name="twitter:card" content="summary_large_image"/>
       </Head>
 
-      <header className={styles.header}>
-        <div className={styles.emojihead}>
-          <p> 🌎 ⌚️ 🚂 🌴 </p>
-          <img
-            src="/images/Profile3.jpeg"
-            className={`${styles.headerImage} ${styles.borderCircle}`}
-            alt={name}
-          />
-          <p> 🏃‍♂️ 🚀 🪐 🐢 </p>
-        </div>
-        <h1 className={utilStyles.heading4Xl}>{name}</h1>
-      </header>
+      { home ?
+        <header className={styles.header}>
+          <div className={styles.emojihead}>
+            <p> 🌎 ⌚️ 🚂 🌴 </p>
+            <img
+              src="/images/Profile.png"
+              className={`${styles.headerImage} ${styles.borderCircle}`}
+              alt={name}
+            />
+            <p> 🏃‍♂️ 🚀 🪐 🐢 </p>
+          </div>
+          <h1 className={utilStyles.heading4Xl}>{name}</h1>
+        </header>
+        : 
+        <Link href="/">
+          <header className={styles.navbar}>
+            <img
+              src="/images/Profile.png"
+              className={`${styles.navbarImage}`}
+              alt={name}
+            />
+            <h1 className={styles.navbarTitle}>{name}</h1>
+          </header>
+        </Link>
+      }
 
       <main>{children}</main>
 
       <footer className={styles.footer}>
-        <h2 className={utilStyles.headingMd}>Contact me at <a href="mailto:joerup@princeton.edu">joerup@princeton.edu</a><br/>or at one of the places below:</h2>
+        {/* <h2 className={utilStyles.headingMd}>Contact me at <a href="mailto:joerup@princeton.edu">joerup@princeton.edu</a><br/>or at one of the places below:</h2> */}
         <Socials/>
-        <p className={utilStyles.footnote}>Copyright 2023 Joseph Rupertus</p>
+        <p className={utilStyles.footnote}>Copyright © 2023 Joseph Rupertus</p>
       </footer>
     </div>
   )

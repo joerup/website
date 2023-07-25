@@ -1,23 +1,26 @@
 import Head from 'next/head'
+import Link from 'next/link';
 import Layout, { siteTitle } from '../components/layout'
 import styles from '../styles/utils.module.css'
-import { useState } from "react"
+import { getSortedProjectsData } from '/lib/projects';
+import { getSortedUpdatesData } from '/lib/updates';
 import AppLink from '../components/applink';
+import AppUpdate from '../components/appupdate';
 import Bullet from '../components/bullet';
 import Socials from '../components/socials';
 
 export async function getStaticProps() {
+  const projects = getSortedProjectsData();
+  const updates = getSortedUpdatesData();
   return {
     props: {
-      
-    }
-  }
+      projects,
+      updates,
+    },
+  };
 }
 
-export default function Home ({  }) { 
-  // Delcare what category should be shown
-  const [viewCategory, setCategory] = useState('all');
-
+export default function Home ({ projects, updates }) { 
   return (
     <Layout home>
       <Head>
@@ -36,7 +39,7 @@ export default function Home ({  }) {
 
       <article>
         <Bullet icon="📙" title="Student @ Princeton University" subtitle="Electrical and Computer Engineering '26"/>
-        <Bullet icon="📱" title="iOS App Developer" subtitle="3 apps available on the App Store"/>
+        <Bullet icon="📱" title="Apple Developer" subtitle="3 apps available on the App Store"/>
         <Bullet icon="🎖️" title="Swift Student Challenge Winner" subtitle="WWDC21"/>
       </article>
 
@@ -47,69 +50,36 @@ export default function Home ({  }) {
       <h1 className={styles.headingXl}>My Projects</h1>
 
       <div className={styles.appgroup}>
-        <AppLink 
-          name="Omega Calculator"
-          subtitle="iOS App"
-          icon="/images/Omega_Classic_Blue.png"
-          link="https://www.omegacalculator.com/"
-          desc="An intuitive and beautiful calculator app with advanced scientific capabilities."
-        />
-        <AppLink 
-          name="Planetaria"
-          subtitle="iOS App"
-          icon="/images/Planetaria Icon.png"
-          link="https://planetaria.app/"
-          desc="An interactive 3D solar system simulator using real-time NASA data and (SOON) augmented reality."
-        />
-        <AppLink 
-          name="Bits & Bobs"
-          subtitle="iOS App"
-          icon="/images/Bits&Bobs Icon.png"
-          link="https://bitsandbobs.app/"
-          desc="A comprehensive collection tracker app using the Core Data persistence framework."
-        />
-      </div>
-
-      <br/>
-      <br/>
-      <br/>
-
-      {/* <h1 className={styles.headingXl}>Other Projects</h1>
-
-      <div className={styles.appgroup}>
-        <AppLink 
-          name="Asculta Technologies"
-          subtitle="Deep Tech Startup"
-          icon="/images/AscultaIcon.png"
-          link="https://www.ascultatech.com/"
-          desc="I am a member of the software team of Asculta Technologies, a startup founded by fellow Princeton students that produces ultrasonic plasma acoustic emissions sensors. I created a website for the company and designed the logo, other branding, and merchandise."
-        />
-      </div>
-
-      <br/>
-      <br/>
-      <br/> */}
-
-      {/* <h1 className={styles.headingXl}>Updates</h1> */}
-
-      {/* <div>
-        {allUpdatesData.map(({ id, category, subject, title, date, image, desc }) => (
-          <li className={styles.listItem} key={id} style={{display: "block"}}>
-            <a href={`/updates/${id}`}>
-              <div className={styles.horizontal}>
-                <div className={styles.image}>
-                  <img src={image}/>
-                </div>
-                <div>
-                  <h2>{title}</h2>
-                  <h3>{desc}</h3>
-                  <h4><Date dateString={date}/></h4>
-                </div>
-              </div>
-            </a>
-          </li>
+        {projects.map(({ project, name, subtitle, link, desc }) => (
+          <AppLink 
+            name={name}
+            subtitle={subtitle}
+            icon={`/images/${project}.png`}
+            link={link}
+            desc={desc}
+          />
         ))}
-      </div> */}
+      </div>
+
+      <article>
+        <h1 className={styles.headingXl}>Updates</h1>
+        <br/>
+
+        {updates.slice(0, 5).map(({ version, date, headline, project }) => (
+          <AppUpdate
+          project={project}
+            version={version}
+            date={date}
+            headline={headline}
+          />
+        ))}
+        
+        <Link href="./updates">
+          <div className={styles.applink}>
+            <p className={styles.button}>All Updates</p>
+          </div>
+        </Link>
+      </article>
 
       <br/>
       <br/>
