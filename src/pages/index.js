@@ -34,7 +34,7 @@ export default function Home ({ projects, updates }) {
       <h1 className={styles.headingXl}>Hello!</h1>
 
       <p className={styles.desc}>
-      My name is Joe and welcome to my portfolio. I am an undergraduate student at Princeton and a self-taught Apple developer with experience creating iOS apps using SwiftUI. I’m a creative individual with a passion for app development, and I also love photography, art, and design. Thanks for visiting and I look forward to connecting with you!
+      I'm an undergraduate student at Princeton and an Apple developer with experience creating iOS apps using SwiftUI. I’m a creative person with a passion for app development and user interface design. I also love photography, art, and design. Thanks for visiting and I look forward to connecting with you!
       </p>
 
       <article>
