@@ -251,6 +251,14 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+.updatedatebox {
+  display: flex;
+  margin-bottom: 15px;
+}
+.updatedatebox p {
+  width: 250px;
+}
 .updatedate {
   font-size: 1.2rem;
   color: #eeeeee;

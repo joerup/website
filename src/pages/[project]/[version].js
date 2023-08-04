@@ -11,6 +11,7 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       updateData,
+      project
     },
   };
 }
@@ -23,32 +24,47 @@ export async function getStaticPaths() {
   };
 }
 
-export default function Update({ updateData }) {
+export default function Update({ updateData, project }) {
 
   return (
     <Layout>
       <Head>
         <title>{updateData.version.replace(/-/g, ".")}</title>
       </Head>
-
       <article>
         <div className={styles.pageheader}>
           <img className={styles.appicon} src={`/images/${updateData.project}.png`}/>
           <div className={styles.heading3Xl}>
-            <p> {updateData.version.replace(/-/g, ".")}</p>
+            <p>{`${updateData.project} ${updateData.version.replace(/-/g, ".")}`}</p>
           </div>
         </div>
-        <div className={styles.headingLg}>
-          <Date dateString={updateData.date} />
-        </div>
 
-        <p className={styles.headingMd}>{updateData.headline}</p>
+        <h2 className={styles.headingMd}>{updateData.headline}</h2>
+        <br/>
 
-        <br />
+        {updateData.dates.slice(0,1).map((date, index) => (
+          <div className={styles.updatedatebox}>
+            <p className={styles.headingXl}>{`Version ${updateData.version.replace(/-/g, ".")}.0`}</p>
+            <div className={styles.headingLg}>
+              <Date dateString={date} />
+            </div>
+          </div>
+        ))}
 
-        <br />
-        <br />
-        <div dangerouslySetInnerHTML={{ __html: updateData.contentHtml }} />
+        <div className={styles.desc} dangerouslySetInnerHTML={{ __html: updateData.contentHtml }} />
+
+        {updateData.dates.slice(1).map((date, index) => (
+          <div>
+            <div className={styles.updatedatebox}>
+              <p className={styles.headingXl}>{`Version ${updateData.version.replace(/-/g, ".")}.${index+1}`}</p>
+              <div className={styles.headingLg}>
+                <Date dateString={date} />
+              </div>
+            </div>
+            <br/>
+          </div>
+        ))}
+
       </article>
     </Layout>
   );

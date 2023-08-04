@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from '../styles/utils.module.css'
 import Date from './date';
 
-const AppUpdate = ({ project, version, date, headline }) => {
+const AppUpdate = ({ project, version, dates, headline }) => {
   return (
     <Link href={`../${project}/${version}`}>
       <div className={styles.appupdate}>
@@ -13,7 +13,7 @@ const AppUpdate = ({ project, version, date, headline }) => {
               <h2 className={styles.updateversion}>{version.replace(/-/g, ".")}</h2>
               <h3 className={styles.updateheadline}>{headline}</h3>
             </div>
-            <h3 className={styles.updatedate}><Date dateString={date}/></h3>
+            <h3 className={styles.updatedate}><Date dateString={dates[0]}/></h3>
           </div>
       </div>
     </Link>

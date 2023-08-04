@@ -53,11 +53,11 @@ export default function Update({ projectData, updates }) {
         <h1 className={styles.headingXl}>Updates</h1>
         <br />
 
-        {updates.map(({ version, date, headline, project }) => (
+        {updates.map(({ version, dates, headline, project }) => (
           <AppUpdate
           project={project}
             version={version}
-            date={date}
+            dates={dates}
             headline={headline}
           />
         ))}

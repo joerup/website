@@ -30,21 +30,11 @@ export default function Updates ({ projects, updates }) {
         <h1 className={styles.headingXl}>Updates</h1>
         <br/>
 
-        {/* <p>{selectedProject}</p>
-        <div className={styles.projectButtonsRow}>
-          {projects.map(({ project, name }) => ( 
-            <div className={styles.projectButton}>
-              <p>{name}</p>
-            </div>
-          ))}
-        </div> */}
-
-
-        {updates.map(({ version, date, headline, project }) => (
+        {updates.map(({ project, version, dates, headline }) => (
           <AppUpdate
             project={project}
             version={version}
-            date={date}
+            dates={dates}
             headline={headline}
           />
         ))}

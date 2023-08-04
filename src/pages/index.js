@@ -65,11 +65,11 @@ export default function Home ({ projects, updates }) {
         <h1 className={styles.headingXl}>Updates</h1>
         <br/>
 
-        {updates.slice(0, 5).map(({ version, date, headline, project }) => (
+        {updates.slice(0, 5).map(({ version, dates, headline, project }) => (
           <AppUpdate
           project={project}
             version={version}
-            date={date}
+            dates={dates}
             headline={headline}
           />
         ))}
