@@ -80,6 +80,22 @@
   margin-bottom: 70px;
 }
 
+.mono1 {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 1.7rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.mono2 {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin: 0;
+}
+
 .largeDisplay {
   display: flex;
   width: 100%;
@@ -225,13 +241,6 @@
   margin-right: 15px;
   box-shadow: 2px 2px 1px 1px rgba(20,20,20,0.05);
 }
-.updateversion {
-  font-family: monospace;
-  font-size: 1.5rem;
-  width: 50px;
-  color: #ffffff;
-  margin: 0;
-}
 .updatetitle {
   display: flex;
   align-items: center;
@@ -255,6 +264,7 @@
 .updatedatebox {
   display: flex;
   margin-bottom: 15px;
+  align-items: baseline;
 }
 .updatedatebox p {
   width: 250px;

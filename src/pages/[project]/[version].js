@@ -43,9 +43,9 @@ export default function Update({ updateData, project }) {
         <br/>
 
         {updateData.dates.slice(0,1).map((date, index) => (
-          <div className={styles.updatedatebox}>
-            <p className={styles.headingXl}>{`Version ${updateData.version.replace(/-/g, ".")}.0`}</p>
-            <div className={styles.headingLg}>
+          <div>
+            <p className={styles.mono1}>{`Version ${updateData.version.replace(/-/g, ".")}.0`}</p>
+            <div className={styles.headingMd}>
               <Date dateString={date} />
             </div>
           </div>
@@ -55,12 +55,10 @@ export default function Update({ updateData, project }) {
 
         {updateData.dates.slice(1).map((date, index) => (
           <div>
-            <div className={styles.updatedatebox}>
-              <p className={styles.headingXl}>{`Version ${updateData.version.replace(/-/g, ".")}.${index+1}`}</p>
-              <div className={styles.headingLg}>
+              <p className={styles.mono1}>{`Version ${updateData.version.replace(/-/g, ".")}.${index+1}`}</p>
+              <div className={styles.headingMd}>
                 <Date dateString={date} />
               </div>
-            </div>
             <br/>
           </div>
         ))}
