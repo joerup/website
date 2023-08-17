@@ -7,5 +7,4 @@ tech:
   - "SwiftUI"
   - "SwiftData"
   - "Widgets"
-  - "Notifications"
 ---
