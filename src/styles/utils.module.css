@@ -234,6 +234,7 @@
   display: flex;
   align-items: center;
   padding-bottom: 5px;
+  max-width: 100%;
 }
 .appdetail {
   margin-right: 10px;
@@ -267,6 +268,7 @@
 .updatetitle {
   display: flex;
   align-items: center;
+  max-width: 100%;
 }
 .updatetitle div {
   display: flex;
