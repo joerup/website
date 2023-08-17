@@ -32,13 +32,13 @@ export default function Layout({ children, home, top, bottom, article }) {
       { home ?
         <header className={styles.header}>
           <div className={styles.emojihead}>
-            <p> 🌎 ⌚️ 🚂 🌴 </p>
+            {/* <p> 🌎 ⌚️ 🚂 🌴 </p> */}
             <img
               src="/images/Profile.png"
               className={`${styles.headerImage} ${styles.borderCircle}`}
               alt={name}
             />
-            <p> 🏃‍♂️ 🚀 🪐 🐢 </p>
+            {/* <p> 🏃‍♂️ 🚀 🪐 🐢 </p> */}
           </div>
           <h1 className={utilStyles.heading4Xl}>{name}</h1>
         </header>

@@ -2,25 +2,29 @@ import Head from 'next/head'
 import Link from 'next/link';
 import Layout, { siteTitle } from '../components/layout'
 import styles from '../styles/utils.module.css'
-import { getSortedProjectsData } from '/lib/projects';
+import { getSortedAppsData } from '/lib/apps';
 import { getSortedUpdatesData } from '/lib/updates';
+import { getSortedCurrentsData } from '/lib/currents';
 import AppLink from '../components/applink';
 import AppUpdate from '../components/appupdate';
+import CurrentProjectInfo from '../components/currentproject';
 import Bullet from '../components/bullet';
 import Socials from '../components/socials';
 
 export async function getStaticProps() {
-  const projects = getSortedProjectsData();
+  const apps = getSortedAppsData();
   const updates = getSortedUpdatesData();
+  const currents = getSortedCurrentsData();
   return {
     props: {
-      projects,
+      apps,
       updates,
+      currents,
     },
   };
 }
 
-export default function Home ({ projects, updates }) { 
+export default function Home ({ apps, updates, currents }) { 
   return (
     <Layout home>
       <Head>
@@ -34,27 +38,33 @@ export default function Home ({ projects, updates }) {
       <h1 className={styles.headingXl}>Hello!</h1>
 
       <p className={styles.desc}>
-      I'm an undergraduate student at Princeton and an Apple developer with experience creating iOS apps using SwiftUI. I’m a creative person with a passion for app development and user interface design. I also love photography, art, and design. Thanks for visiting and I look forward to connecting with you!
+      I'm an undergraduate student at Princeton and an Apple developer creating 
+      apps with SwiftUI. 
+      I’m a creative person with a passion for designing innovative things 
+      with purpose and care. 
+      Thanks for visiting and I look forward to connecting with you!
       </p>
 
       <article>
-        <Bullet icon="📙" title="Student @ Princeton University" subtitle="Electrical and Computer Engineering '26"/>
         <Bullet icon="📱" title="Apple Developer" subtitle="3 apps available on the App Store"/>
-        <Bullet icon="🎖️" title="Swift Student Challenge Winner" subtitle="WWDC21"/>
+        <Bullet icon="🎖️" title="Swift Student Challenge Winner" subtitle="Apple WWDC21"/>
+        <Bullet icon="📙" title="Student at Princeton University" subtitle="Electrical and Computer Engineering '26"/>
+
       </article>
 
       <br/>
       <br/>
       <br/>
 
-      <h1 className={styles.headingXl}>My Projects</h1>
+      <h1 className={styles.headingXl}>Apps</h1>
 
       <div className={styles.appgroup}>
-        {projects.map(({ project, name, subtitle, link, desc }) => (
+        {apps.map(({ app, name, platforms, tech, link, desc }) => (
           <AppLink 
             name={name}
-            subtitle={subtitle}
-            icon={`/images/${project}.png`}
+            icon={`/images/${app}.png`}
+            platforms={platforms}
+            tech={tech}
             link={link}
             desc={desc}
           />
@@ -62,12 +72,29 @@ export default function Home ({ projects, updates }) {
       </div>
 
       <article>
-        <h1 className={styles.headingXl}>Updates</h1>
+
+        <h1 className={styles.headingXl}>Current Projects</h1>
         <br/>
 
-        {updates.slice(0, 5).map(({ version, dates, headline, project }) => (
+        {currents.map(({ name, date, tech, desc }) => (
+          <CurrentProjectInfo
+            name={name}
+            date={date}
+            tech={tech}
+            desc={desc}
+          />
+        ))}
+
+        <br/>
+        <br/>
+        <br/>
+
+        <h1 className={styles.headingXl}>Recent Updates</h1>
+        <br/>
+
+        {updates.slice(0, 5).map(({ version, dates, headline, app }) => (
           <AppUpdate
-          project={project}
+            app={app}
             version={version}
             dates={dates}
             headline={headline}

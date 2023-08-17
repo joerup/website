@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import styles from '../styles/utils.module.css'
 
-const AppLink = ({ name, subtitle, icon, link, desc }) => {
+const AppLink = ({ name, icon, platforms, tech, link, desc }) => {
   return (
     <Link href={link}>
       <div className={styles.applink}>
@@ -10,11 +10,17 @@ const AppLink = ({ name, subtitle, icon, link, desc }) => {
           <img className={styles.appicon} src={icon}/> 
           <div>
             <h2 className={styles.headingXl}>{name}</h2>
-            <h3 className={styles.appsubtitle}>{subtitle}</h3>
+            <p className={styles.platform}>{platforms.join(" • ")}</p> 
           </div>
         </div>
         <p className={styles.appdesc}>{desc}</p>
-        <p className={styles.learnmore}>Learn More</p> 
+        <div className={styles.appdetailrow}>
+          {tech.map((technology) => (
+             <div className={styles.appdetail}>
+               <p className={styles.appdetailtext}>{technology}</p>
+             </div>
+          ))}
+        </div>
       </div>
     </Link>
   );

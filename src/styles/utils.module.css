@@ -3,7 +3,7 @@
   line-height: 1;
   font-weight: 800;
   letter-spacing: 0.02rem;
-  margin-top: 0;
+  margin-top: 1rem;
   margin-bottom: 0.3rem;
   text-shadow: 3px 3px 3px rgba(20,20,20,0.2);
   color: #ffffff;
@@ -76,6 +76,7 @@
 
 .desc {
   font-size: 1.2rem;
+  font-weight: 700px;
   color: #ffffff;
   margin-bottom: 70px;
 }
@@ -217,11 +218,33 @@
   opacity: 0.9;
 }
 
-.learnmore {
-  font-size: 1.2rem;
-  text-align: center;
-  margin: auto;
-  display: table;
+.platformrow {
+  display: flex;
+  margin: 0;
+}
+.platform {
+  color: #cff;
+  font-size: 17px;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-right: 10px;
+}
+
+.appdetailrow {
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+}
+.appdetail {
+  margin-right: 10px;
+  background-color: rgba(211, 211, 211, 0.4);
+  border-radius: 10px;
+}
+.appdetailtext {
+  font-weight: 600;
+  margin: 10px;
+  color: #055;
+  opacity: 0.8;
 }
 
 .appupdate {
