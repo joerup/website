@@ -34,7 +34,7 @@ export default function Update({ apps, update, app }) {
   return (
     <Layout apps={apps} app={app}>
       <Head>
-        <title>{update.version.replace(/-/g, ".")}</title>
+        <title>{`Version ${update.version.replace(/-/g, ".")} | ${app.name}`}</title>
       </Head>
       <article>
         <BackButton text="Updates" link={`/${app.string}/updates`}/>

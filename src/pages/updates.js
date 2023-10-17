@@ -21,7 +21,7 @@ export default function Updates ({ apps, updates }) {
   return (
     <Layout apps={apps}>
       <Head>
-        <title>{siteTitle} | Updates</title>
+        <title>Updates | {siteTitle}</title>
       </Head>
 
       <article>

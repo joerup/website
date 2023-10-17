@@ -13,3 +13,12 @@ tech:
   - RealityKit
   - SceneKit
 ---
+# Welcome to Planetaria – an interactive Solar System simulator. Explore the heavens above right from your fingertips.
+
+# There’s so much to explore in space!
+
+Embark on an epic journey through the celestial realm, and visit the Sun, the planets, dwarf planets, and over two-hundred moons. Entire worlds await your discovery, each with their own unique features and environments. Prepare to be captivated by their stories, enchanted by their beauty, and intrigued by their cosmic influence.
+
+# It’s time to unveil the universe’s mysteries and expand your understanding of the cosmos.
+
+Let Planetaria be your guide, igniting your imagination and fueling your passion for exploring the universe.

@@ -79,14 +79,28 @@
 
 .desc {
   font-size: 1.2rem;
-  color: #ffffff;
-  margin-bottom: 50px;
+  color: #fff;
+}
+.desc2 {
+  font-size: 1rem;
+  color: #eee;
 }
 
 .body {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.body h1 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 50px;
+}
+.body p {
   font-size: 1rem;
-  color: #ffffff;
-  margin-bottom: 20px;
+  color: #ddf;
+  opacity: 0.8;
 }
 
 .mono1 {
@@ -364,6 +378,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .downloadlink {

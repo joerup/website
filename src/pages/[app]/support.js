@@ -29,7 +29,7 @@ export default function Support({ apps, app }) {
   return (
     <Layout apps={apps} app={app}>
       <Head>
-        <title>{`Support | ${app}`}</title>
+        <title>{`Support | ${app.name}`}</title>
       </Head>
       <article>
 
@@ -41,15 +41,15 @@ export default function Support({ apps, app }) {
           We'll try our best to get back to you within a few hours or so.
         </h1>
 
-        <p className={styles.body}>
-        If you are contacting us about an issue in the app, please include the following details in your email:
+        <p className={styles.desc}>
+        If you're contacting us about an issue in the app, please include:
         </p>
 
         <div className={styles.bulletpoint}><h1 className={styles.headingLg}>• app version</h1><p>(e.g. {app.name} 1.0.0)</p></div>
         <div className={styles.bulletpoint}><h1 className={styles.headingLg}>• OS version</h1><p>(e.g. iOS 17.1)</p></div>
         <div className={styles.bulletpoint}><h1 className={styles.headingLg}>• device</h1><p>(e.g. iPhone 15 Pro)</p></div>
 
-        <p className={styles.body}>
+        <p className={styles.desc}>
         This makes it faster for us to resolve any issues you may be facing.
         </p>
 

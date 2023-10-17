@@ -32,7 +32,7 @@ export default function Updates({ apps, app, updates }) {
   return (
     <Layout apps={apps} app={app}>
       <Head>
-        <title>{`Updates | ${app}`}</title>
+        <title>{`Updates | ${app.name}`}</title>
       </Head>
       <article>
 
