@@ -6,11 +6,14 @@
   background: rgba(0,147,119,1);
 }
 
+.pagecontainer {
+  min-width: 100%;
+  flex-grow: 1;
+}
 .page {
   max-width: 56rem;
   padding: 5rem 1rem;
   margin: 0 auto 0;
-  flex-grow: 1;
 }
 
 .header {
