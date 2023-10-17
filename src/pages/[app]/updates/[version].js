@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { getAppData, getSortedAppsData } from '/lib/apps';
 import { getAllUpdateIDs, getUpdateData } from '/lib/updates';
 import Date from 'src/components/date';
+import BackButton from 'src/components/backbutton';
 import styles from '/src/styles/utils.module.css';
 
 export async function getStaticProps({ params }) {
@@ -36,21 +37,15 @@ export default function Update({ apps, update, app }) {
         <title>{update.version.replace(/-/g, ".")}</title>
       </Head>
       <article>
-        <Link href={`/${app.string}`}>
-          <div className={styles.pageheader}>
-            <img className={styles.appicon} src={`/images/${app.string}.png`}/>
-            <div className={styles.heading3Xl}>
-              <p>{`${app.name} ${update.version.replace(/-/g, ".")}`}</p>
-            </div>
-          </div>
-        </Link>
+        <BackButton text="Updates" link={`/${app.string}/updates`}/>
+        
+        <h1 className={styles.heading3Xl}>{`Version ${update.version.replace(/-/g, ".")}`}</h1>
 
-        <h2 className={styles.headingMd}>{update.headline}</h2>
-        <br/>
+        <h2 className={styles.desc}>{update.headline}</h2>
 
         {update.dates.slice(0,1).map((date, index) => (
           <div>
-            <p className={styles.mono1}>{`Version ${update.version.replace(/-/g, ".")}.0`}</p>
+            <p className={styles.headingXl}>{`${update.version.replace(/-/g, ".")}.0`}</p>
             <div className={styles.headingMd}>
               <Date dateString={date} />
             </div>
@@ -61,7 +56,7 @@ export default function Update({ apps, update, app }) {
 
         {update.dates.slice(1).map((date, index) => (
           <div>
-              <p className={styles.mono1}>{`Version ${update.version.replace(/-/g, ".")}.${index+1}`}</p>
+              <p className={styles.headingXl}>{`${update.version.replace(/-/g, ".")}.${index+1}`}</p>
               <div className={styles.headingMd}>
                 <Date dateString={date} />
               </div>
