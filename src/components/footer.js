@@ -3,7 +3,7 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Socials from './socials.js'
 
-export default function Footer ({ apps }) {
+export default function Footer ({ apps, app }) {
 
   return (
     <div>
@@ -13,13 +13,12 @@ export default function Footer ({ apps }) {
           <Link href={'/'}>
           <img className={`${styles.footerImage}`} src="/images/Profile.png"/>
           </Link>
-          {/* <Socials/> */}
         </div>
         
         <div>
-          <p className={utilStyles.footnote}>Copyright © 2023 Joseph Rupertus</p>
+          <FooterText app={app}/>
         </div>
-        
+
         <div>
           {apps.map((app) => (
             <Link href={`/${app.string}/`}>
@@ -31,8 +30,21 @@ export default function Footer ({ apps }) {
       </footer>
 
       <footer className={styles.footer2}>
-        <p className={utilStyles.footnote}>Copyright © 2023 Joseph Rupertus</p>
+        <FooterText app={app}/>
       </footer>
     </div>
+  )
+}
+
+export function FooterText ({ app }) {
+  return (
+    <>
+      <p className={utilStyles.footnote}>Copyright © 2023 Joseph Rupertus</p>
+      {app ? 
+        <p className={utilStyles.footnote}>
+          <Link href={`/${app.string}/privacy`}><u>Privacy Policy</u></Link>  
+        </p>
+      : null}
+    </>
   )
 }

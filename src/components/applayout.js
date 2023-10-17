@@ -44,24 +44,22 @@ export default function Layout({ children, apps, app }) {
           <div className={styles.dropdown}>
             <img className={styles.dropbutton} src="https://img.icons8.com/metro/26/ffffff/menu.png"/>
             <div className={styles.dropdowncontent}>
-              <Link href={`/${app.string}/`}><p>About</p></Link>
+              <Link href={app.link}><p>Download</p></Link>
               <Link href={`/${app.string}/updates`}><p>Updates</p></Link>
               <Link href={`/${app.string}/support`}><p>Support</p></Link>
-              <Link href={`/${app.string}/privacy`}><p>Privacy</p></Link>
             </div>
           </div>
 
-          <Link href={`/${app.string}/`}><p className={styles.rowitem}>About</p></Link>
+          <Link href={app.link}><p className={styles.rowitem}>Download</p></Link>
           <Link href={`/${app.string}/updates`}><p className={styles.rowitem}>Updates</p></Link>
           <Link href={`/${app.string}/support`}><p className={styles.rowitem}>Support</p></Link>
-          <Link href={`/${app.string}/privacy`}><p className={styles.rowitem}>Privacy</p></Link>
           
         </div>
       </div>
       
       <main className={styles.page}>{children}</main>
 
-      <Footer apps={apps}/>
+      <Footer apps={apps} app={app}/>
 
     </div>
   )

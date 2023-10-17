@@ -55,7 +55,7 @@
   font-weight: 500;
   margin: 0;
   letter-spacing: -0.02rem;
-  color: #dddddd;
+  color: #ffffff;
 }
 
 .headingMd {
@@ -72,6 +72,9 @@
   color: #dddddd;
   opacity: 0.7;
   margin: 30px;
+}
+.footnote u {
+  color: #dddddd;
 }
 
 .desc {
@@ -142,12 +145,6 @@
   display: flex;
   align-items: center;
   justify-content: left;
-}
-.bullet p {
-  font-size: 1.2rem;
-  margin: 0;
-  color: #aaa;
-  padding-left: 10px;
 }
 
 .icon {
@@ -364,4 +361,26 @@
 .pageheader {
   display: flex;
   align-items: center;
+}
+
+.download {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.downloadlink {
+  width: 350px;
+}
+
+.bulletpoint {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.bulletpoint p {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #aaa;
+  padding-left: 10px;
 }

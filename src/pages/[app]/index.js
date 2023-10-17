@@ -42,6 +42,10 @@ export default function Home({ apps, app, updates }) {
         <p className={styles.desc}>{app.desc}</p>
 
         <div className={styles.desc} dangerouslySetInnerHTML={{ __html: app.contentHtml }} />
+
+        <div className={styles.download}>
+          <a href={app.link}><img src="download.svg" className={styles.downloadlink}/></a>
+        </div>
         
         <h1 className={styles.headingXl}>Recent Updates</h1>
         <br/>
