@@ -1,6 +1,8 @@
 ---
 name: "Omega Calculator"
 id: 1
+visible: true
+color: 22347c
 platforms:
   - "iOS"
   - "iPadOS"
@@ -9,5 +11,4 @@ desc: "Scientific and engineering calculator. Fluid and colorful design, calcula
 tech: 
   - "SwiftUI"
   - "Core Data"
-link: "https://www.omegacalculator.com/"
 ---

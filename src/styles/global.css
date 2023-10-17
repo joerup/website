@@ -5,13 +5,11 @@ body {
   font-family: 'SF Pro Rounded', 'Outfit', sans-serif;
   line-height: 1.6;
   font-size: 18px;
-  background: linear-gradient(180deg, rgba(33,170,130,1) 0%, rgba(31,162,145,1) 50%, rgba(6,105,92,1) 100%);
   position: relative;
-  min-height: 100%;
 }
 
 a {
-  color: rgb(62, 255, 194);
+  color: rgb(148, 166, 255);
   text-decoration: none;
 }
 

@@ -2,12 +2,13 @@ import Head from 'next/head'
 import Link from 'next/link'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
-import Socials from './socials.js'
+import Footer from './footer.js'
 
 const name = 'Joe Rupertus'
 export const siteTitle = 'Joe Rupertus'
 
-export default function Layout({ children, home, top, bottom, article }) {
+export default function Layout({ children, home, apps }) {
+
   return (
     <div className={styles.container}>
       <Head>
@@ -32,36 +33,32 @@ export default function Layout({ children, home, top, bottom, article }) {
       { home ?
         <header className={styles.header}>
           <div className={styles.emojihead}>
-            {/* <p> 🌎 ⌚️ 🚂 🌴 </p> */}
+            <p> 🌎 ⌚️ 🚂 🌴 </p>
             <img
               src="/images/Profile.png"
               className={`${styles.headerImage} ${styles.borderCircle}`}
               alt={name}
             />
-            {/* <p> 🏃‍♂️ 🚀 🪐 🐢 </p> */}
+            <p> 🏃‍♂️ 🚀 🪐 🐢 </p>
           </div>
           <h1 className={utilStyles.heading4Xl}>{name}</h1>
         </header>
         : 
         <Link href="/">
-          <header className={styles.navbar}>
+          <header className={styles.subheader}>
             <img
               src="/images/Profile.png"
-              className={`${styles.navbarImage}`}
+              className={`${styles.footerImage} ${styles.borderCircle}`}
               alt={name}
             />
-            <h1 className={styles.navbarTitle}>{name}</h1>
           </header>
         </Link>
       }
 
-      <main>{children}</main>
+      <main className={styles.page}>{children}</main>
 
-      <footer className={styles.footer}>
-        {/* <h2 className={utilStyles.headingMd}>Contact me at <a href="mailto:joerup@princeton.edu">joerup@princeton.edu</a><br/>or at one of the places below:</h2> */}
-        <Socials/>
-        <p className={utilStyles.footnote}>Copyright © 2023 Joseph Rupertus</p>
-      </footer>
+      <Footer apps={apps}/>
+
     </div>
   )
 }

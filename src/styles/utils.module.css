@@ -1,10 +1,11 @@
 .heading4Xl {
   font-size: 3.5rem;
   line-height: 1;
-  font-weight: 800;
-  letter-spacing: 0.02rem;
+  font-weight: 600;
+  letter-spacing: -0.02rem;
   margin-top: 1rem;
   margin-bottom: 0.3rem;
+  
   text-shadow: 3px 3px 3px rgba(20,20,20,0.2);
   color: #ffffff;
 }
@@ -18,7 +19,7 @@
 .heading3Xl {
   font-size: 3rem;
   line-height: 1;
-  font-weight: 800;
+  font-weight: 500;
   letter-spacing: -0.02rem;
   margin: 0;
   color: #ffffff;
@@ -42,9 +43,8 @@
 .headingXl {
   font-size: 2rem;
   line-height: 1.3;
-  font-weight: 800;
+  font-weight: 500;
   letter-spacing: -0.02rem;
-  line-height: 105%;
   margin: 0;
   color: #ffffff;
 }
@@ -52,7 +52,7 @@
 .headingLg {
   font-size: 1.5rem;
   line-height: 1.4;
-  font-weight: 400px;
+  font-weight: 500;
   margin: 0;
   letter-spacing: -0.02rem;
   color: #dddddd;
@@ -79,6 +79,13 @@
   font-weight: 700px;
   color: #ffffff;
   margin-bottom: 70px;
+}
+
+.body {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .mono1 {
@@ -135,6 +142,12 @@
   display: flex;
   align-items: center;
   justify-content: left;
+}
+.bullet p {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #aaa;
+  padding-left: 10px;
 }
 
 .icon {
@@ -194,6 +207,12 @@
   font-weight: 1rem;
   color: #ffffff;
   letter-spacing: 0.02rem;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 .appicon {
@@ -279,6 +298,7 @@
   font-size: 1.2rem;
   color: #eeeeee;
   margin: 0;
+  font-weight: 500;
   padding-left: 12px;
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -299,6 +319,7 @@
   color: #eeeeee;
   margin: 0;
   padding-left: 12px;
+  font-weight: 500;
   white-space: nowrap;
   max-width: 500px;
   position: relative;
@@ -337,6 +358,7 @@
   justify-content: center;
   display: flex;
   margin: 0;
+  color: #fff;
 }
 
 .pageheader {

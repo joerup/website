@@ -26,7 +26,7 @@ export async function getStaticProps() {
 
 export default function Home ({ apps, updates, currents }) { 
   return (
-    <Layout home>
+    <Layout home apps={apps}>
       <Head>
         <title>{siteTitle}</title>
       </Head>
@@ -49,7 +49,6 @@ export default function Home ({ apps, updates, currents }) {
         <Bullet icon="📱" title="Apple Developer" subtitle="3 apps available on the App Store"/>
         <Bullet icon="🎖️" title="Swift Student Challenge Winner" subtitle="Apple WWDC21"/>
         <Bullet icon="📙" title="Student at Princeton University" subtitle="Electrical and Computer Engineering '26"/>
-
       </article>
 
       <br/>
@@ -59,15 +58,8 @@ export default function Home ({ apps, updates, currents }) {
       <h1 className={styles.headingXl}>Apps</h1>
 
       <div className={styles.appgroup}>
-        {apps.map(({ app, name, platforms, tech, link, desc }) => (
-          <AppLink 
-            name={name}
-            icon={`/images/${app}.png`}
-            platforms={platforms}
-            tech={tech}
-            link={link}
-            desc={desc}
-          />
+        {apps.map((app) => (
+          <AppLink app={app}/>
         ))}
       </div>
 
@@ -92,13 +84,8 @@ export default function Home ({ apps, updates, currents }) {
         <h1 className={styles.headingXl}>Recent Updates</h1>
         <br/>
 
-        {updates.slice(0, 5).map(({ version, dates, headline, app }) => (
-          <AppUpdate
-            app={app}
-            version={version}
-            dates={dates}
-            headline={headline}
-          />
+        {updates.slice(0, 5).map((update) => (
+          <AppUpdate app={apps.find(app => update.app == app.string)} update={update}/>
         ))}
         
         <Link href="./updates">
@@ -106,12 +93,20 @@ export default function Home ({ apps, updates, currents }) {
             <p className={styles.button}>All Updates</p>
           </div>
         </Link>
-      </article>
 
-      <br/>
-      <br/>
-      <br/>
-      <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        <div className={styles.center}>
+          <p className={styles.headingXl}>Let's connect!</p>
+        </div>
+
+        <Socials/>
+
+
+      </article>
     </Layout>
   )
 }

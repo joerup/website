@@ -7,21 +7,19 @@ import { getSortedUpdatesData } from '/lib/updates';
 import AppUpdate from '../components/appupdate';
 
 export async function getStaticProps() {
-  const projects = getSortedAppsData();
+  const apps = getSortedAppsData();
   const updates = getSortedUpdatesData();
   return {
     props: {
-      projects,
+      apps,
       updates,
     },
   };
 }
 
-export default function Updates ({ projects, updates }) { 
-  const [selectedProject, setSelectedProject] = useState(null);
-
+export default function Updates ({ apps, updates }) { 
   return (
-    <Layout>
+    <Layout apps={apps}>
       <Head>
         <title>{siteTitle} | Updates</title>
       </Head>
@@ -30,20 +28,11 @@ export default function Updates ({ projects, updates }) {
         <h1 className={styles.headingXl}>All Updates</h1>
         <br/>
 
-        {updates.map(({ project, version, dates, headline }) => (
-          <AppUpdate
-            project={project}
-            version={version}
-            dates={dates}
-            headline={headline}
-          />
+        {updates.map((update) => (
+          <AppUpdate app={apps.find(app => update.app == app.string)} update={update}/>
         ))}
       </article>
-
-      <br/>
-      <br/>
-      <br/>
-      <br/>
+      
     </Layout>
   )
 }

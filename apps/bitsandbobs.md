@@ -1,6 +1,8 @@
 ---
 name: "Bits & Bobs"
 id: 3
+visible: true
+color: CA742B
 platforms:
   - "iOS"
   - "iPadOS"
@@ -8,5 +10,4 @@ desc: "Comprehensive collection tracker. Keep track of items, experiences, or go
 tech: 
   - "SwiftUI"
   - "Core Data"
-link: "https://bitsandbobs.app/"
 ---

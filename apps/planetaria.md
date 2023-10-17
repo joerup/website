@@ -1,6 +1,8 @@
 ---
 name: "Planetaria"
 id: 2
+visible: true
+color: 323a4f
 platforms:
   - "iOS"
   - "iPadOS"
@@ -9,5 +11,4 @@ tech:
   - "SwiftUI"
   - "RealityKit"
   - "SceneKit"
-link: "https://planetaria.app/"
 ---
