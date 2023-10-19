@@ -1,5 +1,5 @@
 ---
-name: Countdowny
+name: Holiday Countdowns
 id: 4
 visible: false
 color: a33744
