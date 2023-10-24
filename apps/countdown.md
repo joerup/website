@@ -1,5 +1,5 @@
 ---
-name: Holiday Countdowns
+name: Countdown Creator
 id: 4
 visible: false
 color: a33744
@@ -10,4 +10,5 @@ desc: A brand new app built with the latest Swift technologies. Count down to ho
 tech: 
   - SwiftUI
   - SwiftData
+  - CloudKit
 ---
