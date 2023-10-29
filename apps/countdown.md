@@ -5,6 +5,8 @@ visible: false
 color: a33744
 platforms:
   - iOS
+  - iPadOS
+  - macOS
 link: https://apps.apple.com/us/app/countdown-creator/id6469441334
 desc: A brand new app built with the latest Swift technologies. Count down to holidays, birthdays, vacations, and other events.
 tech: 
