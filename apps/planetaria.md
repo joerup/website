@@ -12,8 +12,13 @@ tech:
   - SwiftUI
   - RealityKit
   - SceneKit
+privacy:
+  - Planetaria does not collect any user data. Any data you enter into the application is stored locally on your device. We do not transfer your data to any other location, nor do we include any advertising or analytics software affiliated with third parties.
+privacydate: 10-27-23
 ---
 # Welcome to Planetaria – an interactive Solar System simulator. Explore the heavens above right from your fingertips.
+
+[![Download](download.svg)](https://apps.apple.com/us/app/planetaria/id1546887479)
 
 # There’s so much to explore in space!
 

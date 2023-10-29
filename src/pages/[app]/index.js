@@ -37,21 +37,21 @@ export default function Home({ apps, app, updates }) {
 
       <article>
 
-        <h1 className={styles.heading3Xl}>{app.name}</h1>
+        {/* <h1 className={styles.heading3Xl}>{app.name}</h1>
 
         <p className={styles.desc}>{app.desc}</p>
 
         <div className={styles.download}>
           <a href={app.link}><img src="download.svg" className={styles.downloadlink}/></a>
-        </div>
+        </div> */}
 
         <div className={styles.body} dangerouslySetInnerHTML={{ __html: app.contentHtml }} />
         
-        <br/>
+        {/* <br/>
         <h1 className={styles.headingXl}>Recent Updates</h1>
-        <br/>
+        <br/> */}
 
-        {updates.slice(0, updates.length === 4 ? 4 : 3).map((update) => (
+        {/* {updates.slice(0, updates.length === 4 ? 4 : 3).map((update) => (
           <AppUpdate app={app} update={update}/>
         ))}
         {updates.length > 4 ?
@@ -60,7 +60,7 @@ export default function Home({ apps, app, updates }) {
               <p className={styles.button}>All Updates</p>
             </div>
           </Link>
-        : null}
+        : null} */}
 
       </article>
     </Layout>

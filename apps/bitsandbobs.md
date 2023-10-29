@@ -11,7 +11,13 @@ desc: Comprehensive collection tracker. Keep track of items, experiences, or goa
 tech: 
   - SwiftUI
   - Core Data
+privacy:
+  - Bits & Bobs does not collect any user data. Your collections, as well as any other data you enter into the app, are stored locally on your device. We do not transfer your data to any other location, nor do we include any advertising or analytics software affiliated with third parties.
+privacydate: 10-27-23
 ---
+
 # A simple but powerful app to keep track of your collections — a tracker for your personal items, experiences, and goals.
 
 We all have little things we want to keep track of. Maybe you’re looking to keep a record of your most prized possessions, a catalog of your vintage memorabilia, or your proudest collection of figurines. A top-10 list for your favorite movies you’ve watched or restaurants you’ve tried. Maybe a list of souvenirs from your favorite places you’ve visited, or even a checklist of all the places you want to visit in the future. Whatever you’re collecting, Bits & Bobs can help.
+
+[![Download](download.svg)](https://apps.apple.com/us/app/bits-and-bobs/id1554786457)

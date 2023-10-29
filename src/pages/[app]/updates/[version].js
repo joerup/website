@@ -1,6 +1,5 @@
 import Layout from 'src/components/applayout';
 import Head from 'next/head';
-import Link from 'next/link';
 import { getAppData, getSortedAppsData } from '/lib/apps';
 import { getAllUpdateIDs, getUpdateData } from '/lib/updates';
 import Date from 'src/components/date';
