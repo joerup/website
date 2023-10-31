@@ -8,7 +8,7 @@ platforms:
   - iPadOS
   - macOS
 link: https://apps.apple.com/us/app/countdown-creator/id6469441334
-desc: A brand new app built with the latest Swift technologies. Count down to holidays, birthdays, vacations, and other events.
+desc: The ultimate tool for staying excited and connected to the special moments in your life.
 tech: 
   - SwiftUI
   - SwiftData

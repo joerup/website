@@ -7,7 +7,7 @@ platforms:
   - iOS
   - iPadOS
 link: https://apps.apple.com/us/app/planetaria/id1546887479
-desc: 3D interactive solar system simulator. Shows positions, orbits, and surfaces of celestial objects in real-time using data from the NASA Horizons API. Plus facts, properties, and information about each object.
+desc: An interactive 3D solar system simulator – explore the heavens above right from your fingertips.
 tech: 
   - SwiftUI
   - RealityKit
@@ -22,6 +22,8 @@ privacydate: 10-27-23
 # Welcome to Planetaria – an interactive Solar System simulator. Explore the heavens above right from your fingertips.
 
 [![Download](download.svg)](https://apps.apple.com/us/app/planetaria/id1546887479)
+
+![Countdown Creator](images/planetariapreview.png)
 
 # There’s so much to explore in space!
 

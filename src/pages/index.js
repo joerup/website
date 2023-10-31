@@ -35,19 +35,21 @@ export default function Home ({ apps, updates, currents }) {
 
       <br/>
 
-      <h1 className={styles.headingXl}>Hello!</h1>
-
-      <p className={styles.desc}>
-      I'm an undergraduate student at Princeton and an Apple developer creating 
-      apps with SwiftUI. 
-      I’m a creative person with a passion for designing innovative things 
-      with purpose and care. 
-      Thanks for visiting and I look forward to connecting with you!
-      </p>
-
       <article>
+
+        <h1 className={styles.headingXl}>Hello!</h1>
+
+        <p className={styles.desc}>
+        I'm an undergraduate student at Princeton and an Apple developer 
+        creating apps with SwiftUI. 
+        I’m a creative person who loves designing interactive experiences.
+        Thanks for visiting and I look forward to connecting with you!
+        </p>
+
+        <br/>
+        <br/>
         <Bullet icon="📱" title="Apple Developer" subtitle="3 apps available on the App Store"/>
-        <Bullet icon="🎖️" title="Swift Student Challenge Winner" subtitle="Apple WWDC21"/>
+        <Bullet icon="🎖️" title="Swift Student Challenge Winner" subtitle="WWDC21"/>
         <Bullet icon="📙" title="Student at Princeton University" subtitle="Electrical and Computer Engineering '26"/>
       </article>
 
@@ -55,17 +57,13 @@ export default function Home ({ apps, updates, currents }) {
       <br/>
       <br/>
 
-      <h1 className={styles.headingXl}>Apps</h1>
-
-      <div className={styles.appgroup}>
-        {apps.map((app) => (
-          <AppLink app={app}/>
-        ))}
-      </div>
+      {apps.map((app) => (
+        <AppLink app={app}/>
+      ))}
 
       <article>
 
-        <h1 className={styles.headingXl}>Current Projects</h1>
+        {/* <h1 className={styles.headingXl}>Current Projects</h1>
         <br/>
 
         {currents.map(({ name, date, tech, desc }) => (
@@ -75,24 +73,24 @@ export default function Home ({ apps, updates, currents }) {
             tech={tech}
             desc={desc}
           />
-        ))}
+        ))} 
 
         <br/>
         <br/>
-        <br/>
+        <br/> */}
 
-        <h1 className={styles.headingXl}>Recent Updates</h1>
-        <br/>
+        {/* <h1 className={styles.headingXl}>Recent Updates</h1>
+        <br/> */}
 
-        {updates.slice(0, 5).map((update) => (
+        {/* {updates.slice(0, 5).map((update) => (
           <AppUpdate app={apps.find(app => update.app == app.string)} update={update}/>
-        ))}
+        ))} */}
         
-        <Link href="./updates">
+        {/* <Link href="./updates">
           <div className={styles.applink}>
             <p className={styles.button}>All Updates</p>
           </div>
-        </Link>
+        </Link> */}
 
         <br/>
         <br/>

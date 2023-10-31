@@ -8,7 +8,7 @@ platforms:
   - iPadOS
   - macOS
 link: https://apps.apple.com/us/app/omega-calculator/id1528068503
-desc: Scientific and engineering calculator. Fluid and colorful design, calculation history, advanced features, and easy input of complicated expressions. Variables and even a graphing calculator.
+desc: A full-blown scientific calculator when you need it, and a simple arithmetic device when you don’t.
 tech: 
   - SwiftUI
   - Core Data

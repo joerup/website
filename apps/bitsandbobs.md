@@ -7,7 +7,7 @@ platforms:
   - iOS
   - iPadOS
 link: https://apps.apple.com/us/app/bits-and-bobs/id1554786457
-desc: Comprehensive collection tracker. Keep track of items, experiences, or goals. Checklists, rankings, grouping, and sorting. Store photos, attributes, and text.
+desc: A comprehensive collection tracker for your personal items, experiences, and goals.
 tech: 
   - SwiftUI
   - Core Data

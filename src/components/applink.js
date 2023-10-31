@@ -4,29 +4,23 @@ import styles from '../styles/utils.module.css'
 
 const AppLink = ({ app }) => {
   return (
-    <Link href={`./${app.string}`}>
-      <div className={styles.applink}>
+      <div className={styles.applink} style={{ background: `#${app.color}` }}>
+        <div className={styles.appcontent}>
+          
+          <img src={`images/${app.string}preview.png`}/> 
 
-        <div className={styles.appheader}>
-          <img className={styles.appicon} src={`/images/${app.string}.png`}/> 
           <div>
-            <h2 className={styles.headingXl}>{app.name}</h2>
-            <p className={styles.platform}>{app.platforms.join(" • ")}</p> 
+            <img className={styles.appicon} src={`/images/${app.string}.png`}/> 
+            <h2 className={styles.heading3Xl}>{app.name}</h2>
+            <p className={styles.headingMd}>{app.desc}</p>
+            <Link href={`./${app.string}`}>
+              <p>Learn more</p>
+            </Link>
           </div>
-        </div>
 
-        <p className={styles.appdesc}>{app.desc}</p>
-
-        <div className={styles.appdetailrow}>
-          {app.tech.map((technology) => (
-             <div className={styles.appdetail}>
-               <p className={styles.appdetailtext}>{technology}</p>
-             </div>
-          ))}
         </div>
         
       </div>
-    </Link>
   );
 };
 
