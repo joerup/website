@@ -48,9 +48,9 @@ export default function Home ({ apps, updates, currents }) {
 
         <br/>
         <br/>
-        <Bullet icon="📱" title="Apple Developer" subtitle="3 apps available on the App Store"/>
-        <Bullet icon="🎖️" title="Swift Student Challenge Winner" subtitle="WWDC21"/>
-        <Bullet icon="📙" title="Student at Princeton University" subtitle="Electrical and Computer Engineering '26"/>
+        <Bullet icon="📱" title="Apple Developer"/>
+        <Bullet icon="🎖️" title="Swift Student Challenge Winner"/>
+        <Bullet icon="📙" title="CS @ Princeton"/>
       </article>
 
       <br/>
