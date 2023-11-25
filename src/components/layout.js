@@ -33,13 +33,11 @@ export default function Layout({ children, home, apps }) {
       { home ?
         <header className={styles.header}>
           <div className={styles.emojihead}>
-            <p> 🌎 ⌚️ 🚂 🌴 </p>
             <img
-              src="/images/Profile.png"
+              src="/images/appleparkprofile.png"
               className={`${styles.headerImage} ${styles.borderCircle}`}
               alt={name}
             />
-            <p> 🏃‍♂️ 🚀 🪐 🐢 </p>
           </div>
           <h1 className={utilStyles.heading4Xl}>{name}</h1>
         </header>
@@ -47,7 +45,7 @@ export default function Layout({ children, home, apps }) {
         <Link href="/">
           <header className={styles.subheader}>
             <img
-              src="/images/Profile.png"
+              src="/images/appleparkprofile.png"
               className={`${styles.footerImage} ${styles.borderCircle}`}
               alt={name}
             />

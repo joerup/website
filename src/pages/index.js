@@ -30,32 +30,21 @@ export default function Home ({ apps, updates, currents }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
+      <br/>
 
       <Socials/>
 
-      <br/>
-
       <article>
 
-        <h1 className={styles.headingXl}>Hello!</h1>
-
         <p className={styles.desc}>
-        I'm an undergraduate student at Princeton and an Apple developer 
-        creating apps with SwiftUI. 
-        I’m a creative person who loves designing interactive experiences.
-        Thanks for visiting and I look forward to connecting with you!
+        Hello! Welcome to my portfolio. I'm a sophomore at Princeton studying Computer Science, and I build apps for Apple platforms using SwiftUI. 
+        I'm a creative person and I also really like photography, art, and design. You can see some of my projects below. Thanks for visiting!
         </p>
 
         <br/>
         <br/>
-        <Bullet icon="📱" title="Apple Developer"/>
-        <Bullet icon="🎖️" title="Swift Student Challenge Winner"/>
-        <Bullet icon="📙" title="CS @ Princeton"/>
-      </article>
 
-      <br/>
-      <br/>
-      <br/>
+      </article>
 
       {apps.map((app) => (
         <AppLink app={app}/>
@@ -94,15 +83,12 @@ export default function Home ({ apps, updates, currents }) {
 
         <br/>
         <br/>
-        <br/>
-        <br/>
 
         <div className={styles.center}>
-          <p className={styles.headingXl}>Let's connect!</p>
+          <p className={styles.headingLg}>Let's connect!</p>
         </div>
 
         <Socials/>
-
 
       </article>
     </Layout>
