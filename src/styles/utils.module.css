@@ -300,8 +300,7 @@
 
 .appupdate {
   background: radial-gradient(circle, rgba(207,236,227,0.3) 0%, rgba(165,203,200,0.2) 100%);
-  box-shadow: 2px 2px 2px 2px rgba(20,20,20,0.03);
-  border-radius: 25px;
+  border-radius: 10px;
   padding: 20px;
   margin-bottom: 20px;
 }
@@ -309,8 +308,8 @@
   opacity: 0.7;
 }
 .updateicon {
-  max-width: 50px;
-  max-height: 50px;
+  max-width: 30px;
+  max-height: 30px;
   border-radius: 15%;
   margin-right: 15px;
   box-shadow: 2px 2px 1px 1px rgba(20,20,20,0.05);
@@ -347,18 +346,13 @@
 }
 .updatedate {
   font-size: 1.2rem;
-  color: #ddd;
+  color: #fff;
   margin: 0;
   padding-left: 12px;
   white-space: nowrap;
   max-width: 500px;
   font-weight: bold;
   position: relative;
-}
-@media only screen and (max-width: 45rem) {
-  .updateheadline {
-    font-size: 0;
-  }
 }
 
 .projectButtonsRow {
@@ -387,9 +381,10 @@
 .button {
   font-size: 1.5rem;
   justify-content: center;
+  text-decoration: underline;
   display: flex;
   margin: 0;
-  color: #fff;
+  color: #bbf;
 }
 
 .pageheader {

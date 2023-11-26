@@ -3,7 +3,7 @@
   min-width: 100%;
   display: flex;
   flex-direction: column;
-  background: rgba(0,147,119,1);
+  background: rgb(66, 168, 141);
 }
 
 .pagecontainer {

@@ -37,7 +37,7 @@ export default function Home ({ apps, updates, currents }) {
       <article>
 
         <p className={styles.desc}>
-        Hello! Welcome to my portfolio. I'm a sophomore at Princeton studying Computer Science, and I build apps using SwiftUI. 
+        Hello! Welcome to my portfolio. I'm a sophomore at Princeton studying Computer Science, app developer, and Swift Student Challenge Winner (2021). 
         I'm a creative person and I also really like photography, art, and design. You can see some of my projects below. Thanks for visiting!
         </p>
 
@@ -62,30 +62,31 @@ export default function Home ({ apps, updates, currents }) {
             tech={tech}
             desc={desc}
           />
-        ))} 
-
-        <br/>
-        <br/>
-        <br/> */}
-
-        {/* <h1 className={styles.headingXl}>Recent Updates</h1>
-        <br/> */}
-
-        {/* {updates.slice(0, 5).map((update) => (
-          <AppUpdate app={apps.find(app => update.app == app.string)} update={update}/>
         ))} */}
-        
-        {/* <Link href="./updates">
-          <div className={styles.applink}>
-            <p className={styles.button}>All Updates</p>
-          </div>
-        </Link> */}
 
+        <br/>
+        
+        <h1 className={styles.headingXl}>Recent Updates</h1>
+        <br/> 
+
+        {updates.slice(0, 5).map((update) => (
+          <AppUpdate app={apps.find(app => update.app == app.string)} update={update}/>
+        ))} 
+        
+        <Link href="./updates">
+          <p className={styles.button}>All Updates</p>
+        </Link>
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         <br/>
         <br/>
 
         <div className={styles.center}>
-          <p className={styles.headingLg}>Let's connect!</p>
+          <p className={styles.headingXl}>Let's connect!</p>
         </div>
 
         <Socials/>
