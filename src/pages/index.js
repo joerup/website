@@ -37,7 +37,7 @@ export default function Home ({ apps, updates, currents }) {
       <article>
 
         <p className={styles.desc}>
-        Hello! Welcome to my portfolio. I'm a sophomore at Princeton studying Computer Science, and I build apps for Apple platforms using SwiftUI. 
+        Hello! Welcome to my portfolio. I'm a sophomore at Princeton studying Computer Science, and I build apps using SwiftUI. 
         I'm a creative person and I also really like photography, art, and design. You can see some of my projects below. Thanks for visiting!
         </p>
 
