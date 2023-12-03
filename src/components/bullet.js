@@ -6,7 +6,7 @@ const Bullet = ({ icon, title }) => {
     <div className={styles.bullet}>
       <h4 className={styles.icon}>{icon}</h4>
       <div>
-        <h1 className={styles.headingXl}>{title}</h1>
+        <h1 className={styles.smalltitledark}>{title}</h1>
       </div>
     </div>
   );

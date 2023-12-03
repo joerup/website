@@ -30,21 +30,34 @@ export default function Home ({ apps, updates, currents }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <br/>
+
+      <div className={styles.header}>
+        <div className={styles.headercontent}>
+          <img
+            src="/images/appleparkprofile.png"
+            className={`${styles.headerImage} ${styles.borderCircle}`}
+            alt={""}
+          />
+          <div>
+            <h1 className={styles.titledark}>Joe Rupertus</h1>
+            <p className={styles.descdark}>
+            Hello! Welcome to my portfolio. 
+            I am a sophomore at Princeton and a developer. 
+            I like to design interactive things that people love using.
+            Thanks for visiting!
+            </p>
+          </div>
+        </div>
+      </div>
 
       <Socials/>
-
-      <article>
-
-        <p className={styles.desc}>
-        Hello! Welcome to my portfolio. I'm a sophomore at Princeton studying Computer Science, app developer, and Swift Student Challenge Winner (2021). 
-        I'm a creative person and I also really like photography, art, and design. You can see some of my projects below. Thanks for visiting!
-        </p>
-
-        <br/>
-        <br/>
-
-      </article>
+      <br/>
+      
+      <div className={styles.bullets}>
+        <Bullet icon="💻" title="Computer Science @ Princeton"/>
+        <Bullet icon="🎨" title="Developer & Designer"/>
+        <Bullet icon="🎖️" title="Swift Student Challenge Winner 2021"/>
+      </div>
 
       {apps.map((app) => (
         <AppLink app={app}/>
@@ -66,7 +79,7 @@ export default function Home ({ apps, updates, currents }) {
 
         <br/>
         
-        <h1 className={styles.headingXl}>Recent Updates</h1>
+        {/* <h1 className={styles.headingXl}>Recent Updates</h1>
         <br/> 
 
         {updates.slice(0, 5).map((update) => (
@@ -75,18 +88,18 @@ export default function Home ({ apps, updates, currents }) {
         
         <Link href="./updates">
           <p className={styles.button}>All Updates</p>
-        </Link>
+        </Link> */}
 
+        {/* <br/>
         <br/>
         <br/>
         <br/>
         <br/>
         <br/>
-        <br/>
-        <br/>
+        <br/> */}
 
         <div className={styles.center}>
-          <p className={styles.headingXl}>Let's connect!</p>
+          <h1 className={styles.smalltitledark}>Let's connect!<br/></h1>
         </div>
 
         <Socials/>

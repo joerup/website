@@ -20,7 +20,7 @@ export default function Custom404({ apps }) {
       </Head>
 
       <div className={styles.largeDisplay}>
-        <h1 className={styles.heading3Xl}>Page Not Found</h1>
+        <h1 className={styles.titledark}>Page Not Found</h1>
       </div>
     </Layout>
   )

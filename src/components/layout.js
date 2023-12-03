@@ -29,29 +29,6 @@ export default function Layout({ children, home, apps }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image"/>
       </Head>
-
-      { home ?
-        <header className={styles.header}>
-          <div className={styles.emojihead}>
-            <img
-              src="/images/appleparkprofile.png"
-              className={`${styles.headerImage} ${styles.borderCircle}`}
-              alt={name}
-            />
-          </div>
-          <h1 className={utilStyles.heading4Xl}>{name}</h1>
-        </header>
-        : 
-        <Link href="/">
-          <header className={styles.subheader}>
-            <img
-              src="/images/appleparkprofile.png"
-              className={`${styles.footerImage} ${styles.borderCircle}`}
-              alt={name}
-            />
-          </header>
-        </Link>
-      }
       
       <main className={styles.pagecontainer}>
         <div className={styles.page}>{children}</div>
