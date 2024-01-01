@@ -15,6 +15,8 @@ tech:
 privacy:
   - Planetaria does not collect any user data. Any data you enter into the application is stored locally on your device. We do not transfer your data to any other location, nor do we include any advertising or analytics software affiliated with third parties.
 privacydate: 10-27-23
+beta: https://testflight.apple.com/join/GuZL3rSB
+betadesc: Welcome to Planetaria v2. This brand new version of Planetaria is an interactive to-scale 3D simulator of the Solar System. You’ll see the planets and moons in their current orbits, along with beautiful 3D models of their surfaces. You can move around and explore many different celestial worlds. The public beta is now open.
 ---
 
 ![Planetaria](images/planetarialogo.png)
