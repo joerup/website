@@ -39,7 +39,7 @@ export default function Footer ({ apps, app }) {
 export function FooterText ({ app }) {
   return (
     <>
-      <p className={utilStyles.footnote}>Copyright © 2023 Joseph Rupertus</p>
+      <p className={utilStyles.footnote}>Copyright © 2024 Joseph Rupertus</p>
       {app ? 
         <p className={utilStyles.footnote}>
           <Link href={`/${app.string}/privacy`}><u>Privacy Policy</u></Link>  

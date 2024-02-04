@@ -42,8 +42,10 @@ export default function Home ({ apps, updates, currents }) {
             <h1 className={styles.titledark}>Joe Rupertus</h1>
             <p className={styles.descdark}>
             Hello! Welcome to my portfolio. 
-            I am a sophomore at Princeton and a developer. 
-            I like to design interactive things that people love using.
+            I'm a sophomore at Princeton, and I'm a developer and designer. 
+            I like to create interactive things that people love using.
+            I also really like art and photography.
+            You can find all of the things I've made below.
             Thanks for visiting!
             </p>
           </div>
