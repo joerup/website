@@ -17,6 +17,8 @@ privacy:
 privacydate: 10-27-23
 ---
 
+![Omega Calculator](images/omegaheader.png)
+
 # Welcome to Omega Calculator, a beautiful and intuitive calculator for your iPhone and iPad.
 
 [![Download](download.svg)](https://apps.apple.com/us/app/omega-calculator/id1528068503)

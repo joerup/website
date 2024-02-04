@@ -43,7 +43,7 @@ export default function Beta({ apps, app }) {
             <div className={styles.body}>
 
               <h1 className={styles.headingLg}>
-                <Link href={app.beta}>Go to Testflight</Link>
+                <Link href={app.beta}>Go to TestFlight</Link>
               </h1>
 
               <img src={`/images/${app.string}beta.png`}/> 
