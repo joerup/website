@@ -2,8 +2,7 @@
 name: Planetaria
 id: 1
 visible: true
-color: 325A5F
-background: /images/planetaria/sky.jpg
+color: 00000a
 platforms:
   - iOS
   - iPadOS
