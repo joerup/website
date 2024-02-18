@@ -9,7 +9,7 @@ export const siteTitle = 'Joe Rupertus'
 export default function Layout({ children, home, apps }) {
 
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -29,8 +29,8 @@ export default function Layout({ children, home, apps }) {
         <meta name="twitter:card" content="summary_large_image"/>
       </Head>
       
-      <main className={styles.pagecontainer}>
-        <div className={styles.page}>{children}</div>
+      <main>
+        <div>{children}</div>
       </main>
 
       <Footer apps={apps}/>

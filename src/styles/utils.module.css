@@ -438,6 +438,11 @@
   width: 350px;
   z-index: 2;
 }
+@media only screen and (max-width: 65rem) {
+  .downloadlink {
+    width: 250px;
+  }
+}
 
 .bulletpoint {
   display: flex;
