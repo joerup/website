@@ -39,8 +39,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 .footer2 {
   justify-content: space-between;
