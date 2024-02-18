@@ -59,9 +59,7 @@ export default function Layout({ children, apps, app }) {
         </div>
       </div>
       
-      <main className={styles.pagecontainer}>
-        <div className={styles.page}>{children}</div>
-      </main>
+      <div className={styles.page}>{children}</div>
 
       <Footer apps={apps} app={app}/>
 

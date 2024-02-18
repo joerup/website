@@ -1,13 +1,9 @@
 .container {
-  min-height: 100vh;
-  min-width: 100%;
   display: flex;
   flex-direction: column;
-  /* background: rgb(66, 168, 141); */
 }
 
 .pagecontainer {
-  min-width: 100%;
   flex-grow: 1;
 }
 .page {

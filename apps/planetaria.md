@@ -19,7 +19,14 @@ codesexpirationdate: 3-17-24
 codeslastupdated: 2-17-24
 ---
 # Explore the celestial worlds of the Solar System with Planetaria, an interactive 3D simulator experience.
-Now available for iPhone, iPad, and Apple Vision Pro. 
+Now available for iPhone, iPad, and [very soon] Apple Vision Pro. 
+
+---
+---
+---
+---
+# Welcome to Planetaria
+This brand new version of Planetaria is an interactive to-scale 3D simulator of the Solar System. You’ll see the planets and moons in their current orbits, along with beautiful 3D models of their surfaces. You can move around and explore many different celestial worlds. 
 
 ---
 ![Planetaria](images/planetaria/preview1.png)
@@ -33,7 +40,7 @@ Become surrounded by the Solar System on Apple Vision Pro. And use AR on iPhone 
 
 ---
 # Track Orbits in Real Time
-The Solar System is constantly in motion. Every orbit is shown in its live position, and each object moves at its actual rate.
+The Solar System is constantly in motion. Each object is shown at its live position in its orbit, and it moves at its actual rate.
 
 ---
 ![Planetaria](images/planetaria/preview3.png)
@@ -47,14 +54,14 @@ Visit the Sun, the 8 planets, 5 dwarf planets, and over 20 moons. All objects ar
 
 ---
 # Learn About Other Worlds
-You'll find fascinating stories and interesting stats about each celestial object. The aim is to show what makes each one unique.
+You'll find fascinating stories and interesting stats about each celestial object that reveal what makes each one unique.
 
 ---
 ![Planetaria](images/planetaria/preview5.png)
 
 ---
 # Discover Stunning Photos
-Enjoy these mesmerizing photos taken by various spacecraft.
+Enjoy these mesmerizing photos of the Sun, the planets, and moons taken by various spacecraft.
 
 ---
 ![Planetaria](images/planetaria/preview6.png)
@@ -63,9 +70,11 @@ Enjoy these mesmerizing photos taken by various spacecraft.
 # Begin Your Celestial Journey
 Explore the Solar System with Planetaria.
 
+---
+---
 
 [![Download](download.svg)](https://apps.apple.com/us/app/planetaria/id1546887479)
 
 ---
 ---
-Photos and 3D models are provided by NASA/JPL.
+Photos and 3D models of celestial objects provided by [NASA/JPL](https://images.nasa.gov/).

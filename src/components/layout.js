@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
 import Footer from './footer.js'
 
 const name = 'Joe Rupertus'
