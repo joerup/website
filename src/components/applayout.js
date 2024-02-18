@@ -30,7 +30,7 @@ export default function Layout({ children, apps, app }) {
         <meta name="twitter:card" content="summary_large_image"/>
       </Head>
 
-      {/* <div className={styles.navbar}>
+      <div className={styles.navbar}>
 
         <Link href={`/${app.string}/`}>
           <div className={styles.navleft}>
@@ -57,11 +57,11 @@ export default function Layout({ children, apps, app }) {
           <Link href={`/${app.string}/support`}><p className={styles.rowitem}>Support</p></Link>
           
         </div>
-      </div> */}
+      </div>
       
       {children}
 
-      {/* <Footer apps={apps} app={app}/> */}
+      <Footer apps={apps} app={app}/>
 
     </main>
   )
