@@ -18,7 +18,7 @@ codesexpirationdate: 3-17-24
 codeslastupdated: 2-17-24
 ---
 # Explore the celestial worlds of the Solar System with Planetaria, an interactive 3D simulator experience.
-Now available for iPhone, iPad, and [very soon] Apple Vision Pro. 
+Now available for iPhone, iPad, and Apple Vision Pro. 
 
 ---
 ---
