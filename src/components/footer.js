@@ -19,13 +19,13 @@ export default function Footer ({ apps, app }) {
           <FooterText app={app}/>
         </div>
 
-        {/* <div>
+        <div>
           {apps.map((app) => (
             <Link href={`/${app.string}/`}>
               <img className={styles.logo} src={`/images/${app.string}/icon.png`}/>
             </Link>
           ))}
-        </div> */}
+        </div>
 
       </footer>
 
