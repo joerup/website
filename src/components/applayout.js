@@ -10,7 +10,7 @@ export const siteTitle = 'Joe Rupertus'
 export default function Layout({ children, apps, app }) {
 
   return (
-    <div className={styles.container} style={app.background == null ? { background: `#${app.color}` } : { backgroundImage: `url(${app.background})` }}>
+    <main className={styles.container} style={app.background == null ? { background: `#${app.color}` } : { backgroundImage: `url(${app.background})` }}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -63,6 +63,6 @@ export default function Layout({ children, apps, app }) {
 
       <Footer apps={apps} app={app}/>
 
-    </div>
+    </main>
   )
 }
