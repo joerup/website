@@ -1,12 +1,14 @@
 .container {
-  
+  display: flex;
+  flex-direction: column;
 }
 
 .pagecontainer {
   flex-grow: 1;
 }
 .page {
-  margin: 0;
+  padding: 5rem 0rem;
+  margin: 0 auto 0;
 }
 
 .header {
