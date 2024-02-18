@@ -22,7 +22,7 @@ export default function Footer ({ apps, app }) {
         <div>
           {apps.map((app) => (
             <Link href={`/${app.string}/`}>
-              <img className={styles.logo} src={`/images/${app.string}.png`}/>
+              <img className={styles.logo} src={`/images/${app.string}/icon.png`}/>
             </Link>
           ))}
         </div>

@@ -1,36 +1,71 @@
 ---
 name: Planetaria
-id: 2
+id: 1
 visible: true
 color: 325A5F
+background: /images/planetaria/sky.jpg
 platforms:
   - iOS
   - iPadOS
 link: https://apps.apple.com/us/app/planetaria/id1546887479
-desc: An interactive 3D solar system simulator – explore the heavens above right from your fingertips.
+desc: An interactive AR Solar System simulator. Explore the celestial worlds of the Solar System.
 tech: 
   - SwiftUI
   - RealityKit
-  - SceneKit
 privacy:
   - Planetaria does not collect any user data. Any data you enter into the application is stored locally on your device. We do not transfer your data to any other location, nor do we include any advertising or analytics software affiliated with third parties.
 privacydate: 10-27-23
-beta: https://testflight.apple.com/join/GuZL3rSB
-betadesc: Welcome to Planetaria v2. This brand new version of Planetaria is an interactive to-scale 3D simulator of the Solar System. You’ll see the planets and moons in their current orbits, along with beautiful 3D models of their surfaces. You can move around and explore many different celestial worlds. The public beta is now open.
+codesexpirationdate: 3-17-24
+codeslastupdated: 2-17-24
 ---
+# Explore the celestial worlds of the Solar System with Planetaria, an interactive 3D simulator experience.
+Now available for iPhone, iPad, and Apple Vision Pro. 
 
-![Planetaria](images/planetarialogo.png)
+---
+![Planetaria](images/planetaria/preview1.png)
 
-# Welcome to Planetaria – an interactive Solar System simulator. Explore the heavens above right from your fingertips.
+---
+# Experience Full Immersion
+Become surrounded by the Solar System on Apple Vision Pro. And use AR on iPhone and iPad to bring the Solar System to you.
+
+---
+![Planetaria](images/planetaria/preview2.png)
+
+---
+# Track Orbits in Real Time
+The Solar System is constantly in motion. Every orbit is shown in its live position, and each object moves at its actual rate.
+
+---
+![Planetaria](images/planetaria/preview3.png)
+
+---
+# Visit Planets and Moons
+Visit the Sun, the 8 planets, 5 dwarf planets, and over 20 moons. All objects are represented by beautiful and detailed 3D models.
+
+---
+![Planetaria](images/planetaria/preview4.png)
+
+---
+# Learn About Other Worlds
+You'll find fascinating stories and interesting stats about each celestial object. The aim is to show what makes each one unique.
+
+---
+![Planetaria](images/planetaria/preview5.png)
+
+---
+# Discover Stunning Photos
+Enjoy these mesmerizing photos taken by various spacecraft.
+
+---
+![Planetaria](images/planetaria/preview6.png)
+
+---
+# Begin Your Celestial Journey
+Explore the Solar System with Planetaria.
+
 
 [![Download](download.svg)](https://apps.apple.com/us/app/planetaria/id1546887479)
 
-![Countdown Creator](images/planetariapreview.png)
-
-# There’s so much to explore in space!
-
-Embark on an epic journey through the celestial realm, and visit the Sun, the planets, dwarf planets, and over two-hundred moons. Entire worlds await your discovery, each with their own unique features and environments. Prepare to be captivated by their stories, enchanted by their beauty, and intrigued by their cosmic influence.
-
-# It’s time to unveil the universe’s mysteries and expand your understanding of the cosmos.
-
-Let Planetaria be your guide, igniting your imagination and fueling your passion for exploring the universe.
+---
+---
+Photos and 3D models are provided by NASA/JPL.

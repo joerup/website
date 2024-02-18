@@ -23,7 +23,7 @@ privacydate: 10-28-23
 
 [![Download](download.svg)](https://apps.apple.com/us/app/countdown-creator/id6469441334)
 
-![Countdown Creator](images/countdownphones.png)
+![Countdown Creator](images/countdown/phones.png)
 
 # Holidays built in. 
 
@@ -45,6 +45,4 @@ Get reminder notifications when your countdown ends.
 
 Countdowns automatically sync between your devices, so you can access them anywhere.
 
-![Countdown Creator](images/countdownphones2.png)
-
-[![Download](download.svg)](https://apps.apple.com/us/app/countdown-creator/id6469441334)
+![Countdown Creator](images/countdown/phones2.png)

@@ -10,7 +10,7 @@ export const siteTitle = 'Joe Rupertus'
 export default function Layout({ children, apps, app }) {
 
   return (
-    <div className={styles.container} style={{ background: `#${app.color}` }}>
+    <div className={styles.container} style={app.background == null ? { background: `#${app.color}` } : { backgroundImage: `url(${app.background})` }}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -34,7 +34,7 @@ export default function Layout({ children, apps, app }) {
 
         <Link href={`/${app.string}/`}>
           <div className={styles.navleft}>
-            <img className={styles.logo} src={`/images/${app.string}.png`}/>
+            <img className={styles.logo} src={`/images/${app.string}/icon.png`}/>
             <h1 className={styles.title}>{app.name}</h1>
           </div>
         </Link>

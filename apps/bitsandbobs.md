@@ -20,7 +20,7 @@ privacydate: 10-27-23
 
 [![Download](download.svg)](https://apps.apple.com/us/app/bits-and-bobs/id1554786457)
 
-![Bits & Bobs](images/bitsandbobsphones.png)
+![Bits & Bobs](images/bitsandbobs/phones.png)
 
 # Create a treasure trove of your own bits & bobs.
 
@@ -35,5 +35,3 @@ Create a new collection in the app, and then add all the items in your collectio
 You can write descriptions for each item, put in images, and add tags to filter them by. There’s also item attributes – properties of whatever you’re collecting. They can be numerical, text-based, or true/false. With each item having its own value, you can sort all the items in the collection, group them together by their attributes, or filter for certain values. 
 
 # We hope the app will be useful to you in keeping track of your own bits and bobs! 
-
-[![Download](download.svg)](https://apps.apple.com/us/app/bits-and-bobs/id1554786457)

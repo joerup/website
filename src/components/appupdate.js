@@ -9,7 +9,7 @@ const AppUpdate = ({ app, update }) => {
       <div className={styles.appupdate}>
           <div className={styles.updatetitle}>
             <div>
-              <img className={styles.updateicon} src={`/images/${app.string}.png`}/>
+              <img className={styles.updateicon} src={`/images/${app.string}/icon.png`}/>
               <h2 className={styles.headingLg}>{`${app.name} ${update.version.replace(/-/g, ".")}`}</h2>
             </div>
             <h3 className={styles.updatedate}><Date dateString={update.dates[0]}/></h3>

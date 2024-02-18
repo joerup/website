@@ -1,6 +1,7 @@
 import Layout from 'src/components/applayout';
 import Link from 'next/link'
 import Head from 'next/head';
+import marked from 'marked';
 import { getAllAppIDs, getAppData, getSortedAppsData } from '/lib/apps';
 import { getSortedUpdatesData } from '/lib/updates';
 import AppUpdate from 'src/components/appupdate'
@@ -34,35 +35,23 @@ export default function Home({ apps, app, updates }) {
       <Head>
         <title>{app.name}</title>
       </Head>
+      <div>
+        <article className={styles.body}>
+          <div dangerouslySetInnerHTML={{ __html: app.contentHtml[0] }} />
+          <a href={app.link} className={styles.downloadlink}><img src="download.svg" alt="Download" /></a>
+        </article> 
+        { app.id == 1 ?
+        <img className={styles.headerimage} src={`/images/${app.string}/header.png`} /> : <></>
+        }
 
-      <article>
-
-        {/* <h1 className={styles.heading3Xl}>{app.name}</h1>
-
-        <p className={styles.desc}>{app.desc}</p>
-
-        <div className={styles.download}>
-          <a href={app.link}><img src="download.svg" className={styles.downloadlink}/></a>
-        </div> */}
-
-        <div className={styles.body} dangerouslySetInnerHTML={{ __html: app.contentHtml }} />
-        
-        {/* <br/>
-        <h1 className={styles.headingXl}>Recent Updates</h1>
-        <br/> */}
-
-        {/* {updates.slice(0, updates.length === 4 ? 4 : 3).map((update) => (
-          <AppUpdate app={app} update={update}/>
-        ))}
-        {updates.length > 4 ?
-          <Link href={`./${app.string}/updates`}>
-            <div className={styles.applink}>
-              <p className={styles.button}>All Updates</p>
-            </div>
-          </Link>
-        : null} */}
-
-      </article>
+        {app.contentHtml.slice(1).map((html, index) => {
+          if (index % 2 === 0 && app.contentHtml.length > 1) {
+            return <div key={index} className={styles.body} dangerouslySetInnerHTML={{ __html: html }} />;
+          } else {
+            return <article key={index} className={styles.body} dangerouslySetInnerHTML={{ __html: html }} />;
+          }
+        })}
+      </div>
     </Layout>
   );
 }

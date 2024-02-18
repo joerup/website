@@ -46,7 +46,7 @@ export default function Beta({ apps, app }) {
                 <Link href={app.beta}>Go to TestFlight</Link>
               </h1>
 
-              <img src={`/images/${app.string}beta.png`}/> 
+              <img src={`/images/${app.string}/beta.png`}/> 
 
             </div>
           </div>

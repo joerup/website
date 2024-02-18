@@ -6,6 +6,7 @@ import { getSortedAppsData } from '/lib/apps';
 import { getSortedUpdatesData } from '/lib/updates';
 import { getSortedCurrentsData } from '/lib/currents';
 import AppLink from '../components/applink';
+import HeaderAppLink from '../components/headerapplink';
 import AppUpdate from '../components/appupdate';
 import CurrentProjectInfo from '../components/currentproject';
 import Bullet from '../components/bullet';
@@ -33,14 +34,14 @@ export default function Home ({ apps, updates, currents }) {
 
       <div className={styles.header}>
         <div className={styles.headercontent}>
-          <img
+          {/* <img
             src="/images/appleparkprofile.png"
             className={`${styles.headerImage} ${styles.borderCircle}`}
             alt={""}
-          />
+          /> */}
           <div>
-            <h1 className={styles.titledark}>Joe Rupertus</h1>
-            <p className={styles.descdark}>
+            <h1 className={styles.darktitle}>Joe Rupertus</h1>
+            <p className={styles.darkdesc}>
             Hello! Welcome to my portfolio. 
             I'm a sophomore at Princeton, and I'm a developer and designer. 
             I like to create interactive things that people love using.
@@ -61,7 +62,8 @@ export default function Home ({ apps, updates, currents }) {
         <Bullet icon="🎖️" title="Swift Student Challenge Winner 2021"/>
       </div>
 
-      {apps.map((app) => (
+      <HeaderAppLink app={apps[0]}/>
+      {apps.slice(1).map((app) => (
         <AppLink app={app}/>
       ))}
 
