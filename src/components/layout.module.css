@@ -47,36 +47,6 @@
   padding-bottom: 10px;
 }
 
-.footer div {
-  display: flex;
-  flex: 1;
-}
-
-.footer div:first-child {
-  justify-content: flex-start;
-}
-
-@media only screen and (max-width: 1200px) {
-  .footer div:nth-child(2) {
-    max-width: 0;
-    opacity: 0;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .footer div:nth-child(2) {
-    justify-content: center;
-    text-align: center;
-    display: block;
-  }
-  .footer2 {
-    display: none;
-  }
-}
-
-.footer div:last-child {
-  justify-content: flex-end;
-}
-
 .footerImage {
   height: 55px;
   border: 5px solid #ccc;
@@ -84,6 +54,38 @@
   margin: 15px;
 }
 
+.footer div {
+  display: flex;
+  flex: 1;
+}
+.footer div:nth-child(2) {
+  justify-content: center;
+  text-align: center;
+  display: block;
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer {
+    display: block;
+  }
+  .footer div:first-child {
+    justify-content: center;
+  }
+  .footer div:last-child {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .footer div:first-child {
+    margin-left: 10px;
+    justify-content: flex-start;
+  }
+  .footer div:last-child {
+    margin-right: 15px;
+    justify-content: flex-end;
+  }
+}
 
 .navbar {
   display: flex;

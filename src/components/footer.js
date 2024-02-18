@@ -16,7 +16,12 @@ export default function Footer ({ apps, app }) {
         </div>
         
         <div>
-          <FooterText app={app}/>
+        <p className={utilStyles.footnote}>Copyright © 2024 Joseph Rupertus</p>
+        {app ? 
+          <p className={utilStyles.footnote}>
+            <Link href={`/${app.string}/privacy`}><u>Privacy Policy</u></Link>  
+          </p>
+        : null}
         </div>
 
         <div>
@@ -28,23 +33,6 @@ export default function Footer ({ apps, app }) {
         </div>
 
       </footer>
-
-      <footer className={styles.footer2}>
-        <FooterText app={app}/>
-      </footer>
     </div>
-  )
-}
-
-export function FooterText ({ app }) {
-  return (
-    <>
-      <p className={utilStyles.footnote}>Copyright © 2024 Joseph Rupertus</p>
-      {app ? 
-        <p className={utilStyles.footnote}>
-          <Link href={`/${app.string}/privacy`}><u>Privacy Policy</u></Link>  
-        </p>
-      : null}
-    </>
   )
 }
