@@ -15,7 +15,6 @@ privacy:
   - Planetaria does not collect any user data. Any data you enter into the application is stored locally on your device. We do not transfer your data to any other location, nor do we include any advertising or analytics software affiliated with third parties.
 privacydate: 10-27-23
 codes:
-  - The following promo codes are redeemable for Planetaria on visionOS.
   - WWPWPHFK6NA4
   - MKAPFYX3RAEM
   - WLMNYTRA6YHL
@@ -25,7 +24,6 @@ codes:
   - 9JJPKJJ6ELWT
   - A6WM67977W3R
   - XR3Y4JLNE7HP
-  - The following promo codes are redeemable for Planetaria on iOS.
   - 7TAL36LR739P
   - EWW9NEAK4PH4
   - MYHRE9TWYHEW

@@ -46,7 +46,7 @@ that are emitted behind them.
 
 ![Planetaria](/images/planetaria/design3.png)
 
-Orbits are kept at the same thickness no matter how the current magnification, 
+Orbits are kept at the same thickness no matter the current magnification, 
 so they're visible at all scales. They're also given unique colors to identify objects more easily.
 
 # 3D Models
