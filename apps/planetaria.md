@@ -25,14 +25,6 @@ codes:
   - A6WM67977W3R
   - XR3Y4JLNE7HP
   - 7TAL36LR739P
-  - EWW9NEAK4PH4
-  - MYHRE9TWYHEW
-  - MNYAJWFJ9PXK
-  - TL3ANH46EFKH
-  - WXKFYR6T7TJT
-  - AXKXRERYJ9NF
-  - 994NTWTJN7EM
-  - X773WWENFNWR
 codesexpirationdate: Sun Mar 17 13:38:18 PDT 2024
 ---
 # Explore the celestial worlds of the Solar System with Planetaria, an interactive 3D simulator experience.
