@@ -46,6 +46,7 @@ export default function Layout({ children, apps, app }) {
             <div className={styles.dropdowncontent}>
               <Link href={app.link}><p>Download</p></Link>
               {app.beta ? <Link href={`/${app.string}/beta`}><p>Testing</p></Link> : <></>} 
+              {app.string === 'planetaria' ? <Link href={`/${app.string}/design`}><p>Design</p></Link> : <></>}
               <Link href={`/${app.string}/updates`}><p>Updates</p></Link>
               <Link href={`/${app.string}/support`}><p>Support</p></Link>
             </div>
@@ -53,6 +54,7 @@ export default function Layout({ children, apps, app }) {
 
           <Link href={app.link}><p className={styles.rowitem}>Download</p></Link>
           {app.beta ? <Link href={`/${app.string}/beta`}><p className={styles.rowitem}>Testing</p></Link> : <></>} 
+          {app.string === 'planetaria' ? <Link href={`/${app.string}/design`}><p className={styles.rowitem}>Design</p></Link> : <></>}
           <Link href={`/${app.string}/updates`}><p className={styles.rowitem}>Updates</p></Link>
           <Link href={`/${app.string}/support`}><p className={styles.rowitem}>Support</p></Link>
           

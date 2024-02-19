@@ -14,8 +14,28 @@ tech:
 privacy:
   - Planetaria does not collect any user data. Any data you enter into the application is stored locally on your device. We do not transfer your data to any other location, nor do we include any advertising or analytics software affiliated with third parties.
 privacydate: 10-27-23
-codesexpirationdate: 3-17-24
-codeslastupdated: 2-17-24
+codes:
+  - The following promo codes are redeemable for Planetaria on visionOS.
+  - WWPWPHFK6NA4
+  - MKAPFYX3RAEM
+  - WLMNYTRA6YHL
+  - 9944RPWATT4W
+  - KP3TAFE4LPNH
+  - PPEJKREEYKWN
+  - 9JJPKJJ6ELWT
+  - A6WM67977W3R
+  - XR3Y4JLNE7HP
+  - The following promo codes are redeemable for Planetaria on iOS.
+  - 7TAL36LR739P
+  - EWW9NEAK4PH4
+  - MYHRE9TWYHEW
+  - MNYAJWFJ9PXK
+  - TL3ANH46EFKH
+  - WXKFYR6T7TJT
+  - AXKXRERYJ9NF
+  - 994NTWTJN7EM
+  - X773WWENFNWR
+codesexpirationdate: Sun Mar 17 13:38:18 PDT 2024
 ---
 # Explore the celestial worlds of the Solar System with Planetaria, an interactive 3D simulator experience.
 Now available for iPhone, iPad, and Apple Vision Pro. 
@@ -71,6 +91,11 @@ Enjoy these mesmerizing photos of the Sun, the planets, and moons taken by vario
 Download Planetaria on the App Store for iPhone, iPad, and Apple Vision Pro.
 
 [![Download](download.svg)](https://apps.apple.com/us/app/planetaria/id1546887479)
+
+---
+---
+# Learn More
+[Case Study: Planetaria Design Process](../planetaria/design)
 
 ---
 ---

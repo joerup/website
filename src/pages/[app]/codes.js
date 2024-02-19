@@ -39,14 +39,22 @@ export default function Privacy({ apps, app }) {
         {app.codes ? 
           <div>
             <p className={styles.desc2}>
-            Keep in mind each code is only redeemable one time, so someone else may have used it already.
+            Promo Codes expire on {app.codesexpirationdate} and are redeemable only on the App Store for United States. Requires an Apple ID, subject to prior acceptance of license and usage terms. To create an Apple ID, you must be age 13 (or equivalent minimum age in your Home Country, as set forth in the registration process) and in United States. Compatible software and hardware, and internet access (fees may apply) required. Not for resale. Full terms apply; see www.apple.com/legal/itunes/ww/. For more information, see https://support.apple.com/apps.
+            This app is provided to you by Apple Inc.
             </p>
-            <br/>
-            <h1 className={styles.headingLg}>Last Updated: {app.codeslastupdated}</h1>
 
             <br/>
-            <h1 className={styles.headingLg}>Codes Expire: {app.codesexpirationdate}</h1>
-
+            <div className={styles.desc2}>
+            Instructions:
+            <ul>
+                <li>Open the App Store</li>
+                <li>Press your profile picture in the upper right corner</li>
+                <li>Press “Redeem Gift Card or Code”</li>
+                <li>Press “Enter Code Manually”</li>
+                <li>Copy and paste the code</li>
+                <li>Redeem the code</li>
+            </ul>
+            </div>
             <br/>
             {app.codes.map((code) => (
               <p className={styles.desc2}>{code}</p>

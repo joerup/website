@@ -69,6 +69,13 @@ export default function Home ({ apps, updates, currents }) {
 
       <article>
 
+        <Link href="./planetaria/design">
+          <div className={styles.body}>
+            <img  src={`/images/planetaria/header.png`} />
+            <h2 className={styles.smalltitledark}>Case Study: Planetaria Design Process</h2>
+          </div>
+        </Link>
+
         {/* <h1 className={styles.headingXl}>Current Projects</h1>
         <br/>
 
@@ -81,6 +88,8 @@ export default function Home ({ apps, updates, currents }) {
           />
         ))} */}
 
+        <br/>
+        <br/>
         <br/>
         
         {/* <h1 className={styles.headingXl}>Recent Updates</h1>
