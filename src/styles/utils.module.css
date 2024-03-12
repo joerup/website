@@ -554,13 +554,24 @@
 }
 
 .embeddedImage {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
+@media only screen and (min-width: 45rem) {
+  .embeddedImage {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
 .headerimage {
   z-index: -1;
-  margin-top: -29%;
   margin-bottom: 100px;
+}
+@media only screen and (min-width: 45rem) {
+  .headerimage {
+     margin-top: -29%;
+  }
 }
 
 @media only screen and (max-width: 45rem) {
