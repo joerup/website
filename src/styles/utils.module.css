@@ -23,7 +23,7 @@
 
 @media only screen and (max-width: 45rem) {
   .heading3Xl {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -92,14 +92,27 @@
   color: #000;
   font-weight: bold;
 }
+@media only screen and (max-width: 45rem) {
+  .footnote {
+    font-size: 0.8rem;
+    line-height: 0;
+  }
+  .darkdesc {
+    font-size: 1rem;
+  }
+  .darkheadline {
+    font-size: 1.2rem;
+  }
+  .darktitle {
+    font-size: 2rem;
+  }
+}
 
 .body {
   justify-content: center;
   text-align: center;
   align-items: center;
   position: relative; 
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
 .justify {
   justify-content: left;
@@ -158,6 +171,26 @@
     padding-right: 5%;
   }
 }
+@media only screen and (max-width: 45rem) {
+  .body h1 {
+    font-size: 1.5rem;
+  }
+  .body h2 {
+    font-size: 1.25rem;
+  }
+  .body h3 {
+    font-size: 1.2rem;
+  }
+  .body h4 {
+    font-size: 1rem;
+  }
+  .body h5 {
+    font-size: 1rem;
+  }
+  .body p {
+    font-size: 1rem;
+  }
+} 
 
 .mono1 {
   font-family: monospace;
@@ -520,9 +553,14 @@
   margin-right: 25px;
 }
 
+.embeddedImage {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 .headerimage {
   z-index: -1;
-  margin-top: -33%;
+  margin-top: -29%;
+  margin-bottom: 100px;
 }
 
 @media only screen and (max-width: 45rem) {

@@ -50,7 +50,7 @@ export default function Home({ apps, app, pages, page }) {
           if (index % 2 === 0 && page.contentHtml.length > 1) {
             return <div key={index} className={styles.body} dangerouslySetInnerHTML={{ __html: html }} />;
           } else {
-            return <article key={index} className={styles.body} dangerouslySetInnerHTML={{ __html: html }} />;
+            return <article key={index} className={`${styles.body} ${styles.embeddedImage}`} dangerouslySetInnerHTML={{ __html: html }} />;
           }
         })}
       </div>
