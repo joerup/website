@@ -510,7 +510,12 @@
 }
 @media only screen and (max-width: 45rem) {
   .downloadlink {
-    width: 200px;
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 30rem) {
+  .downloadlink {
+    width: 150px;
     margin-bottom: -20px;
     margin-top: -20px;
   }
