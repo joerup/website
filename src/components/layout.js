@@ -29,7 +29,7 @@ export default function Layout({ children, home, apps }) {
         <meta name="twitter:card" content="summary_large_image"/>
       </Head>
       
-      <div>{children}</div>
+      <div className={styles.mainpage}>{children}</div>
 
       <Footer apps={apps}/>
 

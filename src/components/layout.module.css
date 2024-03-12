@@ -10,31 +10,12 @@
   flex-grow: 1;
 }
 .page {
-  padding: 5rem 0rem;
+  padding: 5rem 0rem 2rem 0rem;
   margin: 0 auto 0;
+  flex-grow: 1;
 }
-
-.header {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  padding-top: 50px;
-  margin-bottom: -200px;
-  color: #fff;
-}
-
-.subheader {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 50px;
-  margin-bottom: -20px;
-  color: #fff;
-}
-
-.headerImage {
-  width: 10rem;
-  height: 10rem;
+.mainpage {
+  flex-grow: 1;
 }
 
 .footer {

@@ -3,29 +3,20 @@ import Link from 'next/link';
 import Layout, { siteTitle } from '../components/layout'
 import styles from '../styles/utils.module.css'
 import { getSortedAppsData } from '/lib/apps';
-import { getSortedUpdatesData } from '/lib/updates';
-import { getSortedCurrentsData } from '/lib/currents';
 import AppLink from '../components/applink';
-import HeaderAppLink from '../components/headerapplink';
-import AppUpdate from '../components/appupdate';
-import CurrentProjectInfo from '../components/currentproject';
 import Bullet from '../components/bullet';
 import Socials from '../components/socials';
 
 export async function getStaticProps() {
   const apps = getSortedAppsData();
-  const updates = getSortedUpdatesData();
-  const currents = getSortedCurrentsData();
   return {
     props: {
-      apps,
-      updates,
-      currents,
+      apps
     },
   };
 }
 
-export default function Home ({ apps, updates, currents }) { 
+export default function Home ({ apps }) { 
   return (
     <Layout home apps={apps}>
       <Head>
@@ -34,11 +25,6 @@ export default function Home ({ apps, updates, currents }) {
 
       <div className={styles.header}>
         <div className={styles.headercontent}>
-          {/* <img
-            src="/images/appleparkprofile.png"
-            className={`${styles.headerImage} ${styles.borderCircle}`}
-            alt={""}
-          /> */}
           <div>
             <h1 className={styles.darktitle}>Joe Rupertus</h1>
             <p className={styles.darkdesc}>
@@ -62,62 +48,18 @@ export default function Home ({ apps, updates, currents }) {
         <Bullet icon="🎖️" title="Swift Student Challenge Winner 2021"/>
       </div>
 
-      <HeaderAppLink app={apps[0]}/>
+      <AppLink app={apps[0]}/>
       {apps.slice(1).map((app) => (
         <AppLink app={app}/>
       ))}
 
-      <article>
+      <br/>
+      <div className={styles.center}>
+        <h1 className={styles.smalltitledark}>Let's connect!<br/></h1>
+      </div>
+      <Socials/>
+      <br/>
 
-        <Link href="./planetaria/design">
-          <div className={styles.body}>
-            <img  src={`/images/planetaria/header.png`} />
-            <h2 className={styles.smalltitledark}>Case Study: Planetaria Design Process</h2>
-          </div>
-        </Link>
-
-        {/* <h1 className={styles.headingXl}>Current Projects</h1>
-        <br/>
-
-        {currents.map(({ name, date, tech, desc }) => (
-          <CurrentProjectInfo
-            name={name}
-            date={date}
-            tech={tech}
-            desc={desc}
-          />
-        ))} */}
-
-        <br/>
-        <br/>
-        <br/>
-        
-        {/* <h1 className={styles.headingXl}>Recent Updates</h1>
-        <br/> 
-
-        {updates.slice(0, 5).map((update) => (
-          <AppUpdate app={apps.find(app => update.app == app.string)} update={update}/>
-        ))} 
-        
-        <Link href="./updates">
-          <p className={styles.button}>All Updates</p>
-        </Link> */}
-
-        {/* <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/> */}
-
-        <div className={styles.center}>
-          <h1 className={styles.smalltitledark}>Let's connect!<br/></h1>
-        </div>
-
-        <Socials/>
-
-      </article>
     </Layout>
   )
 }

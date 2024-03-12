@@ -2,15 +2,13 @@ import Head from 'next/head'
 import Link from 'next/link'
 import styles from './layout.module.css'
 import Footer from './footer.js'
-// import { getSortedAppsDataHook } from '/lib/apps';
 
 const name = 'Joe Rupertus'
 export const siteTitle = 'Joe Rupertus'
 
-export default function Layout({ children, apps, app }) {
-
+export default function Layout({ children, apps, app, pages }) {
   return (
-    <main className={styles.container} style={app.background == null ? { background: `#${app.color}` } : { backgroundImage: `url(${app.background})` }}>
+    <main className={styles.container} style={{ background: `#${app.color}` }}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -30,7 +28,7 @@ export default function Layout({ children, apps, app }) {
         <meta name="twitter:card" content="summary_large_image"/>
       </Head>
 
-      <div className={styles.navbar}>
+      <div className={styles.navbar} style={{ backgroundColor: `rgba(${parseInt(app.color.slice(0,2), 16)}, ${parseInt(app.color.slice(2,4), 16)}, ${parseInt(app.color.slice(4,6), 16)}, 0.75)` }}>
 
         <Link href={`/${app.string}/`}>
           <div className={styles.navleft}>
@@ -45,18 +43,16 @@ export default function Layout({ children, apps, app }) {
             <img className={styles.dropbutton} src="https://img.icons8.com/metro/26/ffffff/menu.png"/>
             <div className={styles.dropdowncontent}>
               <Link href={app.link}><p>Download</p></Link>
-              {app.beta ? <Link href={`/${app.string}/beta`}><p>Testing</p></Link> : <></>} 
-              {app.string === 'planetaria' ? <Link href={`/${app.string}/design`}><p>Design</p></Link> : <></>}
-              <Link href={`/${app.string}/updates`}><p>Updates</p></Link>
-              <Link href={`/${app.string}/support`}><p>Support</p></Link>
+              {pages.filter(page => page.linked).map((page) => (
+                <Link href={`/${app.string}/${page.string}`}><p>{page.shorttitle ?? page.title}</p></Link>
+              ))}
             </div>
           </div>
 
           <Link href={app.link}><p className={styles.rowitem}>Download</p></Link>
-          {app.beta ? <Link href={`/${app.string}/beta`}><p className={styles.rowitem}>Testing</p></Link> : <></>} 
-          {app.string === 'planetaria' ? <Link href={`/${app.string}/design`}><p className={styles.rowitem}>Design</p></Link> : <></>}
-          <Link href={`/${app.string}/updates`}><p className={styles.rowitem}>Updates</p></Link>
-          <Link href={`/${app.string}/support`}><p className={styles.rowitem}>Support</p></Link>
+          {pages.filter(page => page.linked).map((page) => (
+            <Link href={`/${app.string}/${page.string}`}><p className={styles.rowitem}>{page.shorttitle ?? page.title}</p></Link>
+          ))}
           
         </div>
       </div>
