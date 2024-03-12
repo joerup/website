@@ -6,6 +6,7 @@ Now available for iPhone, iPad, and Apple Vision Pro.
 ===
 ===
 ===
+
 ![Planetaria](images/planetaria/splash.png)
 ## Welcome to Planetaria
 This brand new version of Planetaria is an interactive to-scale 3D simulator of the Solar System. You’ll see the planets and moons in their current orbits, along with beautiful 3D models of their surfaces. You can move around and explore many different celestial worlds. 

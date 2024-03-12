@@ -1,10 +1,11 @@
 
 ### Welcome to Omega Calculator, a beautiful and intuitive calculator for your iPhone and iPad.
 
+===
+
 ![Omega Calculator](images/omega/header.png)
 
-[![Download](download.svg)](https://apps.apple.com/us/app/countdown-creator/id6469441334)
-
+===
 
 ### It’s both familiar and powerful. A full-blown scientific calculator when you need it, and a simple arithmetic device when you don’t. 
 
