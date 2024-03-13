@@ -579,7 +579,7 @@
 .headerimage {
   z-index: -1;
   margin-bottom: 100px;
-  min-width: 100vw;
+  min-width: 100vw - 1px;
 }
 @media only screen and (min-width: 45rem) {
   .headerimage {
