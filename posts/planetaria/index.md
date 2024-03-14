@@ -57,9 +57,4 @@ Download Planetaria on the App Store for iPhone, iPad, and Apple Vision Pro.
 
 ===
 ===
-## Learn More
-[Case Study: Planetaria Design Process](../planetaria/design)
-
-===
-===
 Photos and 3D models of celestial objects provided by [NASA/JPL](https://images.nasa.gov/).

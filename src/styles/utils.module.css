@@ -500,25 +500,8 @@
 }
 
 .downloadlink {
-  width: 350px;
+  width: 250px;
   z-index: 2;
-}
-@media only screen and (max-width: 65rem) {
-  .downloadlink {
-    width: 250px;
-  }
-}
-@media only screen and (max-width: 45rem) {
-  .downloadlink {
-    width: 250px;
-  }
-}
-@media only screen and (max-width: 35rem) {
-  .downloadlink {
-    width: 150px;
-    margin-bottom: -20px;
-    margin-top: -20px;
-  }
 }
 
 .bulletpoint {

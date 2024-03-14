@@ -24,3 +24,5 @@ The interface is smooth, fluid, and fun. Buttons are large and colorful, arrange
 Even more features. All 30+ themes, an interactive text pointer for editing the input line, and saving and exporting your past calculations. Variables for storing and recalling values, plugging numbers into expressions, graphing functions, and more advanced operations like summation, derivatives, and integrals. 
 
 ### It’s time to get the best calculator experience. Download Omega Calculator today.
+
+[![Download](download.svg)](https://apps.apple.com/us/app/planetaria/id1546887479)
