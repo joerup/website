@@ -6,6 +6,7 @@ import { getSortedAppsData } from '/lib/apps';
 import AppLink from '../components/applink';
 import Bullet from '../components/bullet';
 import Socials from '../components/socials';
+import Scroll from '../components/scroll';
 
 export async function getStaticProps() {
   const apps = getSortedAppsData();
@@ -53,6 +54,16 @@ export default function Home ({ apps }) {
         <AppLink app={app}/>
       ))}
 
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+
+      {/* <Scroll/> */}
+
+      <br/>
+      <br/>
+      <br/>
       <br/>
       <div className={styles.center}>
         <h1 className={styles.smalltitledark}>Let's connect!<br/></h1>
