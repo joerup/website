@@ -2,7 +2,7 @@
 name: Countdown Creator
 id: 4
 visible: true
-color: a33744
+color: b33744
 platforms:
   - iOS
   - iPadOS
