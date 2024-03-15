@@ -156,8 +156,6 @@
 }
 .body img {
   align-items: center;
-  padding-top: 50px;
-  padding-bottom: 20px;
 }
 .body a img {
   width: 50%;
@@ -502,6 +500,8 @@
 .downloadlink {
   width: 250px;
   z-index: 2;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .bulletpoint {
@@ -566,7 +566,7 @@
 }
 @media only screen and (min-width: 45rem) {
   .headerimage {
-     margin-top: -29%;
+     margin-top: -30%;
   }
 }
 
@@ -584,10 +584,14 @@
   }
 }
 
+.horizontalScrollContainer { 
+  overflow-x: hidden;
+}
 .horizontalScrollingItems1 {
   display: flex;
+  gap: 10px;
   animation-name: infiniteScroll;
-  animation-duration: 150s;
+  animation-duration: 35s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   margin-top: 50px;
@@ -595,8 +599,9 @@
 }
 .horizontalScrollingItems2 {
   display: flex;
+  gap: 10px;
   animation-name: infiniteScroll;
-  animation-duration: 120s;
+  animation-duration: 30s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   margin-top: 50px;
@@ -604,13 +609,13 @@
 }
 
 @keyframes infiniteScroll {
-  from {transform: translateX(0) }  /* 250 * 4/3 * (13 photos per row) */
-  to {transform: translateX(calc(0px - 4593.33333px));}
+  from {transform: translateX(0) }  /* 110 * (20 photos per row) */
+  to {transform: translateX(calc(0px - 2200px));}
 }
 
 .horizontalScrollingItem {
-  margin: 10px;
   border-radius: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  max-height: 250px;
+}
+.horizontalScrollingItem img {
 }

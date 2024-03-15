@@ -5,6 +5,7 @@ import marked from 'marked';
 import { getAllAppIDs, getAppData, getSortedAppsData } from '/lib/apps';
 import { getSortedPagesData, getPageData } from '/lib/pages';
 import styles from '/src/styles/utils.module.css';
+import OmegaScroll from '/src/components/app-components/omegascroll.js';
 
 export async function getStaticProps({ params }) {
   const apps = await getSortedAppsData();
@@ -31,6 +32,7 @@ export async function getStaticPaths() {
 }
 
 export default function Home({ apps, app, pages, page }) {
+  const views = { "omega_scroll" : <OmegaScroll/> }
   return (
     <Layout apps={apps} app={app} pages={pages}>
       <Head>
@@ -39,7 +41,10 @@ export default function Home({ apps, app, pages, page }) {
       <div>
         <article className={styles.body}>
           <div dangerouslySetInnerHTML={{ __html: page.contentHtml[0] }} />
+          <br/>
           <a href={app.link} className={styles.downloadlink}><img src="download.svg" alt="Download" /></a>
+          <br/>
+          <br/>
         </article> 
 
         { app.id == 1 ?
@@ -48,12 +53,37 @@ export default function Home({ apps, app, pages, page }) {
 
         {page.contentHtml.slice(1).map((html, index) => {
           if (index % 2 === 0 && page.contentHtml.length > 1) {
-            return <div key={index} className={styles.body} dangerouslySetInnerHTML={{ __html: html }} />;
+            return <div key={index} className={styles.body}>
+                <div dangerouslySetInnerHTML={{ __html: strip(html, views) }}/>
+                <OtherView html={html} views={views}/>
+              </div>;
           } else {
             return <article key={index} className={`${styles.body} ${styles.embeddedImage}`} dangerouslySetInnerHTML={{ __html: html }} />;
           }
         })}
+
       </div>
     </Layout>
+  );
+}
+
+function strip(html, views)  {
+  Object.keys(views).forEach(key => {
+    html = html.replace(key, "");
+  });
+  return html;
+}
+
+export function OtherView({ html, views }) {
+  let viewComponent = null;
+
+  Object.keys(views).forEach(key => {
+    if (html.includes(key)) {
+        viewComponent = views[key]; // Set viewComponent to the associated view
+    }
+  });
+
+  return (
+      viewComponent
   );
 }
