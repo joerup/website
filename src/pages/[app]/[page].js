@@ -41,7 +41,7 @@ export default function Page({ apps, pages, page, app }) {
         <br/>
         <hr/>
 
-        <div className={`${styles.body} ${page.justify ? styles.justify : null}`} dangerouslySetInnerHTML={{ __html: page.contentHtml }} />
+        <div className={`${styles.body} ${page.justify ? styles.justify : null} ${styles.pagebody}`} dangerouslySetInnerHTML={{ __html: page.contentHtml }} />
 
       </article>
     </Layout>

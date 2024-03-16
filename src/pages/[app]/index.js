@@ -48,7 +48,10 @@ export default function Home({ apps, app, pages, page }) {
         </article> 
 
         { app.id == 1 ?
-        <img className={styles.headerimage} src={`/images/${app.string}/header.png`} /> : <></>
+        <div className={styles.headerimage}>
+          <img className={styles.insertLg} src={`/images/${app.string}/header.png`}/>
+          <img className={styles.insertSm} src={`/images/${app.string}/headercompact.jpeg`}/>
+        </div> : <> </>
         }
 
         {page.contentHtml.slice(1).map((html, index) => {

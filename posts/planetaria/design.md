@@ -6,15 +6,27 @@ linked: true
 
 ![Planetaria](/images/planetaria/splash.png)
 
-### Welcome to Planetaria
+# Planetaria: Solar System Simulator
+
+##### Purpose: To provide an engaging and educational experience.
 
 Planetaria is an interactive simulator of the Solar System. 
 Once a simple list of planets with some properties, it has now grown 
 into a massive 3D and AR simulation of planets and moons.
+Its primary focus is education, allowing users to freely explore the
+Solar System in an unguided manner, and learn about all of the celestial
+objects within.
+
+##### Audience: Novice, Intermediate, Professional.
+
+Each experience group benefits from using Planetaria.
+The novice can learn about how the Solar System is structured, plus some basic info about the different worlds.
+The intermediate can learn new facts and details about each planet, as well as the different moons which may be unfamiliar.
+For the professional, Planetaria offers a real-time reference for the positions and rotations of the planets and moons.
 
 ![Planetaria](/images/planetaria/header.png)
 
-### Beginnings
+# Design Elements
 
 I created Planetaria originally in fall 2020. It was simply a list of
 planets and moons with some pictures and some properties about each one.
@@ -65,12 +77,16 @@ touch of realism to the scene.
 I scaled them to be their true sizes so you could get perspectives like this one above of a moon
 orbiting a planet that dominates its sky. 
 
-### AR Mode
+### Augmented Reality
 
 I also wanted the simulation to blend seamlessly with the real world. This meant bringing the 
 solar system into the real world through AR.
 
 ![Planetaria](/images/planetaria/design4.png)
+
+# UI Design Process
+
+![Planetaria](/images/planetaria/design10.png)
 
 ### Layout
 
@@ -97,7 +113,12 @@ a separate window, and it can be moved around **within** the Solar System.
 It's objectively very difficult to move through the Solar System. You need to know exactly where
 to go, and since the targets are so small, this task seems hopeless.
 
-Enter the **Orbit-System-Surface** selector.
+It's important to strike a **balance between *freedom to explore* and *ease of navigation***.
+Since the Solar System is mostly empty space, this presents a problem.
+We need gestures that are fluid and natural, to make the user feel in control,
+but there also needs to be a simple way to navigate between objects and systems.
+
+The solution: the **Orbit-System-Surface** selector.
 
 ![Planetaria](/images/planetaria/design7.png)
 
@@ -106,6 +127,20 @@ It's essential to exploration among such a large range of orders of magnitude, a
 so much easier to get to what you want to see.
 
 ![Planetaria](/images/planetaria/design8.png)
+
+Multiple modes of navigation proved to be essential to the user interaction within the app.
+Users have the freedom to move around with zoom and rotation gestures – which is essential for
+true exploration and getting a sense of where everything is – but the selector buttons offer a 
+simple and quick way to navigate to a desired location.
+
+### Accessibility
+
+It's important that everyone has a good experience using Planetaria. With dynamic type, the content
+scales and rearranges in order to accomodate larger text.
+
+![Planetaria](/images/planetaria/design9.png)
+
+# Where We Are Now
 
 ### Full Immersion
 
