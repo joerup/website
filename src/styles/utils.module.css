@@ -190,6 +190,17 @@
   }
 } 
 
+@media only screen and (max-width: 45rem) {
+  .insertLg {
+    display: none;
+  }
+}
+@media only screen and (min-width: 45rem) {
+  .insertSm {
+    display: none;
+  }
+}
+
 .mono1 {
   font-family: monospace;
   font-weight: bold;

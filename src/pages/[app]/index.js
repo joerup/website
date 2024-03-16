@@ -54,7 +54,13 @@ export default function Home({ apps, app, pages, page }) {
         {page.contentHtml.slice(1).map((html, index) => {
           if (index % 2 === 0 && page.contentHtml.length > 1) {
             return <div key={index} className={styles.body}>
-                <div dangerouslySetInnerHTML={{ __html: strip(html, views) }}/>
+                {html.includes("&#x26;&#x26;&#x26;") ?
+                  <div>
+                    <div className={styles.insertLg} dangerouslySetInnerHTML={{ __html: strip(html.split("&#x26;&#x26;&#x26;")[0], views) }}/>
+                    <div className={styles.insertSm} dangerouslySetInnerHTML={{ __html: strip(html.split("&#x26;&#x26;&#x26;")[1], views) }}/>
+                  </div>
+                : <div dangerouslySetInnerHTML={{ __html: strip(html, views) }}/>
+                }
                 <OtherView html={html} views={views}/>
               </div>;
           } else {

@@ -50,11 +50,9 @@ Enjoy these mesmerizing photos of the Sun, the planets, and moons taken by vario
 ![Planetaria](images/planetaria/preview6.png)
 
 ===
-## Begin Your Celestial Journey
-Download Planetaria on the App Store for iPhone, iPad, and Apple Vision Pro.
 
 [![Download](download.svg)](https://apps.apple.com/us/app/planetaria/id1546887479)
 
 ===
-===
+
 Photos and 3D models of celestial objects provided by [NASA/JPL](https://images.nasa.gov/).

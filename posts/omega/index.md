@@ -3,7 +3,10 @@
 
 ===
 
-![Omega Calculator](images/omega/header.png)
+![Omega Calculator](images/omega/headerfull.png)
+&&&
+![Omega Calculator](images/omega/headercompactA.png)
+![Omega Calculator](images/omega/headercompactB.png)
 
 ===
 
@@ -13,7 +16,10 @@
 
 ===
 
-![Omega Calculator](images/omega/visual1.png)
+![Omega Calculator](images/omega/visual1full.png)
+&&&
+![Omega Calculator](images/omega/visual1compactA.png)
+![Omega Calculator](images/omega/visual1compactB.png)
 
 ===
 
@@ -23,7 +29,10 @@
 
 ===
 
-![Omega Calculator](images/omega/visual2.png)
+![Omega Calculator](images/omega/visual2full.png)
+&&&
+![Omega Calculator](images/omega/visual2compactA.png)
+![Omega Calculator](images/omega/visual2compactB.png)
 
 ===
 
@@ -44,4 +53,5 @@ omega_scroll
 
 ===
 
-[![Download](download.svg)](https://apps.apple.com/us/app/planetaria/id1546887479)
+[![Download](download.svg)](https://apps.apple.com/us/app/omega-calculator/id1528068503)
+
