@@ -21,10 +21,6 @@
 
 ### Download Bits & Bobs today for free.
 
-===
-
-===
-
-##### Credits
+[![Download](download.svg)](https://apps.apple.com/us/app/bits-and-bobs/id1554786457)
 
 Quarter-dollar coin images from the [United States Mint](https://www.usmint.gov/learn/coin-and-medal-programs/50-state-quarters).

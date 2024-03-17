@@ -42,7 +42,7 @@ export default function Home({ apps, app, pages, page }) {
         <article className={styles.body}>
           <div dangerouslySetInnerHTML={{ __html: page.contentHtml[0] }} />
           <br/>
-          <a href={app.link} className={styles.downloadlink}><img src="download.svg" alt="Download" /></a>
+          {page.expanded ?  <a href={app.link} className={styles.downloadlink}><img src="download.svg" alt="Download" /></a> : <></>}
           <br/>
           <br/>
         </article> 

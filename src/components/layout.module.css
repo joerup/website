@@ -103,6 +103,12 @@
   border-radius: 20px;
 }
 
+.footerlogo {
+  height: 55px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
 .title {
   color: #fff;
   white-space: nowrap;
@@ -122,6 +128,10 @@
   }
   .logo {
     height: 35px;
+    border-radius: 16px;
+  }
+  .footerlogo {
+    height: 45px;
     border-radius: 16px;
   }
   .title {  
