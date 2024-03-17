@@ -56,7 +56,7 @@ export default function Home({ apps, app, pages, page }) {
 
         {page.contentHtml.slice(1).map((html, index) => {
           if (index % 2 === 0 && page.contentHtml.length > 1) {
-            return <div key={index} className={`${styles.body} ${page.expanded ? null : styles.limitwidth}`}>
+            return <div key={index} className={`${page.expanded ? null : styles.limitwidth}`}>
                 {html.includes("&#x26;&#x26;&#x26;") ?
                   <div>
                     <div className={styles.insertLg} dangerouslySetInnerHTML={{ __html: strip(html.split("&#x26;&#x26;&#x26;")[0], views) }}/>

@@ -1,19 +1,15 @@
 
 ### A comprehensive collection tracker to organize your most treasured possessions.
 
-===
+[![Download](download.svg)](https://apps.apple.com/us/app/bits-and-bobs/id1554786457)
 
 ![Bits & Bobs](images/bitsandbobs/phones.png)
-
-===
 
 ## A home for your bits and bobs.
 
 #### Whatever you collect, Bits & Bobs can help keep track of them. From vinyl records, to collectible coins, to your favorite toys, figurines, books, seashells, cars, antique furniture, souvenirs from traveling, and so much more.
 
-===
-
-===
+![Bits & Bobs](images/bitsandbobs/phones2.png)
 
 ### Features
 
@@ -21,15 +17,11 @@
 
 #### You can make your collection a checklist to see what you have and what you're missing. Or make it a ranking to create an ordered list of your favorite items.
 
-===
-
-![Bits & Bobs](images/bitsandbobs/phones2.png)
-
-===
+![Bits & Bobs](images/bitsandbobs/phones3.png)
 
 ### Download Bits & Bobs today for free.
 
-[![Download](download.svg)](https://apps.apple.com/us/app/bits-and-bobs/id1554786457)
+===
 
 ===
 
