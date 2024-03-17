@@ -565,6 +565,8 @@
 
 .limitwidth {
   max-width: 1400px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .embeddedImage {
