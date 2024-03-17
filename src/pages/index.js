@@ -54,15 +54,15 @@ export default function Home ({ apps }) {
         <AppLink app={app}/>
       ))}
 
+      {/* <br/>
       <br/>
       <br/>
-      <br/>
-      <br/>
+      <br/> */}
 
       {/* <Scroll/> */}
 
-      <br/>
-      <br/>
+      {/* <br/>
+      <br/> */}
       <br/>
       <br/>
       <div className={styles.center}>
