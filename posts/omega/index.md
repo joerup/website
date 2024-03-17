@@ -1,3 +1,6 @@
+---
+expanded: true
+---
 
 ### An intuitive and powerful calculator for iPhone and iPad.
 

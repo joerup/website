@@ -1,26 +1,36 @@
 
-### Celebrate every moment with Countdown Creator.
+### Celebrate every moment with Countdown Creator. Create beautiful countdown widgets to look forward to your next occasion.
+
+===
 
 ![Countdown Creator](images/countdown/phones.png)
 
-<!-- ### Holidays built in. 
+===
 
-Over 20 to choose from: national holidays, religious observances, and cultural celebrations. Just select the holiday you want, and the app will automatically set it up for you – no need to figure out the date. Plus, the countdown rolls over to the next year once the holiday passes.
+## Get excited about the special moments in your life.
 
-### Customizable cards. 
+#### Countdown Creator helps you count down to whatever you're looking forward to next. With beautiful, customizable cards, you can keep track of how long is left until your special day is finally here.
 
-Add photos, and edit fonts and colors to make your countdown look great. Search for beautiful high-quality photos with Unsplash, built right into the app. Or use photos from your own photo library.
+===
 
-### Widgets. 
+===
 
-Choose a countdown in the widget settings, and you’ll always be able to see how many days are left, right on your home screen. Your photos, fonts, and colors also show up on widgets. 
+### Features
 
-### Notifications. 
+#### Holidays are built in. Select any one you like, and the date is set up for you. Plus, when the holiday passes, the countdown automatically rolls over to the next year.
 
-Get reminder notifications when your countdown ends.
+#### Widgets on your home screen. Check how many days are left at a glance. Your countdowns sync across all your devices, so they'll always be up to date.
 
-### iCloud sync. 
+#### Beautiful cards made easy. Access beautiful high-quality photos via Unsplash, built right into the app. And customize the font and color of the digits to make it yours.
 
-Countdowns automatically sync between your devices, so you can access them anywhere. -->
+===
 
-<!-- ![Countdown Creator](images/countdown/phones2.png) -->
+![Countdown Creator](images/countdown/phones2.png)
+
+===
+
+### Download Countdown Creator today for free.
+
+[![Download](download.svg)](https://apps.apple.com/us/app/countdown-creator/id6469441334)
+
+===

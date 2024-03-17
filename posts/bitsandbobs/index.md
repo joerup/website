@@ -1,18 +1,38 @@
 
 ### A comprehensive collection tracker to organize your most treasured possessions.
 
+===
+
 ![Bits & Bobs](images/bitsandbobs/phones.png)
 
-<!-- ### Create a treasure trove of your own bits & bobs.
+===
 
-We all have little things we want to keep track of. Maybe you’re looking to keep a record of your most prized possessions, a catalog of your vintage memorabilia, or your proudest collection of figurines. A top-10 list for your favorite movies you’ve watched or restaurants you’ve tried. Maybe a list of souvenirs from your favorite places you’ve visited, or even a checklist of all the places you want to visit in the future. Whatever you’re collecting, Bits & Bobs can help.
+## A home for your bits and bobs.
 
-### Collections, checklists, and rankings.
+#### Whatever you collect, Bits & Bobs can help keep track of them. From vinyl records, to collectible coins, to your favorite toys, figurines, books, seashells, cars, antique furniture, souvenirs from traveling, and so much more.
 
-Create a new collection in the app, and then add all the items in your collection to it. You might opt for a checklist – which lets you keep track of which items you have and which you don’t – or a ranking – which assigns numbers to each item so you can rank your favorites. 
+===
 
-### Attributes, tags, images, and more.
+===
 
-You can write descriptions for each item, put in images, and add tags to filter them by. There’s also item attributes – properties of whatever you’re collecting. They can be numerical, text-based, or true/false. With each item having its own value, you can sort all the items in the collection, group them together by their attributes, or filter for certain values.  -->
+### Features
 
-<!-- ### We hope the app will be useful to you in keeping track of your own bits and bobs!  -->
+#### Add photos, attributes, descriptions, and tags to each item in your collection. Then you can group, sort, and filter the whole collection based on the properties of the items. 
+
+#### You can make your collection a checklist to see what you have and what you're missing. Or make it a ranking to create an ordered list of your favorite items.
+
+===
+
+![Bits & Bobs](images/bitsandbobs/phones2.png)
+
+===
+
+### Download Bits & Bobs today for free.
+
+[![Download](download.svg)](https://apps.apple.com/us/app/bits-and-bobs/id1554786457)
+
+===
+
+##### Credits
+
+Quarter-dollar coin images from the [United States Mint](https://www.usmint.gov/learn/coin-and-medal-programs/50-state-quarters).

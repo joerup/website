@@ -1,3 +1,6 @@
+---
+expanded: true
+---
 
 ### Explore the celestial worlds of the Solar System with Planetaria, an interactive 3D simulator experience.
 Now available for iPhone, iPad, and Apple Vision Pro. 
