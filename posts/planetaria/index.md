@@ -64,4 +64,8 @@ expanded: true
 
 [![Download](download.svg)](https://apps.apple.com/us/app/planetaria/id1546887479)
 
+===
+
+===
+
 Photos and 3D models of celestial objects provided by [NASA/JPL](https://images.nasa.gov/).

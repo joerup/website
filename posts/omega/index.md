@@ -4,6 +4,8 @@ expanded: true
 
 ### An intuitive and powerful calculator for iPhone and iPad.
 
+##### Now with graphing, variables, and other advanced capabilities.
+
 ===
 
 ![Omega Calculator](images/omega/headerfull.png)
