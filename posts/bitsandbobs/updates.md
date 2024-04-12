@@ -6,6 +6,11 @@ linked: true
 
 ## Version 1.4
 
+##### 1.4.4 - Apr 1, 2024
+
+- New app screenshots & branding
+- Minor bug fixes
+
 ##### 1.4.3 – Nov 13, 2023
 
 - Added Bits & Bobs premium version
