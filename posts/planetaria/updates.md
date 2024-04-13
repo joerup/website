@@ -4,6 +4,16 @@ justify: true
 linked: true
 ---
 
+## Version 2.1
+
+##### 2.1.0 – Apr 12, 2024
+
+- Faster loading on app start
+- Critical bug fixes
+- Minor visual tweaks
+
+---
+
 ## Version 2.0
 
 ##### 2.0.0 – Feb 18, 2024
