@@ -1,7 +1,6 @@
 ---
 title: Design Process
 shorttitle: Design
-linked: true
 ---
 
 ![Planetaria](/images/planetaria/splash.png)
