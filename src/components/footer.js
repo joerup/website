@@ -10,7 +10,7 @@ export default function Footer ({ apps, app }) {
 
         <div>
           <Link href={'/'}>
-          <img className={`${styles.footerImage}`} src="/images/appleparkprofile.png"/>
+          <img className={`${styles.footerImage}`} src="/images/Profile.png"/>
           </Link>
         </div>
         

@@ -25,9 +25,12 @@ export default function Home ({ apps }) {
       </Head>
 
       <div className={styles.header}>
-        <div className={styles.headercontent}>
-          <div>
+        <div>
+          <div className={styles.headercontent}>
+            <img src="/images/Profile.png"/>
             <h1 className={styles.darktitle}>Joe Rupertus</h1>
+          </div>
+          <div className={styles.headercontent}>
             <p className={styles.darkdesc}>
             Hello! Welcome to my portfolio. 
             I'm a sophomore at Princeton, and I'm a developer and designer. 

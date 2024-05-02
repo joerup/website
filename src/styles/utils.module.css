@@ -552,12 +552,13 @@
 .headercontent {
   display: flex;
   max-width: 1000px;
+  align-items: center;
   z-index: 2;
 }
 .headercontent img {
   justify-self: center; 
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   justify-content: center;
   border-radius: 9999px;
   border: 7px solid #ccc;
@@ -605,9 +606,7 @@
     justify-content: center;
   }
   .headercontent img {
-    margin-bottom: 20px;
-    margin-top: -40px;
-    margin-right: 0px;
+    margin-right: 25px;
   }
 }
 
