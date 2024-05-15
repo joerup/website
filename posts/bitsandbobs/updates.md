@@ -4,6 +4,14 @@ justify: true
 linked: true
 ---
 
+## Version 1.5
+
+##### 1.5.0 - May 14, 2024
+
+- Collections now sync with iCloud
+
+---
+
 ## Version 1.4
 
 ##### 1.4.4 - Apr 1, 2024
