@@ -7,7 +7,7 @@ const AppLink = ({ app }) => {
     <Link href={`./${app.string}`}>
       <div className={styles.applink} style={{ background: `#${app.color}` }}>
         <div className={styles.appcontent}>
-          <img src={`images/${app.string}/preview.png`}/> 
+          <img className={styles.apppreviewimage} src={`images/${app.string}/preview.png`}/> 
           <div>
             <img className={styles.appicon} src={`/images/${app.string}/icon.png`}/> 
             <h2 className={styles.heading3Xl}>{app.name}</h2>

@@ -312,9 +312,6 @@
   justify-content: center;
   padding: 20px;
 }
-.applink :hover {
-  opacity: 0.8;
-}
 
 .appcontent {
   display: flex;
@@ -329,8 +326,9 @@
   margin-left: 50px;
   justify-content: left;
 }
-.appcontent img {
-  width: 35%;
+.apppreviewimage {
+  width: 40%;
+  margin: -15px;
 }
 
 .appicon {
