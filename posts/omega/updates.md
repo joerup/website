@@ -18,7 +18,7 @@ linked: true
 - Interface and settings changes
 - Bug fixes
 
-##### 2.2.1 - May 23, 2024
+##### 2.2.1 - May 23, 2023
 
 - Calculation history and stored vars now sync with iCloud
 - Bug fixes
