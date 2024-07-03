@@ -39,7 +39,7 @@ export default function Home({ apps, app, pages, page }) {
         <title>{app.name}</title>
       </Head>
       <div>
-        <article className={styles.body}>
+        <article className={app.theme == 'dark' ? styles.body : styles.body_light}>
           <div dangerouslySetInnerHTML={{ __html: page.contentHtml[0] }} />
           <br/>
           {page.expanded ?  <a href={app.link} className={styles.downloadlink}><img src="download.svg" alt="Download" /></a> : <></>}
@@ -67,7 +67,7 @@ export default function Home({ apps, app, pages, page }) {
                 <OtherView html={html} views={views}/>
               </div>;
           } else {
-            return <article key={index} className={`${styles.body} ${styles.embeddedImage}`} dangerouslySetInnerHTML={{ __html: html }} />;
+            return <article key={index} className={`${app.theme == 'dark' ? styles.body : styles.body_light} ${styles.embeddedImage}`} dangerouslySetInnerHTML={{ __html: html }} />;
           }
         })}
 

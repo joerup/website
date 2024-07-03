@@ -36,12 +36,12 @@ export default function Page({ apps, pages, page, app }) {
         <title>{`${page.title} | ${app.name}`}</title>
       </Head>
       <article>
-        <h1 className={styles.heading3Xl}>{`${page.title}`}</h1>
+        <h1 className={app.theme == 'dark' ? styles.heading3Xl : styles.heading3Xl_light}>{`${page.title}`}</h1>
 
         <br/>
         <hr/>
 
-        <div className={`${styles.body} ${page.justify ? styles.justify : null} ${styles.pagebody}`} dangerouslySetInnerHTML={{ __html: page.contentHtml }} />
+        <div className={`${app.theme == 'dark' ? styles.body : styles.body_light} ${page.justify ? styles.justify : null} ${styles.pagebody}`} dangerouslySetInnerHTML={{ __html: page.contentHtml }} />
 
       </article>
     </Layout>

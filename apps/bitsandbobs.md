@@ -3,6 +3,8 @@ name: Bits & Bobs
 id: 3
 visible: true
 color: D38F41
+backgroundColor: ffdab0
+theme: light
 platforms:
   - iOS
   - iPadOS

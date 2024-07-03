@@ -3,6 +3,8 @@ name: Planetaria
 id: 1
 visible: true
 color: 00000a
+backgroundColor: 00000a
+theme: dark
 platforms:
   - iOS
   - iPadOS

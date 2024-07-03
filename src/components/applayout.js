@@ -8,7 +8,7 @@ export const siteTitle = 'Joe Rupertus'
 
 export default function Layout({ children, apps, app, pages }) {
   return (
-    <main className={styles.container} style={{ background: `#${app.color}` }}>
+    <main className={styles.container} style={{ background: `#${app.backgroundColor}` }}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -28,20 +28,20 @@ export default function Layout({ children, apps, app, pages }) {
         <meta name="twitter:card" content="summary_large_image"/>
       </Head>
 
-      <div className={styles.navbar} style={{ backgroundColor: `rgba(${parseInt(app.color.slice(0,2), 16)}, ${parseInt(app.color.slice(2,4), 16)}, ${parseInt(app.color.slice(4,6), 16)}, 0.75)` }}>
+      <div className={styles.navbar} style={{ backgroundColor: `rgba(${parseInt(app.backgroundColor.slice(0,2), 16)}, ${parseInt(app.backgroundColor.slice(2,4), 16)}, ${parseInt(app.backgroundColor.slice(4,6), 16)}, 0.85)` }}>
 
         <Link href={`/${app.string}/`}>
           <div className={styles.navleft}>
             <img className={styles.logo} src={`/images/${app.string}/icon.png`}/>
-            <h1 className={styles.title}>{app.name}</h1>
+            <h1 className={app.theme == 'dark' ? styles.title : styles.title_light}>{app.name}</h1>
           </div>
         </Link>
 
         <div className={styles.navright}>
 
           <div className={styles.dropdown}>
-            <img className={styles.dropbutton} src="https://img.icons8.com/metro/26/ffffff/menu.png"/>
-            <div className={styles.dropdowncontent}>
+            <img className={styles.dropbutton} src={`https://img.icons8.com/?size=100&id=3096&format=png&color=${app.theme == 'dark' ? 'ffffff' : '000000'}`}/>
+            <div className={app.theme == 'dark' ? styles.dropdowncontent : styles.dropdowncontent_light}>
               <Link href={app.link}><p>Download</p></Link>
               {pages.filter(page => page.linked).map((page) => (
                 <Link href={`/${app.string}/${page.string}`}><p>{page.shorttitle ?? page.title}</p></Link>
@@ -49,9 +49,9 @@ export default function Layout({ children, apps, app, pages }) {
             </div>
           </div>
 
-          <Link href={app.link}><p className={styles.rowitem}>Download</p></Link>
+          <Link href={app.link}><p className={app.theme == 'dark' ? styles.rowitem : styles.rowitem_light}>Download</p></Link>
           {pages.filter(page => page.linked).map((page) => (
-            <Link href={`/${app.string}/${page.string}`}><p className={styles.rowitem}>{page.shorttitle ?? page.title}</p></Link>
+            <Link href={`/${app.string}/${page.string}`}><p className={app.theme == 'dark' ? styles.rowitem : styles.rowitem_light}>{page.shorttitle ?? page.title}</p></Link>
           ))}
           
         </div>

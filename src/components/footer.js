@@ -15,9 +15,9 @@ export default function Footer ({ apps, app }) {
         </div>
         
         <div>
-        <p className={utilStyles.footnote}>Copyright © 2024 Joseph Rupertus</p>
+        <p className={(app ? app.theme : '') == 'dark' ? utilStyles.footnote : utilStyles.footnote_light}>Copyright © 2024 Joseph Rupertus</p>
         {app ? 
-          <p className={utilStyles.footnote}>
+          <p className={app.theme == 'dark' ? utilStyles.footnote : utilStyles.footnote_light}>
             <Link href={`/${app.string}/privacy`}><u>Privacy Policy</u></Link>  
           </p>
         : null}

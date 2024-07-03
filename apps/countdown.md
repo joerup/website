@@ -3,6 +3,8 @@ name: Countdown Creator
 id: 4
 visible: true
 color: b33744
+backgroundColor: ffcfd4
+theme: light
 platforms:
   - iOS
   - iPadOS

@@ -3,6 +3,8 @@ name: Omega Calculator
 id: 2
 visible: true
 color: 32549C
+backgroundColor: a7c2fa
+theme: light
 platforms:
   - iOS
   - iPadOS
