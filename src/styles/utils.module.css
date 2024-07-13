@@ -66,6 +66,12 @@
   font-weight: normal;
   color: #eee;
 }
+.headingMd_light {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: normal;
+  color: #234;
+}
 
 .footnote {
   font-size: 1rem;
@@ -406,6 +412,8 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
+  border-radius: 20px;
+  margin: 20px;
 }
 
 .appcontent {
@@ -449,6 +457,9 @@
   }
   .appicon {
     margin: 0 auto 20px;
+  }
+  .apppreviewimage {
+    margin: 0;
   }
 }
 
@@ -593,6 +604,12 @@
 .learnmore:hover {
   text-decoration: underline;
 }
+.learnmore_light {
+  color: #26f
+}
+.learnmore_light:hover {
+  text-decoration: underline;
+}
 
 .pageheader {
   display: flex;
@@ -645,6 +662,7 @@
 .headercontent {
   display: flex;
   max-width: 1000px;
+  justify-content: center;
   align-items: center;
   z-index: 2;
 }
@@ -685,13 +703,13 @@
   min-width: 100vw - 1px;
   margin-top: -70%;
 }
-@media only screen and (min-width: 45rem) {
+@media only screen and (min-width: 65rem) {
   .headerimage {
      margin-top: -30%;
   }
 }
 
-@media only screen and (max-width: 45rem) {
+@media only screen and (max-width: 65rem) {
   .headercontent {
     display: grid;
     text-align: center;
@@ -699,7 +717,7 @@
     justify-content: center;
   }
   .headercontent img {
-    margin-right: 25px;
+    margin-right: 0px;
   }
 }
 
