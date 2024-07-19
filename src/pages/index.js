@@ -33,7 +33,7 @@ export default function Home ({ apps }) {
           <div className={styles.headercontent}>
             <p className={styles.darkdesc}>
             Hello! Welcome to my portfolio. 
-            I'm a sophomore at Princeton, and I'm a developer and designer. 
+            I'm an incoming junior at Princeton, and I'm a developer and designer. 
             I like to create interactive things that people love using.
             I also really like art and photography.
             You can find all of the things I've made below.
