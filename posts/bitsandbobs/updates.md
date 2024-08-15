@@ -4,6 +4,14 @@ justify: true
 linked: true
 ---
 
+## Version 1.6
+
+##### 1.6.0 - Aug 13, 2024
+
+- Improved usability and simplified attribute settings
+
+---
+
 ## Version 1.5
 
 ##### 1.5.0 - May 14, 2024

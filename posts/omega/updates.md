@@ -6,6 +6,11 @@ linked: true
 
 ## Version 2.2
 
+##### 2.2.1 - May 23, 2024
+
+- Calculation history and stored vars now sync with iCloud
+- Bug fixes
+
 ##### 2.2.0 - Jul 31, 2023
 
 - New app icons with a version for each theme
@@ -16,11 +21,6 @@ linked: true
 - Redesigned graph/table/equivalent results screen
 - Added new Omega Pro previews
 - Interface and settings changes
-- Bug fixes
-
-##### 2.2.1 - May 23, 2023
-
-- Calculation history and stored vars now sync with iCloud
 - Bug fixes
 
 ---
