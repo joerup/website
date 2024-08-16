@@ -4,11 +4,24 @@ justify: true
 linked: true
 ---
 
-## Version 1.0
+## Version 1.2
 
-##### 1.0.1 – Nov 13, 2023
+##### 1.2.0 - Aug 2024
+
+- iMessage app to send countdowns to friends
+- Confetti celebration when a countdown reaches zero
+- Performance improvements
+- Bug fixes
+
+---
+
+## Version 1.1
+
+##### 1.1.0 – Nov 13, 2023
 
 - Bug fixes and changes
+
+---
 
 ##### 1.0.0 – Nov 3, 2023
 
