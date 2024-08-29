@@ -32,12 +32,10 @@ export default function Home ({ apps }) {
           </div>
           <div className={styles.headercontent}>
             <p className={styles.darkdesc}>
-            Hello! Welcome to my portfolio. 
-            I'm an incoming junior at Princeton, and I'm a developer and designer. 
-            I like to create interactive things that people love using.
-            I also really like art and photography.
-            You can find all of the things I've made below.
-            Thanks for visiting!
+            I am an undergraduate student at Princeton and an 
+            indie iOS & visionOS developer. I like to use tech 
+            to create engaging, interactive experiences that 
+            people enjoy using. I would love to connect with you!
             </p>
           </div>
         </div>
