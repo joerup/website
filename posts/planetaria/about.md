@@ -1,5 +1,6 @@
 ---
 title: About
+justify: true
 linked: true
 ---
 
