@@ -17,7 +17,7 @@ export default function Landing_Countdown({ link }) {
           <img
             src="/images/countdown/graphic.png"
             alt="Countdown"
-            className="flex-1 max-w-full md:max-w-[50%] h-auto mb-6 md:mb-0 md:mr-10"
+            className="flex-1 max-w-full md:max-w-[50%] mb-6 md:mb-0 md:mr-10"
           />
           <div className="text-center items-center md:text-left md:items-left max-w-full mb-10">
             <h1 className="text-3xl md:text-4xl lg:text-4xl font-bold mb-4">Celebrate every moment.</h1>

@@ -18,16 +18,14 @@ export default function Landing_Omega({ link }) {
         transition={{ duration: 1, ease: 'easeOut' }}  // Animation settings
       >
         <div className="relative flex flex-col md:flex-row items-center justify-center z-10 px-6 md:py-8 max-w-6xl mx-auto">
-          {/* Left Side: Text and Download Button */}
           <div className="text-center md:text-left">
             <h2 className="text-xl md:text-3xl font-bold mb-8">
               A beautiful and intuitive calculator for your iPhone and iPad.
             </h2>
             <Download href={link} className="mt-6 inline-block" />
           </div>
-          {/* Right Side: Promo Image */}
           <div className="flex justify-center mt-8 md:mt-0">
-            <img src="/images/omega/heading.png" alt="Omega Calculator Promo" className="max-w-full h-auto" />
+            <img src="/images/omega/heading.png" alt="Omega Calculator Promo" className="max-w-full" />
           </div>
         </div>
       </motion.section>
@@ -81,7 +79,7 @@ export default function Landing_Omega({ link }) {
           </p>
           </div>
           <div className="flex justify-center md:mt-0">
-            <img src="/images/omega/pro.png" alt="Omega Pro" className="max-w-full h-auto" />
+            <img src="/images/omega/pro.png" alt="Omega Pro" className="max-w-full" />
           </div>
         </div>
       </motion.section>
