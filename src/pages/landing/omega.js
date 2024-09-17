@@ -2,9 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Download from '/src/components/download';
 import CTA from 'src/components/cta';
-import Reviews from 'src/components/reviews';
-
-import { useState } from 'react';
 
 export default function Landing_Omega({ link }) {
   return (
@@ -17,7 +14,7 @@ export default function Landing_Omega({ link }) {
         animate={{ opacity: 1, y: 0 }}  // Animation end point
         transition={{ duration: 1, ease: 'easeOut' }}  // Animation settings
       >
-        <div className="relative flex flex-col md:flex-row items-center justify-center z-10 px-6 md:py-8 w-full max-w-6xl mx-auto">
+        <div className="relative flex flex-col md:flex-row items-center justify-center z-10 px-6 md:py-8 w-full max-w-6xl md:mx-auto">
           <div className="text-center md:text-left w-full">
             <h2 className="text-xl md:text-3xl font-bold mb-8">
               A beautiful and intuitive calculator for your iPhone and iPad.
@@ -30,7 +27,7 @@ export default function Landing_Omega({ link }) {
         </div>
       </motion.section>
 
-         { /* Features */}
+      { /* Features */}
       <Feature 
         title="Simple and powerful."
         description="All the capabilities you'll ever need, from trivial computations to advanced mathematical functions."
@@ -66,7 +63,7 @@ export default function Landing_Omega({ link }) {
         animate={{ opacity: 1, y: 0 }}  // Animation end point
         transition={{ duration: 1, ease: 'easeOut' }}  // Animation settings
       >
-        <div className="relative flex flex-col items-center justify-center z-10 px-6 md:pt-4 max-w-6xl mx-auto">
+        <div className="relative flex flex-col items-center justify-center z-10 px-6 md:pt-4 max-w-6xl md:mx-auto">
           <div className="text-center">
           <h2 className="text-4xl md:text-6xl font-extrabold mb-8 text-center uppercase" style={{ fontFamily: 'SF Pro Rounded, sans-serif' }}>
             Omega Pro
@@ -123,43 +120,43 @@ function Feature({ title, description, image, reverse }) {
 }
 
 const OmegaScroll = () => {
-const count = 40;
+  const count = 40;
 
-const photos = Array.from({ length: count }, (_, i) => `omega${i + 1}.png`);
+  const photos = Array.from({ length: count }, (_, i) => `omega${i + 1}.png`);
 
-const photos1 = photos.slice(0, count / 2).concat(photos.slice(0, count / 2));
-const photos2 = photos.slice(count / 2, count).concat(photos.slice(count / 2, count));
+  const photos1 = photos.slice(0, count / 2).concat(photos.slice(0, count / 2));
+  const photos2 = photos.slice(count / 2, count).concat(photos.slice(count / 2, count));
 
-return (
-  <div className="overflow-hidden">
-    <div className="flex gap-2.5 animate-scroll1 mt-4 mb-12">
-      {photos1.map((photo, index) => (
-        <img
-          key={index}
-          className="rounded-[20px] shadow-[0_0_10px_rgba(0,0,0,0.5)]"
-          src={`/images/omega/icons/${photo}`}
-          alt=""
-        />
-      ))}
+  return (
+    <div className="overflow-hidden">
+      <div className="flex gap-2.5 animate-scroll1 mt-4 mb-12">
+        {photos1.map((photo, index) => (
+          <img
+            key={index}
+            className="rounded-[20px] shadow-[0_0_10px_rgba(0,0,0,0.5)]"
+            src={`/images/omega/icons/${photo}`}
+            alt=""
+          />
+        ))}
+      </div>
+
+      <div className="max-w-2xl mx-auto my-16">
+        <h2 className="text-2xl lg:text-3xl font-bold mb-4">Customizable themes.</h2>
+        <p className="text-lg">
+          With so many themes to choose from, you can customize the look and feel of the calculator to suit your style. Plus, the app icon changes to match it!
+        </p>
+      </div>
+
+      <div className="flex gap-2.5 animate-scroll2 mt-16 mb-8">
+        {photos2.map((photo, index) => (
+          <img
+            key={index}
+            className="rounded-[20px] shadow-[0_0_10px_rgba(0,0,0,0.5)]"
+            src={`/images/omega/icons/${photo}`}
+            alt=""
+          />
+        ))}
+      </div>
     </div>
-
-    <div className="max-w-2xl mx-auto my-16">
-      <h2 className="text-2xl lg:text-3xl font-bold mb-4">Customizable themes.</h2>
-      <p className="text-lg">
-        With so many themes to choose from, you can customize the look and feel of the calculator to suit your style. Plus, the app icon changes to match it!
-      </p>
-    </div>
-
-    <div className="flex gap-2.5 animate-scroll2 mt-16 mb-8">
-      {photos2.map((photo, index) => (
-        <img
-          key={index}
-          className="rounded-[20px] shadow-[0_0_10px_rgba(0,0,0,0.5)]"
-          src={`/images/omega/icons/${photo}`}
-          alt=""
-        />
-      ))}
-    </div>
-  </div>
-);
+  );
 };

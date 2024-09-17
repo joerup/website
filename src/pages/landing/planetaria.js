@@ -51,7 +51,7 @@ export default function Landing_Planetaria({ link }) {
         <img src="/images/planetaria/symbol.png" alt="Planetaria" className="max-w-[100px] xl:max-w-[200px] mx-auto mb-8" />
         <h2 className="text-2xl md:text-4xl font-bold mb-4">Welcome to Planetaria</h2>
         <p className="text-lg md:text-xl max-w-3xl mx-auto font-semibold text-gray-300">
-          This brand new version of Planetaria is an interactive to-scale 3D simulator of the Solar System. You’ll see the planets and moons in their current orbits, along with beautiful 3D models of their surfaces. You can move around and explore many different celestial worlds.
+          Planetaria is an interactive to-scale 3D simulator of the Solar System. You’ll see the planets and moons in their current orbits, along with beautiful 3D models of their surfaces. You can move around and explore many different celestial worlds.
         </p>
       </motion.section>
 
