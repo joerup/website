@@ -14,8 +14,8 @@ export default function Landing_Omega({ link }) {
         animate={{ opacity: 1, y: 0 }}  // Animation end point
         transition={{ duration: 1, ease: 'easeOut' }}  // Animation settings
       >
-        <div className="relative flex flex-col md:flex-row items-center justify-center z-10 px-6 md:py-8 w-full max-w-6xl md:mx-auto">
-          <div className="text-center md:text-left w-full">
+        <div className="relative flex flex-col md:flex-row items-center z-10 px-6 md:py-8 md:w-full md:max-w-6xl md:mx-auto">
+          <div className="text-center md:text-left">
             <h2 className="text-xl md:text-3xl font-bold mb-8">
               A beautiful and intuitive calculator for your iPhone and iPad.
             </h2>
@@ -63,17 +63,17 @@ export default function Landing_Omega({ link }) {
         animate={{ opacity: 1, y: 0 }}  // Animation end point
         transition={{ duration: 1, ease: 'easeOut' }}  // Animation settings
       >
-        <div className="relative flex flex-col items-center justify-center z-10 px-6 md:pt-4 max-w-6xl md:mx-auto">
+        <div className="relative flex flex-col items-center z-10 px-6 md:pt-4 md:max-w-6xl md:mx-auto">
           <div className="text-center">
-          <h2 className="text-4xl md:text-6xl font-extrabold mb-8 text-center uppercase" style={{ fontFamily: 'SF Pro Rounded' }}>
-            Omega Pro
-          </h2>
-          <p className="text-lg mb-4 max-w-2xl">
-            Advanced features like variables and graphing. Extra productivity features like saving and exporting calculations. Easier editing with inline text pointer. And so much more.
-          </p>
-          <p className="text-sm mb-8 text-gray-700">
-            Available as a one-time in-app purchase.
-          </p>
+            <h2 className="text-4xl md:text-6xl font-extrabold mb-8 text-center uppercase" style={{ fontFamily: 'SF Pro Rounded, system-ui, sans-serif' }}>
+              Omega Pro
+            </h2>
+            <p className="text-lg mb-4 max-w-2xl">
+              Advanced features like variables and graphing. Extra productivity features like saving and exporting calculations. Easier editing with inline text pointer. And so much more.
+            </p>
+            <p className="text-sm mb-8 text-gray-700">
+              Available as a one-time in-app purchase.
+            </p>
           </div>
           <div className="flex justify-center md:mt-0">
             <img src="/images/omega/pro.png" alt="Omega Pro" className="max-w-full" />
