@@ -1,4 +1,4 @@
-Welcome to Bits & Bobs – an app that helps you keep track of your collections and organize your most treasured possessions.
+**Welcome to Bits & Bobs – an app that helps you keep track of your collections and organize your most treasured possessions.**
 
 Whatever you collect, Bits & Bobs can help keep track of it. From vinyl records, to collectible coins, to your favorite toys, figurines, books, seashells, cars, antique furniture, souvenirs, keepsakes, and so much more.
 

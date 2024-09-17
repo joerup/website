@@ -1,4 +1,4 @@
-Celebrate every moment with Countdown Creator – create beautiful countdown widgets to look forward to your next occasion.
+**Celebrate every moment with Countdown Creator – create beautiful countdown widgets to look forward to your next occasion.**
 
 Countdown cards are completely customizable. Add photos, text styles, and colors to make your countdown look great. Search for beautiful high-quality photos with Unsplash, built right into the app. Or use photos from your own photo library.
 

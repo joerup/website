@@ -1,4 +1,4 @@
-Welcome to Omega Calculator, a beautiful and intuitive calculator for your iPhone and iPad.
+**Welcome to Omega Calculator, a beautiful and intuitive calculator for your iPhone and iPad.**
 
 It’s both familiar and powerful. A full-blown scientific calculator when you need it, and a simple arithmetic device when you don’t. A myriad of capabilities to suit your needs, from trivial computations to advanced mathematical functions. Perfect for students and professionals alike, or anyone in need of a high-quality, visually-pleasing calculator, capable of performing any mathematical task you throw its way.
 
