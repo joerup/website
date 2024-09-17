@@ -65,7 +65,7 @@ export default function Landing_Omega({ link }) {
       >
         <div className="relative flex flex-col items-center justify-center z-10 px-6 md:pt-4 max-w-6xl md:mx-auto">
           <div className="text-center">
-          <h2 className="text-4xl md:text-6xl font-extrabold mb-8 text-center uppercase" style={{ fontFamily: 'SF Pro Rounded, sans-serif' }}>
+          <h2 className="text-4xl md:text-6xl font-extrabold mb-8 text-center uppercase" style={{ fontFamily: 'SF Pro Rounded' }}>
             Omega Pro
           </h2>
           <p className="text-lg mb-4 max-w-2xl">
