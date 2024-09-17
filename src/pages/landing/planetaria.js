@@ -15,7 +15,7 @@ export default function Landing_Planetaria({ link }) {
         transition={{ delay: 0.3, duration: 0.8 }}
       >
         <p className="text-xl md:text-2xl max-w-3xl mb-4 font-bold">
-          Explore the celestial worlds of the Solar System with Planetaria, an interactive 3D simulator experience.
+          Explore the celestial worlds of the Solar System.
         </p>
         <p className="text-sm md:text-lg max-w-xl mb-8 font-bold text-gray-300">
           Now available for iPhone, iPad, and Apple Vision Pro.

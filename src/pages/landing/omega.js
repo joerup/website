@@ -17,20 +17,20 @@ export default function Landing_Omega({ link }) {
         animate={{ opacity: 1, y: 0 }}  // Animation end point
         transition={{ duration: 1, ease: 'easeOut' }}  // Animation settings
       >
-        <div className="relative flex flex-col md:flex-row items-center justify-center z-10 px-6 md:py-8 max-w-6xl mx-auto">
-          <div className="text-center md:text-left">
+        <div className="relative flex flex-col md:flex-row items-center justify-center z-10 px-6 md:py-8 w-full max-w-6xl mx-auto">
+          <div className="text-center md:text-left w-full">
             <h2 className="text-xl md:text-3xl font-bold mb-8">
               A beautiful and intuitive calculator for your iPhone and iPad.
             </h2>
             <Download href={link} className="mt-6 inline-block" />
           </div>
-          <div className="flex justify-center mt-8 md:mt-0">
+          <div className="flex justify-center mt-8 md:mt-0 w-full">
             <img src="/images/omega/heading.png" alt="Omega Calculator Promo" className="max-w-full" />
           </div>
         </div>
       </motion.section>
 
-     { /* Features */}
+         { /* Features */}
       <Feature 
         title="Simple and powerful."
         description="All the capabilities you'll ever need, from trivial computations to advanced mathematical functions."
