@@ -52,9 +52,9 @@ export default function Landing_Omega({ link }) {
       />
 
       {/* Themes */}
-      <div className="mx-auto bg-[#2f44bc] bg-opacity-60 py-12 text-center md:pt-16">
+      {/* <div className="mx-auto bg-[#2f44bc] bg-opacity-60 py-12 text-center md:pt-16">
         <OmegaScroll />
-      </div>
+      </div> */}
 
       {/* Omega Pro Section */}
       <motion.section
