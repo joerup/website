@@ -1,8 +1,7 @@
-import Layout from 'src/components/applayout';
+import Layout from 'src/components/layout-app';
 import Head from 'next/head';
 import { getAppData, getSortedAppsData } from '/lib/apps';
 import { getSortedPagesData, getAllPageIDs, getPageData } from '/lib/pages';
-import styles from '/src/styles/utils.module.css';
 
 export async function getStaticProps({ params }) {
   const apps = await getSortedAppsData();
@@ -33,7 +32,7 @@ export default function Page({ apps, pages, page, app }) {
   return (
     <Layout apps={apps} app={app} pages={pages}>
       <Head>
-        <title>{`${page.title} | ${app.name}`}</title>
+        <title>{`${page ? page.title : "Error 404"} | ${app.name}`}</title>
       </Head>
       <article>
         <h1 className={app.theme == 'dark' ? styles.heading3Xl : styles.heading3Xl_light}>{`${page.title}`}</h1>

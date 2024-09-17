@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -38,4 +42,32 @@ article {
     min-width: 900px;
     max-width: 900px;
   }
+}
+
+.markdown-content h1 {
+  @apply text-3xl font-bold mt-10 mb-4;
+}
+
+.markdown-content h2 {
+  @apply text-2xl font-bold mt-8 mb-3;
+}
+
+.markdown-content h3 {
+  @apply text-xl font-bold mt-6 mb-2;
+}
+
+.markdown-content h4 {
+  @apply text-lg font-bold mt-6 mb-2;
+}
+
+.markdown-content h5 {
+  @apply text-base font-bold mt-2 mb-1;
+}
+
+.markdown-content h6 {
+  @apply text-sm font-bold mt-2 mb-1;
+}
+
+.markdown-content img {
+  @apply mt-8 mb-8;
 }

@@ -1,24 +1,20 @@
-import Layout from 'src/components/applayout';
-import Link from 'next/link'
+import Layout from 'src/components/layout-app';
 import Head from 'next/head';
-import marked from 'marked';
 import { getAllAppIDs, getAppData, getSortedAppsData } from '/lib/apps';
-import { getSortedPagesData, getPageData } from '/lib/pages';
-import styles from '/src/styles/utils.module.css';
-import OmegaScroll from '/src/components/app-components/omegascroll.js';
+
+import Landing_Planetaria from '/src/pages/landing/planetaria.js';
+import Landing_Omega from '/src/pages/landing/omega.js';
+import Landing_BitsAndBobs from '/src/pages/landing/bitsandbobs.js';
+import Landing_Countdown from '/src/pages/landing/countdown.js';
 
 export async function getStaticProps({ params }) {
   const apps = await getSortedAppsData();
   const app = await getAppData(params.app);
-  const pages = await getSortedPagesData(params.app);
-  const page = await getPageData(params.app, "index");
 
   return {
     props: {
       apps,
       app,
-      pages,
-      page,
     },
   };
 }
@@ -31,47 +27,31 @@ export async function getStaticPaths() {
   };
 }
 
-export default function Home({ apps, app, pages, page }) {
-  const views = { "omega_scroll" : <OmegaScroll/> }
+export default function Home({ apps, app }) {
+
+  const component = () => {
+    switch (app.string) {
+      case 'planetaria':
+        return <Landing_Planetaria link={app.link} />;
+      case 'omega':
+        return <Landing_Omega link={app.link} />;
+      case 'bitsandbobs':
+        return <Landing_BitsAndBobs link={app.link} />;
+      case 'countdown':
+        return <Landing_Countdown link={app.link} />;
+      default:
+        return <div>App not found</div>;
+    }
+  };
+
   return (
-    <Layout apps={apps} app={app} pages={pages}>
+    <Layout apps={apps} app={app} landing>
       <Head>
         <title>{app.name}</title>
       </Head>
-      <div>
-        <article className={app.theme == 'dark' ? styles.body : styles.body_light}>
-          <div dangerouslySetInnerHTML={{ __html: page.contentHtml[0] }} />
-          <br/>
-          {page.expanded ?  <a href={app.link} className={styles.downloadlink}><img src="download.svg" alt="Download" /></a> : <></>}
-          <br/>
-          <br/>
-        </article> 
-
-        { app.id == 1 ?
-        <div className={styles.headerimage}>
-          <img className={styles.insertLg} src={`/images/${app.string}/header.png`}/>
-          <img className={styles.insertSm} src={`/images/${app.string}/headercompact.jpeg`}/>
-        </div> : <> </>
-        }
-
-        {page.contentHtml.slice(1).map((html, index) => {
-          if (index % 2 === 0 && page.contentHtml.length > 1) {
-            return <div key={index} className={`${page.expanded ? null : styles.limitwidth}`}>
-                {html.includes("&#x26;&#x26;&#x26;") ?
-                  <div>
-                    <div className={styles.insertLg} dangerouslySetInnerHTML={{ __html: strip(html.split("&#x26;&#x26;&#x26;")[0], views) }}/>
-                    <div className={styles.insertSm} dangerouslySetInnerHTML={{ __html: strip(html.split("&#x26;&#x26;&#x26;")[1], views) }}/>
-                  </div>
-                : <div dangerouslySetInnerHTML={{ __html: strip(html, views) }}/>
-                }
-                <OtherView html={html} views={views}/>
-              </div>;
-          } else {
-            return <article key={index} className={`${app.theme == 'dark' ? styles.body : styles.body_light} ${styles.embeddedImage}`} dangerouslySetInnerHTML={{ __html: html }} />;
-          }
-        })}
-
-      </div>
+    
+      {component()}
+      
     </Layout>
   );
 }

@@ -11,6 +11,7 @@
   "dependencies": {
     "axios": "^1.4.0",
     "date-fns": "^2.30.0",
+    "framer-motion": "^11.5.4",
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
     "marked": "^12.0.0",
@@ -18,7 +19,15 @@
     "path": "^0.12.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^5.3.0",
+    "react-slick": "^0.30.2",
     "remark": "^14.0.3",
-    "remark-html": "^15.0.2"
+    "remark-html": "^15.0.2",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.10"
   }
 }

@@ -1,0 +1,54 @@
+[
+  {
+    "string": "planetaria",
+    "name": "Planetaria",
+    "id": 1,
+    "visible": true,
+    "color": "34D9D9",
+    "backgroundColor": "00000a",
+    "theme": "dark",
+    "platforms": ["iOS", "iPadOS", "visionOS"],
+    "link": "https://apps.apple.com/us/app/planetaria/id1546887479",
+    "desc": "An interactive AR Solar System simulator experience, now available on Apple Vision Pro.",
+    "tech": ["SwiftUI", "RealityKit"]
+  },
+  {
+    "string": "omega",
+    "name": "Omega Calculator",
+    "id": 2,
+    "visible": true,
+    "color": "2882f0",
+    "backgroundColor": "a7c2fa",
+    "theme": "light",
+    "platforms": ["iOS", "iPadOS", "macOS"],
+    "link": "https://apps.apple.com/us/app/omega-calculator/id1528068503",
+    "desc": "A scientific calculator designed to make complex calculations simple and intuitive.",
+    "tech": ["SwiftUI", "Core Data"]
+  },
+  {
+    "string": "bitsandbobs",
+    "name": "Bits & Bobs",
+    "id": 3,
+    "visible": true,
+    "color": "FFA41B",
+    "backgroundColor": "ffdab0",
+    "theme": "light",
+    "platforms": ["iOS", "iPadOS"],
+    "link": "https://apps.apple.com/us/app/bits-and-bobs/id1554786457",
+    "desc": "A comprehensive collection tracker to organize your most treasured possessions.",
+    "tech": ["SwiftUI", "Core Data"]
+  },
+  {
+    "string": "countdown",
+    "name": "Countdown Creator",
+    "id": 4,
+    "visible": true,
+    "color": "ED2D39",
+    "backgroundColor": "ffcfd4",
+    "theme": "light",
+    "platforms": ["iOS", "iPadOS", "macOS"],
+    "link": "https://apps.apple.com/us/app/countdown-creator/id6469441334",
+    "desc": "The ultimate tool for keeping track of upcoming events and special occasions.",
+    "tech": ["SwiftUI", "SwiftData", "CloudKit"]
+  }
+]

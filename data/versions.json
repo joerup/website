@@ -1,0 +1,200 @@
+{
+  "planetaria": [
+    {
+      "number": "2.1.0",
+      "date": "2024-04-12",
+      "description": "Improved loading performance"
+    },
+    {
+      "number": "2.0.0",
+      "date": "2024-02-18",
+      "description": "AR mode and support for Apple Vision Pro"
+    },
+    {
+      "number": "1.3.0",
+      "date": "2023-06-03",
+      "description": "Updated icon; small design tweaks"
+    },
+    {
+      "number": "1.2.0",
+      "date": "2023-01-29",
+      "description": "Added Solar System simulator and 3D models"
+    },
+    {
+      "number": "1.1.1",
+      "date": "2021-07-18",
+      "description": ""
+    },
+    {
+      "number": "1.1.0",
+      "date": "2021-02-14",
+      "description": "Added a lot more objects to the catalog"
+    },
+    {
+      "number": "1.0.0",
+      "date": "2021-01-01",
+      "description": "Planetaria release"
+    }
+  ],
+  "omega": [
+    {
+      "number": "2.2.1",
+      "date": "2024-05-23",
+      "description": "Calculation history and stored vars now sync with iCloud"
+    },
+    {
+      "number": "2.2.0",
+      "date": "2023-07-31",
+      "description": "Mixed fractions, design changes, new themes"
+    },
+    {
+      "number": "2.1.0",
+      "date": "2023-06-02",
+      "description": "Revamped button layout and other design changes"
+    },
+    {
+      "number": "2.0.2",
+      "date": "2022-12-04",
+      "description": ""
+    },
+    {
+      "number": "2.0.1",
+      "date": "2022-10-09",
+      "description": ""
+    },
+    {
+      "number": "2.0.0",
+      "date": "2022-08-15",
+      "description": "Complete app overhaul; introduced Omega Pro"
+    },
+    {
+      "number": "1.7.0",
+      "date": "2021-09-22",
+      "description": "Interface improvements and full iOS 15 support"
+    },
+    {
+      "number": "1.6.2",
+      "date": "2021-08-10",
+      "description": ""
+    },
+    {
+      "number": "1.6.1",
+      "date": "2021-08-07",
+      "description": ""
+    },
+    {
+      "number": "1.6.0",
+      "date": "2021-08-02",
+      "description": "Redesigned history, added scrollable input line"
+    },
+    {
+      "number": "1.5.1",
+      "date": "2021-07-01",
+      "description": ""
+    },
+    {
+      "number": "1.5.0",
+      "date": "2021-06-28",
+      "description": "Premium themes and accessibility improvements"
+    },
+    {
+      "number": "1.4.0",
+      "date": "2021-05-30",
+      "description": "Repeating decimals and equivalent results"
+    },
+    {
+      "number": "1.3.0",
+      "date": "2021-03-12",
+      "description": "Probability functions, adjusted button layout"
+    },
+    {
+      "number": "1.2.0",
+      "date": "2020-11-22",
+      "description": "New themes and custom theme icons"
+    },
+    {
+      "number": "1.1.0",
+      "date": "2020-09-28",
+      "description": "Updated to fully support iOS 14"
+    },
+    {
+      "number": "1.0.0",
+      "date": "2020-08-30",
+      "description": "Omega Calculator release"
+    }
+  ],
+  "bitsandbobs": [
+    {
+      "number": "1.6.0",
+      "date": "2024-08-13",
+      "description": "Improved usability and simplified attribute settings"
+    },
+    {
+      "number": "1.5.0",
+      "date": "2024-05-14",
+      "description": "Collections now sync with iCloud"
+    },
+    {
+      "number": "1.4.4",
+      "date": "2024-04-01",
+      "description": ""
+    },
+    {
+      "number": "1.4.3",
+      "date": "2023-11-13",
+      "description": ""
+    },
+    {
+      "number": "1.4.2",
+      "date": "2023-08-05",
+      "description": ""
+    },
+    {
+      "number": "1.4.1",
+      "date": "2023-07-15",
+      "description": ""
+    },
+    {
+      "number": "1.4.0",
+      "date": "2023-07-11",
+      "description": "Added tags/filters, grid layouts, multiple values"
+    },
+    {
+      "number": "1.3.0",
+      "date": "2023-05-31",
+      "description": "Overhauled interface, updated icon, improved performance and other things"
+    },
+    {
+      "number": "1.2.0",
+      "date": "2022-08-21",
+      "description": "Redesigned interface"
+    },
+    {
+      "number": "1.1.0",
+      "date": "2021-07-28",
+      "description": "Minor changes in settings"
+    },
+    {
+      "number": "1.0.0",
+      "date": "2021-07-16",
+      "description": "Bits & Bobs release"
+    }
+  ],
+  "countdown": [
+    {
+      "number": "1.2.0",
+      "date": "2024-08-21",
+      "description": "Countdown messages, confetti celebrations"
+    },
+    {
+      "number": "1.1.0",
+      "date": "2023-11-13",
+      "description": ""
+    },
+    {
+      "number": "1.0.0",
+      "date": "2023-11-03",
+      "description": "Countdown Creator release"
+    }
+  ]
+}
