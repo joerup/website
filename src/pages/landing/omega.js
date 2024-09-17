@@ -5,7 +5,7 @@ import CTA from 'src/components/cta';
 
 export default function Landing_Omega({ link }) {
   return (
-    <div className="min-h-screen w-full bg-[#2882f0] bg-opacity-40">
+    <div className="min-h-screen w-full bg-[#a7c2fa] bg-opacity-85">
       
       {/* Hero Section */}
       <motion.section 
@@ -111,7 +111,7 @@ function Feature({ title, description, image, reverse }) {
           <img
             src={image}
             alt={title}
-            className={`w-full h-auto ${reverse ? 'order-2 md:order-1' : 'order-2 md:order-2'} pt-8 md:pt-0`}
+            className={`w-full h-auto ${reverse ? 'order-2 md:order-1' : 'order-2 md:order-2'}`}
           />
         )}
       </div>
