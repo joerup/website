@@ -9,7 +9,7 @@
     "theme": "dark",
     "platforms": ["iOS", "iPadOS", "visionOS"],
     "link": "https://apps.apple.com/us/app/planetaria/id1546887479",
-    "desc": "An interactive AR Solar System simulator experience, now available on Apple Vision Pro.",
+    "desc": "An interactive Solar System simulator experience, now available on Apple Vision Pro.",
     "tech": ["SwiftUI", "RealityKit"]
   },
   {
