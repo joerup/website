@@ -6,7 +6,7 @@ const AppLink = ({ app }) => {
     <Link href={`./${app.string}`}>
       <div
         className="shadow-md cursor-pointer transition transform sm:rounded-2xl sm:hover:scale-105"
-        style={{ background: `#${app.backgroundColor}` }}
+        style={{ background: `#${app.color}66` }} // Adding 99 to the hex color to set opacity to 0.6
       >
         <div className="mx-auto flex flex-col md:flex-row p-4">
           <div className="flex flex-col justify-center p-4 text-center">
@@ -16,23 +16,17 @@ const AppLink = ({ app }) => {
               alt={`${app.name} Icon`}
             />
             <h2
-              className={`text-xl lg:text-2xl font-semibold mb-2 ${
-                app.theme === 'dark' ? 'text-white' : 'text-gray-800'
-              }`}
+              className={`text-xl lg:text-2xl font-semibold mb-2 text-gray-800`}
             >
               {app.name}
             </h2>
             <p
-              className={`text-sm lg:text-md mb-4 ${
-                app.theme === 'dark' ? 'text-gray-300' : 'text-gray-600'
-              }`}
+              className={`text-sm lg:text-md mb-4 text-gray-600`}
             >
               {app.desc}
             </p>
             <p
-              className={`text-xs lg:text-sm font-medium text-center ${
-                app.theme === 'dark' ? 'text-blue-400' : 'text-blue-600'
-              }`}
+              className={`text-xs lg:text-sm font-medium text-center text-blue-600`}
             >
               Learn more
             </p>
