@@ -105,7 +105,7 @@ function Feature({ title, description, image, reverse }) {
       <div className={`max-w-7xl mx-auto px-6 grid grid-cols-1 ${image ? 'md:grid-cols-2' : 'md:grid-cols-1'} items-center`}>
         <div className={`text-center md:py-16 ${image ? (reverse ? 'order-1 md:order-2' : 'order-2 md:order-1') : ''}`}>
           <h2 className="text-2xl lg:text-3xl font-bold mb-4">{title}</h2>
-          <p className="text-lg mb-12 md:mb-5">{description}</p>
+          <p className="text-md lg:text-lg mb-12 md:mb-5">{description}</p>
         </div>
         {image && (
           <img

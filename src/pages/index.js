@@ -21,7 +21,7 @@ export default function Home({ apps }) {
       </Head>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-[#DBFFF7] to-white py-16 px-4">
+      <section className="bg-gradient-to-b from-[#DBFFF7] to-white py-8 lg:py-16 px-4">
         <div className="container mx-auto text-center">
           <div className="flex flex-col items-center space-y-6">
             <img
@@ -43,10 +43,10 @@ export default function Home({ apps }) {
 
       {/* Portfolio Section */}
       <section data-aos="fade-up">
-        <div className="container mx-auto text-center max-w-lg xl:max-w-5xl px-2 pb-10">
-          <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 xl:gap-8">
+        <div className="container mx-auto text-center max-w-lg xl:max-w-5xl sm:pb-10">
+          <div className="grid grid-cols-1 xl:grid-cols-2 sm:gap-4 xl:gap-8">
             {apps.map((app) => (
-              <AppLink key={app.id} app={app} className="transform hover:scale-105 transition-transform duration-300" />
+              <AppLink key={app.id} app={app} />
             ))}
           </div>
         </div>

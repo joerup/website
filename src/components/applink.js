@@ -5,7 +5,7 @@ const AppLink = ({ app }) => {
   return (
     <Link href={`./${app.string}`}>
       <div
-        className="rounded-2xl shadow-md cursor-pointer transition transform xl:hover:scale-105"
+        className="shadow-md cursor-pointer transition transform sm:rounded-2xl sm:hover:scale-105"
         style={{ background: `#${app.backgroundColor}` }}
       >
         <div className="mx-auto flex flex-col md:flex-row p-4">

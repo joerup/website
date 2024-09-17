@@ -83,7 +83,7 @@ function FeatureRow({ title, description, imgSrc, reverse }) {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className={`order-2 md:order-2' : 'order-2 md:order-2 text-center md:py-16`}>
           <h2 className="text-2xl lg:text-3xl font-bold mb-4">{title}</h2>
-          <p className="text-lg mb-12 md:mb-5">{description}</p>
+          <p className="text-md lg:text-lg mb-12 md:mb-5">{description}</p>
         </div>
         <img
           src={imgSrc}
