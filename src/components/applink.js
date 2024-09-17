@@ -5,7 +5,7 @@ const AppLink = ({ app }) => {
   return (
     <Link href={`./${app.string}`}>
       <div
-        className="shadow-md cursor-pointer transition transform sm:rounded-2xl sm:hover:scale-105"
+        className="cursor-pointer transition transform sm:rounded-2xl sm:hover:scale-105 sm:shadow-md"
         style={{ background: `#${app.color}66` }} // Adding 99 to the hex color to set opacity to 0.6
       >
         <div className="mx-auto flex flex-col md:flex-row p-4">
