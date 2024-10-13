@@ -49,7 +49,7 @@ export default function Support({ apps, app }) {
           <p className="font-bold text-xl mt-4">
             Email:{' '}
             <a
-              href="mailto:rupertusapps@gmail.com?subject=Support%20Ticket"
+              href={`mailto:rupertusapps@gmail.com?subject=Support%20Ticket%20for%20${app.name}`}
               className="text-blue-500 hover:underline"
             >
               rupertusapps@gmail.com
