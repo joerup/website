@@ -48,7 +48,10 @@ export default function Support({ apps, app }) {
           </p>
           <p className="font-bold text-xl mt-4">
             Email:{' '}
-            <a href="mailto:rupertusapps@gmail.com" className="text-blue-500 hover:underline">
+            <a
+              href="mailto:rupertusapps@gmail.com?subject=Support%20Ticket"
+              className="text-blue-500 hover:underline"
+            >
               rupertusapps@gmail.com
             </a>
           </p>

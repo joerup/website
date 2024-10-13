@@ -13,6 +13,8 @@ const CTA = ({ href, text, subtext, footnote }) => {
         {footnote ? <p className="text-xs md:text-sm text-gray-600 pb-6">{footnote}</p> : <></>}
       </div>
     </div>
+
+    
   );
 };
 
