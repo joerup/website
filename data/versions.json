@@ -182,6 +182,11 @@
   ],
   "countdown": [
     {
+      "number": "1.2.1",
+      "date": "2024-10-18",
+      "description": ""
+    },
+    {
       "number": "1.2.0",
       "date": "2024-08-21",
       "description": "Countdown messages, confetti celebrations"
