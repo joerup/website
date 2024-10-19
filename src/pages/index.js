@@ -34,7 +34,7 @@ export default function Home({ apps }) {
             </h1>
             <p className="text-sm lg:text-lg text-gray-600 max-w-2xl">
               I am an undergraduate student at Princeton and an indie iOS & visionOS developer. I like to use tech
-              to create engaging, interactive experiences that people enjoy using. I would love to connect with you!
+              to create engaging, interactive stories and experiences that people enjoy using. I would love to connect with you!
             </p>
             <Socials/>
           </div>
