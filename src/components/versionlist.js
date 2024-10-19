@@ -2,7 +2,8 @@ import React from 'react';
 
 const formatDate = (dateString) => {
   const options = { year: 'numeric', month: 'short', day: '2-digit' };
-  return new Intl.DateTimeFormat('en-US', options).format(new Date(dateString));
+  const date = new Date(`${dateString}T00:00:00Z`);
+  return new Intl.DateTimeFormat('en-US', options).format(date);
 };
 
 const VersionList = ({ app, versions }) => {
