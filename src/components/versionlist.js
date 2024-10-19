@@ -1,9 +1,8 @@
 import React from 'react';
 
 const formatDate = (dateString) => {
-  const [year, month, day] = dateString.split('-');
-  const date = new Date(Date.UTC(year, month - 1, day)); // Month is 0-indexed
-  const options = { year: 'numeric', month: 'short', day: '2-digit' };
+  const options = { year: 'numeric', month: 'short', day: '2-digit', timeZone: 'UTC' };
+  const date = new Date(dateString);
   return new Intl.DateTimeFormat('en-US', options).format(date);
 };
 
