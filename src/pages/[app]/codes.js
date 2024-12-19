@@ -1,16 +1,21 @@
 import Layout from 'src/components/layout-app';
 import Page from 'src/components/page';
 import Head from 'next/head';
-import { getAllAppIDs, getAppData, getSortedAppsData } from '/lib/apps';
+import { getAllAppIDs, getAppData, getSortedAppsData, getAppRelatedData } from '/lib/apps';
 
 export async function getStaticProps({ params }) {
   const apps = await getSortedAppsData();
   const app = await getAppData(params.app);
+  const promoCodesText = await getAppRelatedData(params.app, 'promocodes');
+
+  // Parse the promo codes from the plain text string
+  const promoCodes = parsePromoCodes(promoCodesText);
 
   return {
     props: {
       apps,
       app,
+      promoCodes,
     },
   };
 }
@@ -23,7 +28,31 @@ export async function getStaticPaths() {
   };
 }
 
-export default function Codes({ apps, app }) {
+// Helper function to parse promo codes from a plain text string
+function parsePromoCodes(text) {
+  const lines = text.trim().split('\n');
+  const promoCodes = {};
+  let currentDate = null;
+
+  lines.forEach((line) => {
+    const trimmed = line.trim();
+    if (!trimmed) return; // Skip empty lines
+
+    // Match the custom date format directly
+    if (/^[A-Za-z]{3} [A-Za-z]{3} \d{2} \d{2}:\d{2}:\d{2} [A-Za-z]{3} \d{4}$/.test(trimmed)) {
+      // Use the date string as-is
+      currentDate = trimmed;
+      promoCodes[currentDate] = [];
+    } else if (currentDate) {
+      // Treat the line as a promo code and add it to the current date's array
+      promoCodes[currentDate].push(trimmed);
+    }
+  });
+
+  return promoCodes;
+}
+
+export default function PromoCodes({ apps, app, promoCodes }) {
   return (
     <Layout apps={apps} app={app}>
       <Head>
@@ -32,26 +61,59 @@ export default function Codes({ apps, app }) {
 
       <Page title="Promo Codes" theme={app.theme}>
         <div className={`${app.theme === 'dark' ? 'text-white' : 'text-gray-700'}`}>
-          <p>
-            No promo codes available.
-
-            {/* Promo Codes expire on 
-            **Sun Mar 17 13:38:18 PDT 2024**
-            and are redeemable only on the App Store for United States. Requires an Apple ID, subject to prior acceptance of license and usage terms. To create an Apple ID, you must be age 13 (or equivalent minimum age in your Home Country, as set forth in the registration process) and in United States. Compatible software and hardware, and internet access (fees may apply) required. Not for resale. Full terms apply; see [www.apple.com/legal/itunes/ww/](https://www.apple.com/legal/itunes/ww/). For more information, see [https://support.apple.com/apps](https://support.apple.com/apps). This app is provided to you by Apple Inc. -->
-
-            No codes are available at this time.
-
-            ---
-
-            ### Instructions to Redeem
-
-            - Open the App Store
-            - Press your profile picture in the upper right corner
-            - Press “Redeem Gift Card or Code”
-            - Press “Enter Code Manually”
-            - Copy and paste the code
-            - Redeem the code */}
+          <p className="text-md mb-6">
+            These promo codes can be redeemed on the App Store to download {app.name}.
           </p>
+          {promoCodes && Object.keys(promoCodes).length > 0 ? (
+            Object.entries(promoCodes).map(([date, codes]) => (
+              <div key={date} className="mb-6">
+                <ul className="list-none">
+                  {codes.map((code, index) => (
+                    <li key={index} className="text-lg font-bold">{code}</li>
+                  ))}
+                </ul>
+                <p className="pt-2 text-xs text-gray-500 italic">
+                  Promo Codes expire on {date} and are redeemable only on the App Store in regions where the app is available. 
+                  Requires an Apple ID, subject to prior acceptance of license and
+                  usage terms. To create an Apple ID, you must be age 13 (or equivalent minimum
+                  age in your Home Country, as set forth in the registration process). Compatible software and hardware, and internet access (fees may
+                  apply) required. Not for resale. Full terms apply; see{' '}
+                  <a
+                    href="https://www.apple.com/legal/itunes/ww/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline text-current"
+                  >
+                    www.apple.com/legal/itunes/ww/
+                  </a>
+                  . For more information, see{' '}
+                  <a
+                    href="https://support.apple.com/apps"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline text-current"
+                  >
+                    support.apple.com/apps
+                  </a>
+                  .
+                </p>
+              </div>
+            ))
+          ) : (
+            <p>No promo codes are available at this time.</p>
+          )}
+
+          <hr className="my-6" />
+
+          <h3 className="text-lg font-semibold mb-3">Instructions to Redeem</h3>
+          <ol className="list-decimal list-inside">
+            <li>Open the App Store</li>
+            <li>Press your profile picture in the upper right corner</li>
+            <li>Press “Redeem Gift Card or Code”</li>
+            <li>Press “Enter Code Manually”</li>
+            <li>Copy and paste the code</li>
+            <li>Redeem the code</li>
+          </ol>
         </div>
       </Page>
     </Layout>
