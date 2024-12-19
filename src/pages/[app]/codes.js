@@ -104,22 +104,6 @@ export default function PromoCodes({ apps, app, promoCodes }) {
           ) : (
             <p>No promo codes are available at this time.</p>
           )}
-
-          <hr className="my-6" />
-
-          {Object.keys(promoCodes).length > 0 && (
-            <>
-              <h3 className="text-lg font-semibold mb-3">Instructions to Redeem</h3>
-              <ol className="list-decimal list-inside">
-                <li>Open the App Store</li>
-                <li>Press your profile picture in the upper right corner</li>
-                <li>Press “Redeem Gift Card or Code”</li>
-                <li>Press “Enter Code Manually”</li>
-                <li>Copy and paste the code</li>
-                <li>Redeem the code</li>
-              </ol>
-            </>
-          )}
         </div>
       </Page>
     </Layout>
