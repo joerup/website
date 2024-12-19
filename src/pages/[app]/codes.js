@@ -61,9 +61,11 @@ export default function PromoCodes({ apps, app, promoCodes }) {
 
       <Page title="Promo Codes" theme={app.theme}>
         <div className={`${app.theme === 'dark' ? 'text-white' : 'text-gray-700'}`}>
-          <p className="text-md mb-6">
-            These promo codes can be redeemed on the App Store to download {app.name}.
-          </p>
+          {Object.keys(promoCodes).length > 0 && (
+            <p className="text-md mb-6">
+              These promo codes can be redeemed on the App Store to download {app.name}.
+            </p>
+          )}
           {promoCodes && Object.keys(promoCodes).length > 0 ? (
             Object.entries(promoCodes).map(([date, codes]) => (
               <div key={date} className="mb-6">
@@ -105,15 +107,19 @@ export default function PromoCodes({ apps, app, promoCodes }) {
 
           <hr className="my-6" />
 
-          <h3 className="text-lg font-semibold mb-3">Instructions to Redeem</h3>
-          <ol className="list-decimal list-inside">
-            <li>Open the App Store</li>
-            <li>Press your profile picture in the upper right corner</li>
-            <li>Press “Redeem Gift Card or Code”</li>
-            <li>Press “Enter Code Manually”</li>
-            <li>Copy and paste the code</li>
-            <li>Redeem the code</li>
-          </ol>
+          {Object.keys(promoCodes).length > 0 && (
+            <>
+              <h3 className="text-lg font-semibold mb-3">Instructions to Redeem</h3>
+              <ol className="list-decimal list-inside">
+                <li>Open the App Store</li>
+                <li>Press your profile picture in the upper right corner</li>
+                <li>Press “Redeem Gift Card or Code”</li>
+                <li>Press “Enter Code Manually”</li>
+                <li>Copy and paste the code</li>
+                <li>Redeem the code</li>
+              </ol>
+            </>
+          )}
         </div>
       </Page>
     </Layout>
