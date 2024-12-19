@@ -14,6 +14,7 @@ export default function Landing_Planetaria({ link }) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.8 }}
       >
+        <img src="/images/planetaria/symbol.png" alt="Planetaria" className="max-w-[60px] xl:max-w-[100px] mx-auto mb-8" />
         <p className="text-xl md:text-2xl max-w-3xl mb-4 font-bold">
           Explore the celestial worlds of the Solar System.
         </p>
@@ -27,33 +28,19 @@ export default function Landing_Planetaria({ link }) {
       <motion.img 
         src="/images/planetaria/header.png" 
         alt="Solar System Orbit" 
-        className="hidden md:block w-full relative -mt-[25%] z-0" 
+        className="hidden md:block w-full relative -mt-[24%] z-0" 
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1, duration: 1.5 }}
       />
       <motion.img 
-        src="/images/planetaria/headercompact.jpeg" 
+        src="/images/planetaria/headercompact.png" 
         alt="Solar System Orbit" 
         className="md:hidden w-full relative -mt-[55%] z-0" 
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6, duration: 1 }}
       />
-
-      {/* Welcome Section */}
-      <motion.section 
-        className="pt-[150px] pb-20 px-6 text-center"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
-        <img src="/images/planetaria/symbol.png" alt="Planetaria" className="max-w-[100px] xl:max-w-[200px] mx-auto mb-8" />
-        <h2 className="text-2xl md:text-4xl font-bold mb-4">Welcome to Planetaria</h2>
-        <p className="text-lg md:text-xl max-w-3xl mx-auto font-semibold text-gray-300">
-          Planetaria is an interactive to-scale 3D simulator of the Solar System. You’ll see the planets and moons in their current orbits, along with beautiful 3D models of their surfaces. You can move around and explore many different celestial worlds.
-        </p>
-      </motion.section>
 
       {/* Features Section */}
       <section className="mx-auto">
@@ -78,21 +65,27 @@ export default function Landing_Planetaria({ link }) {
           image="preview4.png"
         />
         <Feature 
-          title="Discover Stunning Photos" 
-          description="Enjoy these mesmerizing photos of the Sun, the planets, and moons taken by various spacecraft."
+          title="Fast-Forward and Rewind Time" 
+          description="Jump to any point in the past or future to see what the Solar System looks like. Watch the intricate dance of the planets over time."
           image="preview5.png"
         />
       </section>
 
       {/* Call to Action Section */}
-      <motion.div 
-        className="relative flex items-center justify-center bg-cover bg-top pt-25"
+      <motion.div
+        className="relative items-center justify-center bg-cover bg-top -mt-[80px] lg:-mt-[180px]"
         style={{ backgroundImage: 'url(/images/planetaria/preview6.png)' }}
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <CTA href={link} text="Explore the Solar System" footnote="Photos and 3D models provided by NASA/JPL."/>
+        <img src="/images/planetaria/symbol.png" alt="Planetaria" className="max-w-[80px] xl:max-w-[150px] mx-auto" />
+        <CTA
+          href={link}
+          text="The heavens await your arrival."
+          subtext="Download Planetaria now for iPhone, iPad, and Apple Vision Pro."
+          footnote="Photos and 3D models provided by NASA/JPL."
+        />
       </motion.div>
     </div>
   );
@@ -106,13 +99,13 @@ function Feature({ title, description, image }) {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
+      <h3 className="text-xl md:text-3xl font-bold mb-4 mx-4">{title}</h3>
+      <p className="max-w-2xl text-md md:text-xl font-semibold text-gray-300 mb-8 mx-4">{description}</p>
       <img 
         src={`/images/planetaria/${image}`} 
         alt={title}
         className="w-full mb-12" 
       />
-      <h3 className="text-xl md:text-3xl font-bold mb-4 mx-4">{title}</h3>
-      <p className="max-w-2xl text-md md:text-xl font-semibold text-gray-300 mx-4">{description}</p>
     </motion.div>
   );
 }

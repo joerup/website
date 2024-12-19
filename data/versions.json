@@ -1,6 +1,11 @@
 {
   "planetaria": [
     {
+      "number": "2.2.0",
+      "date": "2024-12-19",
+      "description": "Time controls, lighting, and improved visionOS app"
+    },
+    {
       "number": "2.1.0",
       "date": "2024-04-12",
       "description": "Improved loading performance"
