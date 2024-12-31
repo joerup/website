@@ -130,6 +130,11 @@
   ],
   "bitsandbobs": [
     {
+      "number": "1.7.0",
+      "date": "2024-12-31",
+      "description": "Added repositioning and cropping of photos"
+    },
+    {
       "number": "1.6.0",
       "date": "2024-08-13",
       "description": "Improved usability and simplified attribute settings"
