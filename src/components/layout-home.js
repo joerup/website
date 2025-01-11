@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Footer from './footer.js'
+import ThemeToggle from './theme-toggle'
 
 const name = 'Joe Rupertus'
 export const siteTitle = 'Joe Rupertus'
@@ -7,7 +8,7 @@ export const siteTitle = 'Joe Rupertus'
 export default function Layout({ children, apps }) {
 
   return (
-    <main className="min-h-screen min-w-full flex flex-col">
+    <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-200">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -27,10 +28,14 @@ export default function Layout({ children, apps }) {
         <meta name="twitter:card" content="summary_large_image"/>
       </Head>
       
+      <div className="absolute right-4 top-4 z-10">
+        <ThemeToggle />
+      </div>
+      
       <div className="flex-grow">{children}</div>
 
       <Footer apps={apps}/>
 
-    </main>
+    </div>
   )
 }

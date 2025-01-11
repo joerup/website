@@ -1,0 +1,57 @@
+{
+  "skills": [
+    {
+      "category": "Mobile Development",
+      "icon": "📱",
+      "items": [
+        "SwiftUI",
+        "UIKit",
+        "RealityKit",
+        "Core Data",
+        "SwiftData",
+        "CloudKit",
+        "React Native"
+      ]
+    },
+    {
+      "category": "Web Development",
+      "icon": "🌐",
+      "items": [
+        "React.js",
+        "Next.js",
+        "Tailwind CSS",
+        "JavaScript/TypeScript",
+        "HTML/CSS",
+        "Node.js"
+      ]
+    },
+    {
+      "category": "Programming Languages",
+      "icon": "💻",
+      "items": [
+        "Swift",
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "Java",
+        "C",
+        "C++",
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "category": "Tools & Technologies",
+      "icon": "🛠",
+      "items": [
+        "Git",
+        "Xcode",
+        "Figma",
+        "TestFlight",
+        "App Store Connect",
+        "Reality Composer Pro",
+        "Vercel"
+      ]
+    }
+  ]
+} 

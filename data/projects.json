@@ -1,0 +1,26 @@
+[
+  {
+    "id": "swiftspice",
+    "name": "SwiftSPICE",
+    "description": "A Swift package that provides a Swift wrapper for NASA's SPICE Toolkit. Allows users to load state vectors of celestial bodies and perform various calculations, such as position, velocity, and light time corrections.",
+    "tech": ["Swift", "SPM"],
+    "link": "https://github.com/joerup/SwiftSPICE",
+    "year": "2025"
+  },
+  {
+    "id": "digitaltwins",
+    "name": "Redefining Crowdwork with LLM-Powered Digital Twins",
+    "description": "A research project that explores the use of \"digital twins\" – AI representations of human crowdworkers – to automatically fill out surveys and other tasks. Project for COS436 (Human-Computer Interaction) at Princeton University.",
+    "tech": ["Next.js", "Azure"],
+    "link": "https://github.com/gs9515/digital-twins",
+    "year": "2024"
+  },
+  {
+    "id": "planetariastar",
+    "name": "Planetaria Star [2021 Swift Student Challenge Winner]",
+    "description": "A Swift playground that allows users to learn about stars in the universe.",
+    "tech": ["Swift"],
+    "link": "https://github.com/joerup/planetariastar",
+    "year": "2021"
+  }
+] 

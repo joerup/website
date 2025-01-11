@@ -10,7 +10,8 @@
     "platforms": ["iOS", "iPadOS", "visionOS"],
     "link": "https://apps.apple.com/us/app/planetaria/id1546887479",
     "desc": "An interactive Solar System simulator experience, now available on Apple Vision Pro.",
-    "tech": ["SwiftUI", "RealityKit"]
+    "tech": ["SwiftUI", "RealityKit"],
+    "year": "2021"
   },
   {
     "string": "omega",
@@ -20,10 +21,11 @@
     "color": "2882f0",
     "backgroundColor": "a7c2fa",
     "theme": "light",
-    "platforms": ["iOS", "iPadOS", "macOS"],
+    "platforms": ["iOS", "iPadOS"],
     "link": "https://apps.apple.com/us/app/omega-calculator/id1528068503",
     "desc": "A scientific calculator designed to make complex calculations simple and intuitive.",
-    "tech": ["SwiftUI", "Core Data"]
+    "tech": ["SwiftUI", "Core Data"],
+    "year": "2020"
   },
   {
     "string": "bitsandbobs",
@@ -36,7 +38,8 @@
     "platforms": ["iOS", "iPadOS"],
     "link": "https://apps.apple.com/us/app/bits-and-bobs/id1554786457",
     "desc": "A comprehensive collection tracker to organize your most treasured possessions.",
-    "tech": ["SwiftUI", "Core Data"]
+    "tech": ["SwiftUI", "Core Data"],
+    "year": "2021"
   },
   {
     "string": "countdown",
@@ -46,9 +49,10 @@
     "color": "ED2D39",
     "backgroundColor": "ffcfd4",
     "theme": "light",
-    "platforms": ["iOS", "iPadOS", "macOS"],
+    "platforms": ["iOS", "iPadOS"],
     "link": "https://apps.apple.com/us/app/countdown-creator/id6469441334",
     "desc": "The ultimate tool for keeping track of upcoming events and special occasions.",
-    "tech": ["SwiftUI", "SwiftData", "CloudKit"]
+    "tech": ["SwiftUI", "SwiftData", "CloudKit"],
+    "year": "2023"
   }
 ]
