@@ -15,7 +15,7 @@ export default function Landing_Countdown({ link }) {
       >
         <div className="relative flex flex-col md:flex-row items-center z-10 px-6 md:py-8 max-w-6xl">
           <img
-            src="/images/countdown/graphic.png"
+            src="/images/countdown/hero.png"
             alt="Countdown"
             className="flex-1 w-full h-auto md:max-w-[50%] mb-6 md:mb-0 md:mr-10"
           />

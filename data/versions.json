@@ -192,6 +192,11 @@
   ],
   "countdown": [
     {
+      "number": "1.3.0",
+      "date": "2025-02-10",
+      "description": "More customization options & redesigned editor"
+    },
+    {
       "number": "1.2.1",
       "date": "2024-10-18",
       "description": ""
