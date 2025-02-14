@@ -1,6 +1,11 @@
 {
   "planetaria": [
     {
+      "number": "2.3.0",
+      "date": "2025-02-14",
+      "description": "Added 200+ moons, 350+ asteroids, expanded time range"
+    },
+    {
       "number": "2.2.0",
       "date": "2024-12-19",
       "description": "Time controls, lighting, and improved visionOS app"
