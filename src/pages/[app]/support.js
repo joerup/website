@@ -104,7 +104,7 @@ export default function Support({ apps, app }) {
           </button>
         </form>
 
-        <p className="mt-6">
+        <p className={`mt-6 ${app.theme === 'dark' ? 'text-white' : 'text-gray-700'}`}>
           If you have any issues with the form, contact us directly at 
           <a href="mailto:rupertusapps@gmail.com" className="text-blue-500 hover:underline pl-1">
             rupertusapps@gmail.com
