@@ -120,8 +120,8 @@ async function handleSubmit(event, app) {
   event.preventDefault();
   const formData = new FormData(event.target);
   const data = {
-    from_name: formData.get('userEmail'),
-    message: `App: ${app.name}\nVersion: ${formData.get('version') || 'N/A'}\nOS Version: ${formData.get('osVersion') || 'N/A'}\nDevice: ${formData.get('device') || 'N/A'}\n\n${formData.get('message')}`,
+    app_name: app.name,
+    message: `Version: ${formData.get('version') || 'N/A'}\nOS Version: ${formData.get('osVersion') || 'N/A'}\nDevice: ${formData.get('device') || 'N/A'}\n\n${formData.get('message')}`,
     reply_to: formData.get('userEmail'),
   };
 
