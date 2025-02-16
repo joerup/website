@@ -40,7 +40,7 @@ export default function Support({ apps, app }) {
 
         <form className="mt-4" onSubmit={(event) => handleSubmit(event, app)}>
           <div className="mb-4">
-            <label className="block text-sm font-bold mb-2" htmlFor="userEmail">
+            <label className={`block text-sm font-bold mb-2 ${app.theme === 'dark' ? 'text-white' : 'text-gray-700'}`} htmlFor="userEmail">
               Your Email <span className="text-red-500">*</span>
             </label>
             <input
@@ -52,7 +52,7 @@ export default function Support({ apps, app }) {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-sm font-bold mb-2" htmlFor="version">
+            <label className={`block text-sm font-bold mb-2 ${app.theme === 'dark' ? 'text-white' : 'text-gray-700'}`} htmlFor="version">
               {app.name} Version (e.g. 2.0.0)
             </label>
             <input
@@ -63,7 +63,7 @@ export default function Support({ apps, app }) {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-sm font-bold mb-2" htmlFor="osVersion">
+            <label className={`block text-sm font-bold mb-2 ${app.theme === 'dark' ? 'text-white' : 'text-gray-700'}`} htmlFor="osVersion">
               OS Version (e.g. iOS 17.1)
             </label>
             <input
@@ -74,7 +74,7 @@ export default function Support({ apps, app }) {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-sm font-bold mb-2" htmlFor="device">
+            <label className={`block text-sm font-bold mb-2 ${app.theme === 'dark' ? 'text-white' : 'text-gray-700'}`} htmlFor="device">
               Device (e.g. iPhone 15 Pro)
             </label>
             <input
@@ -85,7 +85,7 @@ export default function Support({ apps, app }) {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-sm font-bold mb-2" htmlFor="message">
+            <label className={`block text-sm font-bold mb-2 ${app.theme === 'dark' ? 'text-white' : 'text-gray-700'}`} htmlFor="message">
               Message <span className="text-red-500">*</span>
             </label>
             <textarea
