@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/righteous": "^5.2.5",
     "@heroicons/react": "^2.2.0",
     "aws-sdk": "^2.1692.0",
     "axios": "^1.4.0",

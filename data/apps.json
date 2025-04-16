@@ -54,5 +54,20 @@
     "desc": "The ultimate tool for keeping track of upcoming events and special occasions.",
     "tech": ["SwiftUI", "SwiftData", "CloudKit"],
     "year": "2023"
+  },
+  {
+    "string": "roomofthoughts",
+    "name": "Room of Thoughts",
+    "id": 5,
+    "visible": true,
+    "comingsoon": true,
+    "color": "B57FB5",
+    "backgroundColor": "B57FB5",
+    "theme": "light",
+    "platforms": ["visionOS"],
+    "link": "",
+    "desc": "A spatial AI assistant that creates mindmap visualizations in augmented reality.",
+    "tech": [],
+    "year": "2025"
   }
 ]

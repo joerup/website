@@ -6,6 +6,7 @@ import Landing_Planetaria from '/src/pages/landing/planetaria.js';
 import Landing_Omega from '/src/pages/landing/omega.js';
 import Landing_BitsAndBobs from '/src/pages/landing/bitsandbobs.js';
 import Landing_Countdown from '/src/pages/landing/countdown.js';
+import Landing_RoomOfThoughts from '/src/pages/landing/roomofthoughts.js';
 
 export async function getStaticProps({ params }) {
   const apps = await getSortedAppsData();
@@ -39,6 +40,8 @@ export default function Home({ apps, app }) {
         return <Landing_BitsAndBobs link={app.link} />;
       case 'countdown':
         return <Landing_Countdown link={app.link} />;
+      case 'roomofthoughts':
+        return <Landing_RoomOfThoughts link={app.link} />;
       default:
         return <div>App not found</div>;
     }

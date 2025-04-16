@@ -20,7 +20,7 @@ export default function Footer({ apps, app }) {
           <div className="relative lg:absolute inset-x-0 text-center z-0">
             <div className="inline-block">
               <p className={`text-xs md:text-sm text-gray-400`}>
-                Copyright © 2024 Joseph Rupertus
+                Copyright © 2025 Joseph Rupertus
               </p>
               {app && (
                 <Link href={`/${app.string}/privacy`}>

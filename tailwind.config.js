@@ -25,6 +25,9 @@ module.exports = {
         scroll1: 'scroll 35s linear infinite',
         scroll2: 'scrollReverse 35s linear infinite',
       },
+      fontFamily: {
+        righteous: ["Righteous", "cursive"],
+      },
     },
   },
   plugins: [],

@@ -30,11 +30,17 @@ export default function AppLink({ app }) {
             <p className="text-sm lg:text-base text-gray-600 dark:text-gray-300 mb-4">
               {app.desc}
             </p>
-            <div className="flex items-center text-sm text-blue-600 font-medium">
-              Learn more
-              <svg className="w-4 h-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd" />
-              </svg>
+            <div className={`flex items-center ${app.comingsoon ? 'justify-center' : ''} text-sm font-medium`}>
+              {app.comingsoon ? (
+                <span className="bg-red-400 text-white px-2 rounded-full">COMING SOON</span>
+              ) : (
+                <React.Fragment>
+                  Learn more
+                  <svg className="w-4 h-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd" />
+                  </svg>
+                </React.Fragment>
+              )}
             </div>
           </div>
         </div>

@@ -53,9 +53,19 @@ export default function Home({ apps }) {
         <div className="container mx-auto text-center">
           <div className="max-w-lg xl:max-w-5xl mx-auto">
             <div className="grid grid-cols-1 xl:grid-cols-2 sm:gap-4 xl:gap-8">
-              {apps.map((app) => (
-                <AppLink key={app.id} app={app} />
-              ))}
+              {apps.map((app, idx) => {
+                const isLastOdd = idx === apps.length - 1 && apps.length % 2 !== 0;
+                return (
+                  <div
+                    key={app.id}
+                    className={isLastOdd ? 'xl:col-span-2' : ''}
+                  >
+                    <div className={isLastOdd ? 'mx-auto w-full xl:w-1/2' : 'w-full'}>
+                      <AppLink app={app} />
+                    </div>
+                  </div>
+                );
+              })}
             </div>
             
             {/* Version Updates Section */}
@@ -128,7 +138,6 @@ export default function Home({ apps }) {
           <Socials className="mt-8 flex justify-center space-x-4" />
         </div>
       </section>
-
     </Layout>
   );
 }
