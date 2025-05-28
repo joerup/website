@@ -23,7 +23,7 @@ export default function Apps({ apps }) {
         </div>
         
         {/* Version Updates Section */}
-        <div className="mt-0 md:mt-12 lg:mt-16 px-4 py-8 md:pb-8 max-w-2xl mx-auto">
+        <div className="mt-0 md:mt-8 px-4 py-8 md:pb-8 max-w-2xl mx-auto">
           {/* Recent Updates Title - Hidden on small, visible on medium+ */}
           <h3 className="hidden md:block text-lg md:text-xl font-bold text-gray-900 dark:text-white mb-4 text-center">
             Recent Updates
@@ -50,7 +50,7 @@ export default function Apps({ apps }) {
               ))}
           </div>
 
-          <div className="pt-2 md:pt-4 text-center">
+          <div className="md:pt-6 text-center">
             <Link 
               href="/updates"
               className="inline-flex items-center justify-center px-4 py-1.5 md:py-2 text-sm font-medium text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors"

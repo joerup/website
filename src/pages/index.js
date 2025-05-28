@@ -122,7 +122,7 @@ function HomeContent({ apps }) {
   };
 
   const getTitleClasses = (sectionId) => {
-    const baseClasses = "text-2xl md:text-3xl lg:text-4xl font-extrabold text-center font-['Clash_Display'] tracking-tight transition-all duration-300 md:pt-12";
+    const baseClasses = "text-2xl md:text-3xl lg:text-4xl font-extrabold text-center font-['Clash_Display',sans-serif] tracking-tight transition-all duration-300 md:pt-12";
     const activeClasses = "scale-110 brightness-110";
     let gradientClasses = "";
     
@@ -198,7 +198,7 @@ function HomeContent({ apps }) {
               alt="Profile"
               className="w-16 h-16 lg:w-24 lg:h-24 rounded-full shadow-2xl transform transition-transform duration-300 md:hover:scale-110"
             />
-            <h1 className="text-2xl md:text-3xl lg:text-6xl font-['Clash_Display'] font-extrabold text-gray-900 dark:text-white tracking-tight transition-transform duration-300 md:hover:scale-105">
+            <h1 className="text-2xl md:text-3xl lg:text-6xl font-['Clash_Display',sans-serif] font-extrabold text-gray-900 dark:text-white tracking-tight transition-transform duration-300 md:hover:scale-105">
               Joe Rupertus
             </h1>
             <p className="text-sm md:text-lg lg:text-xl text-gray-600 dark:text-gray-300 max-w-2xl">
@@ -208,7 +208,7 @@ function HomeContent({ apps }) {
             <div className="pt-2">
               <Socials/>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mt-12 md:mt-16 pt-4 md:pt-8 pb-0 md:pb-8 w-full max-w-5xl">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mt-12 md:mt-16 pt-4 md:pt-8 pb-0 md:pb-8 w-full max-w-5xl md:px-8 lg:px-12">
               <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#40E0D0]/5 to-[#20B2AA]/5 dark:from-[#40E0D0]/8 dark:to-[#20B2AA]/8 p-4 md:p-8 transition-all duration-300 md:hover:scale-[1.02] border border-gray-200 dark:border-gray-700">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#40E0D0]/3 to-[#20B2AA]/3 dark:from-[#40E0D0]/5 dark:to-[#20B2AA]/5 backdrop-blur-sm"></div>
                 <div className="relative">
@@ -288,7 +288,7 @@ function HomeContent({ apps }) {
       <section
         id="experience"
         ref={el => sections.current[2] = el}
-        className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 md:bg-none md:bg-gray-50 dark:md:bg-gray-800 pt-12 md:pt-0 pb-0 md:pb-16"
+        className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 md:bg-none md:bg-gray-50 dark:md:bg-gray-800 pt-12 md:pt-0 pb-0 md:pb-16 md:leading-4"
       >
         <div className="container mx-auto">
           <div 
@@ -308,7 +308,7 @@ function HomeContent({ apps }) {
       <section
         id="skills"
         ref={el => sections.current[3] = el}
-        className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 md:bg-none md:bg-white dark:md:bg-gray-900 pt-12 md:pt-0 pb-0 md:pb-16"
+        className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 md:bg-none md:bg-white dark:md:bg-gray-900 pt-12 md:pt-0 pb-0 md:pb-16 md:px-4"
       >
         <div className="container mx-auto max-w-4xl">
           <div 
@@ -345,16 +345,16 @@ function HomeContent({ apps }) {
       {/* Modal */}
       {isModalOpen && selectedPhoto && (
         <div 
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90"
           onClick={handleCloseModal}
         >
-          <div 
-            className="relative"
-            onClick={(e) => e.stopPropagation()}
-          >
+          <div className="relative w-full h-full flex items-center justify-center">
             <button
-              onClick={handleCloseModal}
-              className="absolute -top-12 right-0 text-white text-4xl font-bold hover:text-gray-300 transition-colors"
+              onClick={(e) => {
+                e.stopPropagation();
+                handleCloseModal();
+              }}
+              className="absolute top-4 right-4 text-white text-4xl font-bold hover:text-gray-300 transition-colors p-4 z-10"
               aria-label="Close modal"
             >
               ×
@@ -367,7 +367,7 @@ function HomeContent({ apps }) {
                 className="object-contain"
               />
             </div>
-            <p className="mt-4 text-center text-white text-sm md:text-base">
+            <p className="absolute bottom-4 left-0 right-0 text-center text-white text-sm md:text-base px-4 pb-4">
               {selectedPhoto.alt}
             </p>
           </div>

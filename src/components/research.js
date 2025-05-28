@@ -16,11 +16,11 @@ export default function Research() {
                 >
                   <div className="flex items-start justify-between mb-3 px-4 md:px-0">
                     <div>
-                      <h3 className="text-lg md:text-xl font-semibold text-zinc-900 dark:text-white mb-1">
+                      <h3 className="text-base md:text-xl font-semibold text-zinc-900 dark:text-white mb-1">
                         {project.title}
                       </h3>
                       <div className="space-y-1 py-1">
-                        <p className="text-xs md:text-sm font-medium text-zinc-700 dark:text-gray-300">
+                        <p className="text-xs md:text-sm text-zinc-700 dark:text-gray-300">
                           {project.authors.join(', ')}
                         </p>
                         {/* <p className="text-xs md:text-sm text-zinc-500 dark:text-gray-400">
@@ -37,8 +37,8 @@ export default function Research() {
                   {/* <p className="text-xs md:text-sm text-zinc-600 dark:text-gray-300 leading-relaxed mb-4 px-4 md:px-0">
                     {project.description}
                   </p> */}
-                  <div className="flex items-center gap-2 text-xs md:text-sm text-blue-600 dark:text-blue-400 group px-4 md:px-0">
-                    <span className="group-hover:underline">View Publication</span>
+                  <div className="flex items-center gap-2 text-sm md:text-sm text-blue-600 dark:text-blue-400 group px-4 md:px-0">
+                    <span className="font-semibold">Learn more</span>
                     <svg className="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd" />
                     </svg>

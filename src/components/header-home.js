@@ -84,7 +84,7 @@ export default function HeaderHome() {
   };
 
   const getButtonClasses = (sectionId) => {
-    const baseClasses = "font-['Clash_Display'] font-extrabold text-transparent bg-clip-text hover:scale-105 transition-all duration-300 relative";
+    const baseClasses = "font-['Clash_Display',sans-serif] font-extrabold text-transparent bg-clip-text hover:scale-105 transition-all duration-300 relative";
     let gradientClasses = "";
     
     switch(sectionId) {
@@ -142,8 +142,8 @@ export default function HeaderHome() {
         <link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap" rel="stylesheet"/>
         <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&display=swap" rel="stylesheet"/>
       </Head>
-      <header className={`relative md:fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm' : 'bg-transparent'
+      <header className={`relative md:fixed top-0 left-0 right-0 z-50 md:transition-all md:duration-300 ${
+        isScrolled ? 'md:bg-white/80 md:dark:bg-gray-900/80 md:backdrop-blur-md md:shadow-sm' : ''
       }`}>
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
@@ -158,7 +158,7 @@ export default function HeaderHome() {
                       behavior: 'smooth'
                     });
                   }}
-                  className="text-xl font-['Clash_Display'] font-extrabold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300 transition-all duration-200 hover:scale-105 transform whitespace-nowrap relative"
+                  className="text-xl font-['Clash_Display',sans-serif] font-extrabold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300 transition-all duration-200 hover:scale-105 transform whitespace-nowrap relative"
                 >
                   Joe Rupertus
                   <div className={`absolute -bottom-1 left-0 w-full h-0.5 bg-emerald-600 rounded-full transform transition-transform duration-300 ${isHomePage && !activeSection ? 'scale-x-100' : 'scale-x-0'}`}></div>
@@ -167,7 +167,7 @@ export default function HeaderHome() {
             </div>
 
             {/* Navigation Links */}
-            <nav className="hidden md:flex items-center justify-center flex-1">
+            <nav className="hidden lg:flex items-center justify-center flex-1">
               <div className="flex space-x-8">
                 <button
                   onClick={() => scrollToSection('apps')}
@@ -208,7 +208,32 @@ export default function HeaderHome() {
             </nav>
 
             {/* Theme Toggle */}
-            <div className="w-full md:w-32 flex justify-end">
+            <div className="w-full md:w-auto lg:w-32 flex justify-between md:justify-end lg:justify-end">
+              {/* Mobile Home Button */}
+              <Link href="/" className="md:hidden p-2">
+                <button
+                  onClick={() => {
+                    if (isHomePage) {
+                      window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                      });
+                    } else {
+                      router.push('/');
+                    }
+                  }}
+                  className="text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300 transition-colors duration-200 mt-1.5"
+                >
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    className="h-5 w-5" 
+                    viewBox="0 0 24 24" 
+                    fill="currentColor"
+                  >
+                    <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3L12 2z" />
+                  </svg>
+                </button>
+              </Link>
               <ThemeToggle />
             </div>
           </div>

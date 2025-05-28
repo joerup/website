@@ -16,7 +16,7 @@ export default function AppLink({ app }) {
         onMouseUp={() => setIsActive(false)}
         onMouseLeave={() => setIsActive(false)}
       >
-        <div className="mx-auto flex flex-col p-4 md:p-6">
+        <div className="mx-auto flex flex-col py-6 md:py-6 px-4 md:px-6">
           <div className="flex flex-col justify-center text-left">
             <div className="flex items-center gap-4 mb-4">
               <img
@@ -28,7 +28,7 @@ export default function AppLink({ app }) {
                 <h2 className="text-lg lg:text-xl font-semibold text-gray-900 dark:text-white">
                   {app.name}
                 </h2>
-                <div className="flex gap-2 text-xs text-gray-500 mt-0.5">
+                <div className="flex gap-2 text-xs text-gray-500 dark:text-gray-400 mt-0.5">
                   <span>{app.platforms.join(', ')}</span>
                 </div>
               </div>
