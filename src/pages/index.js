@@ -190,8 +190,8 @@ function HomeContent({ apps }) {
       </Head>
 
       {/* Hero Section */}
-      <section id="hero" className="bg-gradient-to-b from-[#DBFFF7] to-white dark:bg-gradient-to-b dark:from-[#0A2F2D] dark:to-gray-900 pt-8 md:pt-16 lg:pt-24 pb-8 px-4 -mt-20 pt-20">
-        <div className="container mx-auto text-center pt-32">
+      <section id="hero" className="bg-gradient-to-b from-[#DBFFF7] to-white dark:bg-gradient-to-b dark:from-[#0A2F2D] dark:to-gray-900 pt-4 md:pt-16 lg:pt-24 pb-8 px-4 -mt-20 pt-20">
+        <div className="container mx-auto text-center pt-16 md:pt-32">
           <div className="flex flex-col items-center space-y-4 lg:space-y-6">
             <img
               src="/images/Profile.png"

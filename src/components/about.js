@@ -138,22 +138,52 @@ My name is Joe.
         </div>
       </motion.div>
 
-      {/* Photo Carousel Section */}
+      {/* Photo Carousel/Grid Section */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
         className="pt-12 md:pt-0 pb-0 md:pb-8 w-screen relative left-1/2 right-1/2 -mx-[50vw]"
       >
-        <div className="w-full inline-flex flex-nowrap overflow-hidden will-change-transform">
-          <div className="flex animate-infinite-scroll gap-4 md:gap-6">
+        {/* Mobile Full-width Scrollable View */}
+        <div className="md:hidden">
+          <div className="flex overflow-x-auto snap-x snap-mandatory px-4 pb-4">
+            {photos.map((photo, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.3, delay: index * 0.05 }}
+                className="relative w-[calc(100%-2rem)] flex-none snap-center cursor-pointer mr-4"
+                onClick={() => onPhotoClick(photo)}
+              >
+                <div className="aspect-[4/3] relative rounded-2xl overflow-hidden">
+                  <Image
+                    src={photo.src}
+                    alt={photo.alt}
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                    <p className="text-sm font-medium">{photo.alt}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+
+        {/* Desktop Carousel View */}
+        <div className="hidden md:block w-full inline-flex flex-nowrap overflow-hidden will-change-transform">
+          <div className="flex animate-infinite-scroll gap-6">
             {doubledPhotos.map((photo, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.3, delay: index * 0.05 }}
-                className="relative overflow-hidden rounded-2xl group aspect-[4/3] flex-none w-56 md:w-80 cursor-pointer"
+                className="relative overflow-hidden rounded-2xl group aspect-[4/3] flex-none w-80 cursor-pointer"
                 onClick={() => onPhotoClick(photo)}
               >
                 <Image

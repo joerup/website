@@ -16,7 +16,7 @@ export default function AppLink({ app }) {
         onMouseUp={() => setIsActive(false)}
         onMouseLeave={() => setIsActive(false)}
       >
-        <div className="mx-auto flex flex-col p-6">
+        <div className="mx-auto flex flex-col p-4 md:p-6">
           <div className="flex flex-col justify-center text-left">
             <div className="flex items-center gap-4 mb-4">
               <img

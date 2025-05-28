@@ -59,9 +59,9 @@ export default function Updates({ apps }) {
         <title>App Updates - Joe Rupertus</title>
       </Head>
 
-      <section className="py-16 px-4">
+      <section className="px-4 md:py-16">
         <div className="container mx-auto max-w-3xl">
-          <h1 className="text-3xl lg:text-4xl font-['Clash_Display'] font-extrabold text-gray-900 dark:text-white mb-8 mt-16">
+          <h1 className="text-3xl lg:text-4xl font-['Clash_Display'] font-extrabold text-gray-900 dark:text-white mb-8 md:mt-16">
             App Updates
           </h1>
 

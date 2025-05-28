@@ -142,13 +142,13 @@ export default function HeaderHome() {
         <link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap" rel="stylesheet"/>
         <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&display=swap" rel="stylesheet"/>
       </Head>
-      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      <header className={`relative md:fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled ? 'bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm' : 'bg-transparent'
       }`}>
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo/Name */}
-            <div className="w-40">
+            <div className="hidden md:block w-40">
               <Link href="/">
                 <button
                   onClick={(e) => {
@@ -208,7 +208,7 @@ export default function HeaderHome() {
             </nav>
 
             {/* Theme Toggle */}
-            <div className="w-32 flex justify-end">
+            <div className="w-full md:w-32 flex justify-end">
               <ThemeToggle />
             </div>
           </div>
