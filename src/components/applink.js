@@ -18,9 +18,9 @@ export default function AppLink({ app }) {
       >
         <div className="mx-auto flex flex-col py-6 md:py-6 px-4 md:px-6">
           <div className="flex flex-col justify-center text-left">
-            <div className="flex items-center gap-4 mb-4">
+            <div className="flex items-center gap-3 md:gap-4 mb-4">
               <img
-                className="w-12 h-12 lg:w-14 lg:h-14 rounded-xl shadow-md"
+                className="w-12 h-12 lg:w-14 lg:h-14 rounded-lg md:rounded-xl shadow-md"
                 src={`/images/${app.string}/icon.png`}
                 alt={`${app.name} Icon`}
               />
@@ -28,7 +28,7 @@ export default function AppLink({ app }) {
                 <h2 className="text-lg lg:text-xl font-semibold text-gray-900 dark:text-white">
                   {app.name}
                 </h2>
-                <div className="flex gap-2 text-xs text-gray-500 dark:text-gray-400 mt-0.5">
+                <div className="flex gap-2 text-[11px] md:text-xs text-gray-500 dark:text-gray-400 mt-0.5">
                   <span>{app.platforms.join(', ')}</span>
                 </div>
               </div>
@@ -36,7 +36,7 @@ export default function AppLink({ app }) {
             <p className="text-sm lg:text-base text-gray-600 dark:text-gray-300 mb-4">
               {app.desc}
             </p>
-            <div className={`flex items-center ${app.comingsoon ? 'justify-center' : ''} text-sm font-medium`}>
+            <div className={`flex items-center ${app.comingsoon ? 'justify-center' : ''} text-sm font-medium text-blue-600 dark:text-blue-400`}>
               {app.comingsoon ? (
                 <span className="bg-red-400 text-white px-2 rounded-full">COMING SOON</span>
               ) : (

@@ -179,42 +179,6 @@ My name is Joe.
         </motion.div>
       </div>
 
-      {/* Desktop Carousel */}
-      <div className="hidden md:block">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="w-screen relative left-1/2 right-1/2 -mx-[50vw]"
-        >
-          <div className="w-full inline-flex flex-nowrap overflow-hidden will-change-transform">
-            <div className="flex animate-infinite-scroll gap-4 md:gap-6">
-              {[...randomizedPhotos, ...randomizedPhotos].map((photo, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.3, delay: index * 0.05 }}
-                  className="relative overflow-hidden rounded-2xl group aspect-[4/3] flex-none w-56 md:w-80 cursor-pointer"
-                  onClick={() => onPhotoClick(photo)}
-                >
-                  <Image
-                    src={photo.src}
-                    alt={photo.alt}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <div className="absolute bottom-0 left-0 right-0 p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <p className="text-sm font-medium">{photo.alt}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </motion.div>
-      </div>
-
       {/* Desktop Carousel Animation */}
       <style jsx>{`
         @keyframes infinite-scroll {
@@ -226,8 +190,50 @@ My name is Joe.
           will-change: transform;
           backface-visibility: hidden;
           -webkit-backface-visibility: hidden;
+          transform: translateZ(0);
+          -webkit-transform: translateZ(0);
+          position: relative;
+          width: max-content;
         }
       `}</style>
+
+      {/* Desktop Carousel */}
+      <div className="hidden md:block overflow-hidden">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="w-screen relative left-1/2 right-1/2 -mx-[50vw] overflow-hidden"
+        >
+          <div className="relative mx-[10px] overflow-hidden">
+            <div className="w-full overflow-hidden">
+              <div className="flex animate-infinite-scroll gap-4 md:gap-6">
+                {[...randomizedPhotos, ...randomizedPhotos].map((photo, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.3, delay: index * 0.05 }}
+                    className="relative overflow-hidden rounded-2xl group aspect-[4/3] flex-none w-56 md:w-80 cursor-pointer"
+                    onClick={() => onPhotoClick(photo)}
+                  >
+                    <Image
+                      src={photo.src}
+                      alt={photo.alt}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute bottom-0 left-0 right-0 p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <p className="text-sm font-medium">{photo.alt}</p>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </div>
 
       {/* Mobile Scrollbar Hide */}
       <style jsx>{`

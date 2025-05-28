@@ -18,7 +18,7 @@ export default function Footer({ apps, app }) {
                   />
                 </Link>
               </div>
-              <div className="hidden md:block">
+              <div className="hidden md:block lg:pl-4">
                 {!app && (
                   <Socials compact={true} />
                 )}
@@ -27,7 +27,7 @@ export default function Footer({ apps, app }) {
 
             {/* Centered Text */}
             <div className="relative lg:absolute inset-x-0 text-center z-0">
-              <div className="inline-block pb-4 md:pb-0">
+              <div className="inline-block pb-8 md:pb-0">
                 <p className={`text-xs md:text-sm text-gray-400`}>
                   Copyright © 2025 Joseph Rupertus
                 </p>

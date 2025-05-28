@@ -53,7 +53,7 @@ export default function Apps({ apps }) {
           <div className="md:pt-6 text-center">
             <Link 
               href="/updates"
-              className="inline-flex items-center justify-center px-4 py-1.5 md:py-2 text-sm font-medium text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors"
+              className="inline-flex items-center justify-center px-4 py-1.5 md:py-2 text-sm font-medium text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-all duration-300 hover:scale-105"
             >
               View all updates
               <svg className="w-4 h-4 ml-1.5" viewBox="0 0 20 20" fill="currentColor">

@@ -12,7 +12,7 @@ export default function Research() {
                   href={project.publication}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`block bg-white dark:bg-[#18202F] py-6 px-0 md:px-6 rounded-none md:rounded-xl shadow-none md:shadow-sm border-b border-zinc-200 dark:border-gray-600 md:border hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-all duration-300 md:hover:scale-[1.02] md:hover:shadow-lg ${index === researchData.length - 1 ? 'border-b-0' : ''}`}
+                  className={`block bg-white dark:bg-[#18202F] py-6 px-0 md:px-6 rounded-none md:rounded-xl shadow-none md:shadow-sm border-b border-zinc-200 dark:border-gray-600 md:border md:hover:bg-gray-50 dark:md:hover:bg-gray-700/50 transition-all duration-300 md:hover:scale-[1.02] md:hover:shadow-lg ${index === researchData.length - 1 ? 'border-b-0' : ''}`}
                 >
                   <div className="flex items-start justify-between mb-3 px-4 md:px-0">
                     <div>
