@@ -5,7 +5,7 @@ export default function Research() {
     <section data-aos="fade-up">
       <div className="container mx-auto text-center max-w-2xl xl:max-w-4xl">
         <div className="p-0 md:p-4 px-0 md:px-4 lg:px-6">
-          <ol className="space-y-4 border-t border-b border-gray-200 dark:border-gray-700 md:border-0">
+          <ol className="space-y-0 md:space-y-4 border-t border-b border-gray-200 dark:border-gray-700 md:border-0">
             {researchData.map((project, index) => (
               <li key={project.id} className="text-left">
                 <a
@@ -28,7 +28,7 @@ export default function Research() {
                         </p> */}
                       </div>
                       {project.conference && (
-                        <div className="mt-2 inline-flex items-center px-2.5 py-1 rounded-md bg-orange-100 dark:bg-orange-900/40 text-orange-800 dark:text-orange-200 text-xs font-medium border border-orange-200 dark:border-orange-800">
+                        <div className="mt-2 mb-1 inline-flex items-center px-2.5 py-1 rounded-md bg-orange-100 dark:bg-orange-900/40 text-orange-800 dark:text-orange-200 text-xs font-medium border border-orange-200 dark:border-orange-800">
                           {project.conference} • {project.conferenceLocation}
                         </div>
                       )}

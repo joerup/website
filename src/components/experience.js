@@ -19,7 +19,7 @@ export default function Experience() {
               <div className="hidden md:flex absolute -left-[1.625rem] top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-gradient-to-r from-lime-500 to-emerald-500 items-center justify-center text-2xl text-white font-bold">
                 {role.emoji}
               </div>
-              <div className={`bg-white dark:bg-[#18202F] py-6 md:py-8 px-4 md:px-6 rounded-none md:rounded-2xl border-b border-gray-200 dark:border-gray-700 md:border transition-all duration-300 hover:scale-[1.02] ${index === rolesData.length - 1 ? 'border-b-0' : ''}`}>
+              <div className={`bg-white dark:bg-[#18202F] py-6 md:py-8 px-4 md:px-6 rounded-none md:rounded-2xl border-b border-gray-200 dark:border-gray-700 md:border transition-all duration-300 md:hover:scale-[1.02] ${index === rolesData.length - 1 ? 'border-b-0' : ''}`}>
                 <div className="flex flex-col md:flex-row items-start justify-between gap-2 md:gap-4">
                   <div className="w-full md:w-auto">
                     <h5 className="text-base md:text-xl font-bold text-gray-900 dark:text-white mb-0.5">

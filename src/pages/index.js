@@ -196,9 +196,9 @@ function HomeContent({ apps }) {
             <img
               src="/images/Profile.png"
               alt="Profile"
-              className="w-16 h-16 lg:w-24 lg:h-24 rounded-full shadow-2xl transform transition-transform duration-300 hover:scale-110"
+              className="w-16 h-16 lg:w-24 lg:h-24 rounded-full shadow-2xl transform transition-transform duration-300 md:hover:scale-110"
             />
-            <h1 className="text-2xl md:text-3xl lg:text-6xl font-['Clash_Display'] font-extrabold text-gray-900 dark:text-white tracking-tight transition-transform duration-300 hover:scale-105">
+            <h1 className="text-2xl md:text-3xl lg:text-6xl font-['Clash_Display'] font-extrabold text-gray-900 dark:text-white tracking-tight transition-transform duration-300 md:hover:scale-105">
               Joe Rupertus
             </h1>
             <p className="text-sm md:text-lg lg:text-xl text-gray-600 dark:text-gray-300 max-w-2xl">
@@ -209,7 +209,7 @@ function HomeContent({ apps }) {
               <Socials/>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mt-12 md:mt-16 pt-4 md:pt-8 pb-0 md:pb-8 w-full max-w-5xl">
-              <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#40E0D0]/5 to-[#20B2AA]/5 dark:from-[#40E0D0]/8 dark:to-[#20B2AA]/8 p-4 md:p-8 transition-all duration-300 hover:scale-[1.02] border border-gray-200 dark:border-gray-700">
+              <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#40E0D0]/5 to-[#20B2AA]/5 dark:from-[#40E0D0]/8 dark:to-[#20B2AA]/8 p-4 md:p-8 transition-all duration-300 md:hover:scale-[1.02] border border-gray-200 dark:border-gray-700">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#40E0D0]/3 to-[#20B2AA]/3 dark:from-[#40E0D0]/5 dark:to-[#20B2AA]/5 backdrop-blur-sm"></div>
                 <div className="relative">
                   <div className="flex flex-col items-center text-center mb-2 md:mb-4">
@@ -219,7 +219,7 @@ function HomeContent({ apps }) {
                   <p className="text-sm md:text-base text-gray-800 dark:text-gray-100 font-medium leading-relaxed text-center">B.S.E. in Computer Science, Minor in Robotics (Class of 2026)</p>
                 </div>
               </div>
-              <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#40E0D0]/5 to-[#20B2AA]/5 dark:from-[#40E0D0]/8 dark:to-[#20B2AA]/8 p-4 md:p-8 transition-all duration-300 hover:scale-[1.02] border border-gray-200 dark:border-gray-700">
+              <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#40E0D0]/5 to-[#20B2AA]/5 dark:from-[#40E0D0]/8 dark:to-[#20B2AA]/8 p-4 md:p-8 transition-all duration-300 md:hover:scale-[1.02] border border-gray-200 dark:border-gray-700">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#40E0D0]/3 to-[#20B2AA]/3 dark:from-[#40E0D0]/5 dark:to-[#20B2AA]/5 backdrop-blur-sm"></div>
                 <div className="relative">
                   <div className="flex flex-col items-center text-center mb-2 md:mb-4">
@@ -229,7 +229,7 @@ function HomeContent({ apps }) {
                   <p className="text-sm md:text-base text-gray-800 dark:text-gray-100 font-medium leading-relaxed text-center">Published 4 apps on the App Store, Swift Student Challenge Winner 2021</p>
                 </div>
               </div>
-              <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#40E0D0]/5 to-[#20B2AA]/5 dark:from-[#40E0D0]/8 dark:to-[#20B2AA]/8 p-4 md:p-8 transition-all duration-300 hover:scale-[1.02] border border-gray-200 dark:border-gray-700">
+              <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#40E0D0]/5 to-[#20B2AA]/5 dark:from-[#40E0D0]/8 dark:to-[#20B2AA]/8 p-4 md:p-8 transition-all duration-300 md:hover:scale-[1.02] border border-gray-200 dark:border-gray-700">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#40E0D0]/3 to-[#20B2AA]/3 dark:from-[#40E0D0]/5 dark:to-[#20B2AA]/5 backdrop-blur-sm"></div>
                 <div className="relative">
                   <div className="flex flex-col items-center text-center mb-2 md:mb-4">
@@ -252,7 +252,7 @@ function HomeContent({ apps }) {
       >
         <div className="container mx-auto">
           <div 
-            className="flex flex-col items-center mb-8 transition-all duration-300 cursor-pointer hover:scale-[1.05]"
+            className="flex flex-col items-center mb-8 transition-all duration-300 cursor-pointer md:hover:scale-[1.05]"
             onClick={() => scrollToSection('apps')}
           >
             <h2 className={getTitleClasses('apps')}>
@@ -272,7 +272,7 @@ function HomeContent({ apps }) {
       >
         <div className="container mx-auto">
           <div 
-            className="flex flex-col items-center mb-8 transition-all duration-300 cursor-pointer hover:scale-[1.05]"
+            className="flex flex-col items-center mb-8 transition-all duration-300 cursor-pointer md:hover:scale-[1.05]"
             onClick={() => scrollToSection('research')}
           >
             <h2 className={getTitleClasses('research')}>
@@ -292,7 +292,7 @@ function HomeContent({ apps }) {
       >
         <div className="container mx-auto">
           <div 
-            className="flex flex-col items-center mb-8 transition-all duration-300 cursor-pointer hover:scale-[1.05]"
+            className="flex flex-col items-center mb-8 transition-all duration-300 cursor-pointer md:hover:scale-[1.05]"
             onClick={() => scrollToSection('experience')}
           >
             <h2 className={getTitleClasses('experience')}>
@@ -312,7 +312,7 @@ function HomeContent({ apps }) {
       >
         <div className="container mx-auto max-w-4xl">
           <div 
-            className="flex flex-col items-center mb-8 transition-all duration-300 cursor-pointer hover:scale-[1.05]"
+            className="flex flex-col items-center mb-8 transition-all duration-300 cursor-pointer md:hover:scale-[1.05]"
             onClick={() => scrollToSection('skills')}
           >
             <h2 className={getTitleClasses('skills')}>
@@ -330,7 +330,7 @@ function HomeContent({ apps }) {
       <section ref={el => sections.current[4] = el} id="about" className="pt-12 pb-16 md:pt-0 pb-0 md:pb-16 bg-gray-50 dark:bg-gray-800 opacity-0">
         <div>
           <div 
-            className="flex flex-col items-center mb-8 transition-all duration-300 cursor-pointer hover:scale-[1.05]"
+            className="flex flex-col items-center mb-8 transition-all duration-300 cursor-pointer md:hover:scale-[1.05]"
             onClick={() => scrollToSection('about')}
           >
             <h2 className={getTitleClasses('about')}>

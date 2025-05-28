@@ -7,7 +7,7 @@ export default function AppLink({ app }) {
   return (
     <Link href={`./${app.string}`}>
       <div
-        className="cursor-pointer transition-all duration-300 sm:rounded-2xl sm:hover:scale-[1.02] sm:hover:shadow-lg bg-white border-0 md:border-2"
+        className="cursor-pointer transition-all duration-300 sm:rounded-2xl md:hover:scale-[1.02] md:hover:shadow-lg bg-white border-0 md:border-2"
         style={{ 
           background: `linear-gradient(to bottom right, #${app.color}${isActive ? '66' : '33'}, #${app.color}${isActive ? '44' : '22'})`,
           borderColor: `#${app.color}22`

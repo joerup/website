@@ -118,7 +118,7 @@ My name is Joe.
         transition={{ duration: 0.6, delay: 0.4 }}
         className="mb-0 md:mb-16 max-w-full md:max-w-3xl mx-auto p-[2px]"
       >
-        <div className="py-6 px-4 md:p-6 rounded-none md:rounded-2xl bg-white/50 dark:bg-[#18202F]/50 border-t border-b md:border border-gray-200 dark:border-gray-700 backdrop-blur-sm transition-all duration-300 hover:scale-[1.01]">
+        <div className="py-6 px-4 md:p-6 rounded-none md:rounded-2xl bg-white/50 dark:bg-[#18202F]/50 border-t border-b md:border border-gray-200 dark:border-gray-700 backdrop-blur-sm transition-all duration-300 md:hover:scale-[1.01]">
           <div className="space-y-3 md:space-y-4">
             {funFacts.map((fact, index) => (
               <motion.div
