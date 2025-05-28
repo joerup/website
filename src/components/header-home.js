@@ -153,10 +153,14 @@ export default function HeaderHome() {
                 <button
                   onClick={(e) => {
                     e.preventDefault();
-                    window.scrollTo({
-                      top: 0,
-                      behavior: 'smooth'
-                    });
+                    if (isHomePage) {
+                      window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                      });
+                    } else {
+                      router.push('/');
+                    }
                   }}
                   className="text-xl font-['Clash_Display',sans-serif] font-extrabold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300 transition-all duration-200 hover:scale-105 transform whitespace-nowrap relative"
                 >
