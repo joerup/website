@@ -61,12 +61,12 @@ export default function Updates({ apps }) {
 
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-3xl">
-          <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-8">
+          <h1 className="text-3xl lg:text-4xl font-['Clash_Display'] font-extrabold text-gray-900 dark:text-white mb-8 mt-16">
             App Updates
           </h1>
 
           {/* Filter Buttons */}
-          <div className="flex flex-wrap gap-2 mb-8">
+          <div className="flex flex-wrap gap-2 mb-12">
             {apps.map(app => (
               <button
                 key={app.id}

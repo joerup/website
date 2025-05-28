@@ -1,0 +1,32 @@
+[
+  {
+    "id": 2,
+    "company": "Dedalus Labs",
+    "position": "Software Engineering Intern",
+    "description": "",
+    "startDate": "May",
+    "endDate": "Aug 2025",
+    "location": "San Francisco, CA",
+    "emoji": "🤖"
+  },
+  {
+    "id": 1,
+    "company": "Map My Customers",
+    "position": "Product Design Intern",
+    "description": "Designed web and mobile interfaces in Figma, completing 32 design tickets and collaborating with cross-functional teams. Led the Mileage Tracking feature from prototype to final design, while maintaining design systems and component libraries.",
+    "startDate": "June",
+    "endDate": "Aug 2024",
+    "location": "New York, NY",
+    "emoji": "🗺️"
+  },
+  {
+    "id": 0,
+    "company": "Apple Developer Program (Self-employed)",
+    "position": "Indie iOS & visionOS Developer",
+    "description": "Through the Apple Developer Program, I have designed and developed four apps available on the App Store with over 20,000 downloads combined. I use Swift and SwiftUI to build robust and scalable architectures, ensuring high performance and reliability. I have created intuitive interfaces for each app, focusing on user-friendly navigation and engaging interactions. I have also leveraged emerging technologies like spatial computing through RealityKit to build innovative and immersive experiences.",
+    "startDate": "Apr 2020",
+    "endDate": "Present",
+    "location": "",
+    "emoji": "📱"
+  }
+] 

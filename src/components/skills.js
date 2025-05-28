@@ -1,44 +1,48 @@
+import React from 'react';
+import { motion } from 'framer-motion';
 import skillsData from '../../data/skills.json';
 
 export default function Skills() {
   const { skills } = skillsData;
 
   return (
-    <div className="container mx-auto max-w-4xl px-4">
-      
-      <div className="space-y-12">
-        {skills.map((skillGroup, index) => (
-          <div key={index}>
-            <div className="flex items-center gap-3 mb-4">
-              <span className="text-xl dark:text-gray-300">{skillGroup.icon}</span>
-              <h3 className="text-lg font-bold text-gray-800 dark:text-gray-200">
-                {skillGroup.category}
-              </h3>
+    <motion.div 
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-4 px-0 md:px-4 lg:px-6 border-t border-b border-gray-200 dark:border-gray-700 md:border-0"
+    >
+      {skills.map((skillGroup, index) => (
+        <div
+          key={index}
+          className={`bg-white dark:bg-[#18202F] px-0 md:px-6 py-4 md:py-6 rounded-none md:rounded-2xl border-b border-gray-200 dark:border-gray-700 md:border transition-all duration-300 hover:scale-[1.02] md:hover:scale-[1.02] ${index === skills.length - 1 ? 'border-b-0' : ''}`}
+        >
+          <div className="flex items-center gap-3 mb-6 px-4 md:px-0">
+            <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-br from-sky-500 to-blue-600 flex items-center justify-center text-lg sm:text-2xl">
+              {skillGroup.icon}
             </div>
-            
-            <div className="flex flex-wrap gap-3">
-              {skillGroup.items.map((skill, skillIndex) => (
-                <div 
-                  key={skillIndex}
-                  className={`
-                    px-4 py-2 rounded-lg text-sm
-                    bg-gradient-to-br from-teal-500/10 to-teal-500/5
-                    border border-gray-100 dark:border-gray-700
-                    hover:shadow-sm hover:scale-102
-                    transition-all duration-300
-                    cursor-default whitespace-nowrap
-                    dark:bg-gray-800/80 backdrop-blur-sm
-                  `}
-                >
-                  <span className="text-gray-800 dark:text-gray-200 font-medium">
-                    {skill}
-                  </span>
-                </div>
-              ))}
-            </div>
+            <h3 className="text-base md:text-xl font-bold text-gray-900 dark:text-white">
+              {skillGroup.category}
+            </h3>
           </div>
-        ))}
-      </div>
-    </div>
+          
+          <div className="flex flex-wrap gap-2 px-4 md:px-0 pb-2">
+            {skillGroup.items.map((skill, skillIndex) => (
+              <div
+                key={skillIndex}
+                className="px-2 py-1 rounded-md text-xs md:text-sm font-medium
+                  bg-gradient-to-r from-sky-500/10 to-blue-600/10
+                  text-sky-700 dark:text-sky-300
+                  border border-sky-200 dark:border-sky-800
+                  hover:from-sky-500/20 hover:to-blue-600/20
+                  transition-all duration-300"
+              >
+                {skill}
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </motion.div>
   );
 } 

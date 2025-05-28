@@ -1,14 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 
 export default function AppLink({ app }) {
+  const [isActive, setIsActive] = useState(false);
+
   return (
     <Link href={`./${app.string}`}>
       <div
-        className="cursor-pointer transition-all duration-300 sm:rounded-2xl sm:hover:scale-[1.02] sm:hover:shadow-lg bg-white"
+        className="cursor-pointer transition-all duration-300 sm:rounded-2xl sm:hover:scale-[1.02] sm:hover:shadow-lg bg-white border-0 md:border-2"
         style={{ 
-          background: `linear-gradient(to bottom right, #${app.color}33, #${app.color}22)`
+          background: `linear-gradient(to bottom right, #${app.color}${isActive ? '66' : '33'}, #${app.color}${isActive ? '44' : '22'})`,
+          borderColor: `#${app.color}22`
         }}
+        onMouseDown={() => setIsActive(true)}
+        onMouseUp={() => setIsActive(false)}
+        onMouseLeave={() => setIsActive(false)}
       >
         <div className="mx-auto flex flex-col p-6">
           <div className="flex flex-col justify-center text-left">

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 0,
+    "title": "Redefining Research Crowdsourcing: Incorporating Human Feedback with LLM-Powered Digital Twins",
+    "description": "Crowd work platforms are vital for research, yet workers' growing use of generative AI tools poses challenges. We propose a hybrid framework using digital twins – personalized AI models that emulate workers' behaviors while keeping humans in the loop. Through experiments with 88 crowd workers and interviews with researchers, we found that digital twins enhance productivity while maintaining response quality. By automating repetitive tasks and preserving human engagement, digital twins help balance scalability with authenticity.",
+    "institution": "Princeton University",
+    "authors": ["Amanda Chan", "Catherine Di", "Joseph Rupertus", "Gary Smith", "Varun Nagaraj Rao", "Manoel Horta Ribeiro", "Andrés Monroy-Hernández"],
+    "publication": "https://dl.acm.org/doi/10.1145/3706599.3720269",
+    "conference": "CHI 2025 Late Breaking Work",
+    "conferenceLocation": "Yokohama, Japan"
+  },
+  {
+    "id": 1,
+    "title": "Room of Thoughts: Exploring the Role of AI Assistants in 3D Space",
+    "description": "We present Room of Thoughts, a novel visual interface for interacting with Large Language Models (LLMs) in augmented reality on Apple Vision Pro. The system uses virtual windows embedded in the user's physical space, organized by topic and connected through visual links, making LLM interactions more engaging and enabling deeper exploration.",
+    "institution": "Princeton University",
+    "authors": ["Joseph Rupertus", "Parastoo Abtahi"],
+    "publication": "https://youtu.be/SYJ_XmAcLgM"
+  }
+] 

@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Header from './header.js'
+import Header from './header-app.js'
 import Footer from './footer.js'
 
 const name = 'Joe Rupertus'
@@ -34,7 +34,9 @@ export default function Layout({ children, apps, app, landing }) {
       
       <div className="pt-[3.5rem] mx-auto flex-grow">{children}</div>
 
-      <Footer apps={apps} app={app}/>
+      <div className="bg-gray-700 bg-opacity-0.5">
+        <Footer apps={apps} app={app}/>
+      </div>
 
     </main>
   )
