@@ -125,19 +125,15 @@ My name is Joe.
         <div className="py-6 px-4 md:p-6 rounded-none md:rounded-2xl bg-white/50 dark:bg-[#18202F]/50 border-t border-b md:border border-gray-200 dark:border-gray-700 backdrop-blur-sm transition-all duration-300 md:hover:scale-[1.01]">
           <div className="space-y-3 md:space-y-4">
             {funFacts.map((fact, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
                 className="flex items-center gap-3"
               >
                 <span className="text-2xl flex-none">{fact.emoji}</span>
                 <p className="text-sm md:text-base text-gray-600 dark:text-gray-300 leading-relaxed flex-1 font-semibold">
                   {fact.text}
                 </p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -155,12 +151,8 @@ My name is Joe.
           <div className="flex overflow-x-auto snap-x snap-mandatory px-4 scrollbar-hide">
             <div className="flex-none w-4" />
             {randomizedPhotos.map((photo, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.3, delay: index * 0.05 }}
-                viewport={{ once: true }}
                 className="relative w-[calc(100%-2rem)] flex-none snap-center cursor-pointer mx-2"
                 onClick={() => onPhotoClick(photo)}
               >
@@ -176,7 +168,7 @@ My name is Joe.
                     <p className="text-sm font-medium">{photo.alt}</p>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
             <div className="flex-none w-4" />
           </div>
@@ -214,12 +206,8 @@ My name is Joe.
             <div className="w-full overflow-hidden">
               <div className="flex animate-infinite-scroll gap-4 md:gap-6">
                 {[...randomizedPhotos, ...randomizedPhotos].map((photo, index) => (
-                  <motion.div
+                  <div
                     key={index}
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.3, delay: index * 0.05 }}
-                    viewport={{ once: true }}
                     className="relative overflow-hidden rounded-2xl group aspect-[4/3] flex-none w-56 md:w-80 cursor-pointer"
                     onClick={() => onPhotoClick(photo)}
                   >
@@ -233,7 +221,7 @@ My name is Joe.
                     <div className="absolute bottom-0 left-0 right-0 p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <p className="text-sm font-medium">{photo.alt}</p>
                     </div>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
             </div>
