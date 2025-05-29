@@ -10,7 +10,7 @@ export const siteTitle = 'Joe Rupertus'
 
 export default function Layout({ children, apps }) {
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-200">
+    <div className="min-h-screen flex flex-col bg-white dark:bg-gray-900 transition-colors duration-200">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -32,7 +32,7 @@ export default function Layout({ children, apps }) {
       
       <HeaderHome />
       
-      <div className="flex-grow">{children}</div>
+      <main className="flex-grow">{children}</main>
 
       <Footer apps={apps}/>
 

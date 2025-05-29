@@ -1,29 +1,48 @@
 import AppLink from './applink';
 import Link from 'next/link';
 import VersionCard from './versioncard';
+import { motion } from 'framer-motion';
 
 export default function Apps({ apps }) {
   return (
     <div className="container mx-auto text-center pt-0 md:pt-8">
       <div className="max-w-lg xl:max-w-5xl mx-auto px-0 md:px-4 lg:px-6">
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-0 xl:gap-8 border-t border-b border-gray-200 dark:border-gray-700 md:border-0">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="grid grid-cols-1 xl:grid-cols-2 gap-0 xl:gap-8 space-y-4 md:space-y-0"
+        >
           {apps.map((app, idx) => {
             const isLastOdd = idx === apps.length - 1 && apps.length % 2 !== 0;
             return (
-              <div
+              <motion.div
                 key={app.id}
-                className={isLastOdd ? 'xl:col-span-2' : ''}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: idx * 0.1 }}
+                viewport={{ once: true }}
+                className={`${isLastOdd ? 'xl:col-span-2' : ''}`}
               >
-                <div className={`${isLastOdd ? 'mx-auto w-full xl:w-1/2' : 'w-full'} transition-shadow duration-300 ${idx === apps.length - 1 ? '' : 'border-b md:border-b-0 border-gray-200 dark:border-gray-700'} pb-0 md:pb-2 xl:pb-0 px-0 md:px-0 rounded-none md:rounded-none`}>
-                  <AppLink app={app} />
+                <div className={`${isLastOdd ? 'mx-auto w-full xl:w-1/2' : 'w-full'} px-4 md:px-0`}>
+                  <div className="rounded-xl">
+                    <AppLink app={app} />
+                  </div>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
-        </div>
+        </motion.div>
         
         {/* Version Updates Section */}
-        <div className="mt-0 md:mt-8 px-4 py-8 md:pb-8 max-w-2xl mx-auto">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="mt-0 md:mt-8 px-4 py-8 md:pb-8 max-w-2xl mx-auto"
+        >
           {/* Recent Updates Title - Hidden on small, visible on medium+ */}
           <h3 className="hidden md:block text-lg md:text-xl font-bold text-gray-900 dark:text-white mb-4 text-center">
             Recent Updates
@@ -42,11 +61,18 @@ export default function Apps({ apps }) {
               .sort((a, b) => new Date(b.date) - new Date(a.date))
               .slice(0, 4)
               .map((version, index) => (
-                <VersionCard 
+                <motion.div
                   key={`${version.app.id}-${index}`}
-                  app={version.app}
-                  version={version}
-                />
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                >
+                  <VersionCard 
+                    app={version.app}
+                    version={version}
+                  />
+                </motion.div>
               ))}
           </div>
 
@@ -61,7 +87,7 @@ export default function Apps({ apps }) {
               </svg>
             </Link>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className="block md:hidden border-b border-gray-200 dark:border-gray-700"></div>
     </div>

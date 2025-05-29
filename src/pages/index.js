@@ -64,9 +64,8 @@ function HomeContent({ apps }) {
       // Add fade-in animation to all sections
       sectionElements.forEach(section => {
         const rect = section.getBoundingClientRect();
-        if (rect.top < window.innerHeight && rect.bottom > 0) {
-          section.classList.add('animate-fade-in');
-          section.classList.remove('opacity-0');
+        if (rect.top < window.innerHeight * 0.8 && rect.bottom > 0) {
+          section.classList.add('visible');
         }
       });
 
@@ -180,7 +179,16 @@ function HomeContent({ apps }) {
             }
           }
           .animate-fade-in {
-            animation: fadeIn 0.5s ease-out forwards;
+            animation: fadeIn 0.8s ease-out forwards;
+          }
+          .section-fade {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+          }
+          .section-fade.visible {
+            opacity: 1;
+            transform: translateY(0);
           }
           /* Prevent horizontal scrollbar flicker */
           html, body {
@@ -248,7 +256,7 @@ function HomeContent({ apps }) {
       <section
         id="apps"
         ref={el => sections.current[0] = el}
-        className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 md:bg-none md:bg-gray-50 dark:md:bg-gray-800 pt-12 md:pt-0 pb-0 md:pb-16"
+        className="section-fade bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 md:bg-none md:bg-gray-50 dark:md:bg-gray-800 pt-12 md:pt-0 pb-0 md:pb-16"
       >
         <div className="container mx-auto">
           <div 
@@ -268,7 +276,7 @@ function HomeContent({ apps }) {
       <section
         id="research"
         ref={el => sections.current[1] = el}
-        className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 md:bg-none md:bg-white dark:md:bg-gray-900 pt-12 md:pt-0 pb-0 md:pb-16"
+        className="section-fade bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 md:bg-none md:bg-white dark:md:bg-gray-900 pt-12 md:pt-0 pb-0 md:pb-16"
       >
         <div className="container mx-auto">
           <div 
@@ -288,7 +296,7 @@ function HomeContent({ apps }) {
       <section
         id="experience"
         ref={el => sections.current[2] = el}
-        className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 md:bg-none md:bg-gray-50 dark:md:bg-gray-800 pt-12 md:pt-0 pb-0 md:pb-16 md:leading-4"
+        className="section-fade bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 md:bg-none md:bg-gray-50 dark:md:bg-gray-800 pt-12 md:pt-0 pb-0 md:pb-16 md:leading-4"
       >
         <div className="container mx-auto">
           <div 
@@ -308,7 +316,7 @@ function HomeContent({ apps }) {
       <section
         id="skills"
         ref={el => sections.current[3] = el}
-        className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 md:bg-none md:bg-white dark:md:bg-gray-900 pt-12 md:pt-0 pb-0 md:pb-16 md:px-4"
+        className="section-fade bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 md:bg-none md:bg-white dark:md:bg-gray-900 pt-12 md:pt-0 pb-0 md:pb-16 md:px-4"
       >
         <div className="container mx-auto max-w-4xl">
           <div 
@@ -327,7 +335,11 @@ function HomeContent({ apps }) {
       </section>
 
       {/* About Section */}
-      <section ref={el => sections.current[4] = el} id="about" className="pt-12 pb-16 md:pt-0 pb-0 md:pb-16 bg-gray-50 dark:bg-gray-800 opacity-0">
+      <section 
+        ref={el => sections.current[4] = el} 
+        id="about" 
+        className="section-fade pt-12 pb-16 md:pt-0 pb-0 md:pb-16 bg-gray-50 dark:bg-gray-800"
+      >
         <div>
           <div 
             className="flex flex-col items-center mb-8 transition-all duration-300 cursor-pointer md:hover:scale-[1.05]"

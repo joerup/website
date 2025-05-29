@@ -7,13 +7,18 @@ export default function Experience() {
     <div className="max-w-4xl mx-auto px-0 md:px-4 lg:px-6">
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
       >
         <div className="md:space-y-4 border-t border-b border-gray-200 dark:border-gray-700 md:border-0 md:pl-4">
           {rolesData.map((role, index) => (
-            <div
+            <motion.div
               key={role.id}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true }}
               className={`relative pl-0 md:pl-10 transition-all duration-300 md:hover:scale-[1.02]`}
             >
               <div className="hidden md:flex absolute -left-[1.625rem] top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-gradient-to-r from-lime-500 to-emerald-500 items-center justify-center text-2xl text-white font-bold">
@@ -39,7 +44,7 @@ export default function Experience() {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </motion.div>

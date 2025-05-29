@@ -7,7 +7,7 @@ export default function AppLink({ app }) {
   return (
     <Link href={`./${app.string}`}>
       <div
-        className="cursor-pointer transition-all duration-300 sm:rounded-2xl md:hover:scale-[1.02] md:hover:shadow-lg bg-white border-0 md:border-2"
+        className="cursor-pointer transition-all duration-300 rounded-xl md:hover:scale-[1.02] md:hover:shadow-lg bg-white border-2"
         style={{ 
           background: `linear-gradient(to bottom right, #${app.color}${isActive ? '66' : '33'}, #${app.color}${isActive ? '44' : '22'})`,
           borderColor: `#${app.color}22`
@@ -16,24 +16,24 @@ export default function AppLink({ app }) {
         onMouseUp={() => setIsActive(false)}
         onMouseLeave={() => setIsActive(false)}
       >
-        <div className="mx-auto flex flex-col py-6 md:py-6 px-4 md:px-6">
-          <div className="flex flex-col justify-center text-left">
-            <div className="flex items-center gap-3 md:gap-4 mb-4">
+        <div className="mx-auto flex flex-col py-5 md:py-6 px-4 md:px-6">
+          <div className="flex flex-col items-center md:items-start text-center md:text-left">
+            <div className="flex flex-col md:flex-row items-center md:items-center gap-3 md:gap-4 mb-3.5 md:mb-4">
               <img
-                className="w-12 h-12 lg:w-14 lg:h-14 rounded-lg md:rounded-xl shadow-md"
+                className="w-11 h-11 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-lg md:rounded-xl shadow-md"
                 src={`/images/${app.string}/icon.png`}
                 alt={`${app.name} Icon`}
               />
-              <div>
-                <h2 className="text-lg lg:text-xl font-semibold text-gray-900 dark:text-white">
+              <div className="flex flex-col items-center md:items-start">
+                <h2 className="text-lg md:text-lg lg:text-xl font-semibold text-gray-900 dark:text-white">
                   {app.name}
                 </h2>
-                <div className="flex gap-2 text-[11px] md:text-xs text-gray-500 dark:text-gray-400 mt-0.5">
+                <div className="flex gap-2 text-[11px] md:text-xs text-gray-500 dark:text-gray-400 mt-0 md:mt-0.5">
                   <span>{app.platforms.join(', ')}</span>
                 </div>
               </div>
             </div>
-            <p className="text-sm lg:text-base text-gray-600 dark:text-gray-300 mb-4">
+            <p className="text-sm md:text-sm lg:text-base text-gray-600 dark:text-gray-300 mb-3.5 md:mb-4">
               {app.desc}
             </p>
             <div className={`flex items-center ${app.comingsoon ? 'justify-center' : ''} text-sm font-medium text-blue-600 dark:text-blue-400`}>

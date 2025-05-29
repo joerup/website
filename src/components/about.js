@@ -117,8 +117,9 @@ My name is Joe.
       {/* Fun Facts Section */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.4 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
         className="mb-0 md:mb-16 max-w-full md:max-w-3xl mx-auto p-[2px] md:px-8"
       >
         <div className="py-6 px-4 md:p-6 rounded-none md:rounded-2xl bg-white/50 dark:bg-[#18202F]/50 border-t border-b md:border border-gray-200 dark:border-gray-700 backdrop-blur-sm transition-all duration-300 md:hover:scale-[1.01]">
@@ -127,8 +128,9 @@ My name is Joe.
               <motion.div
                 key={index}
                 initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
+                whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
                 className="flex items-center gap-3"
               >
                 <span className="text-2xl flex-none">{fact.emoji}</span>
@@ -145,8 +147,9 @@ My name is Joe.
       <div className="md:hidden">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
           className="pt-16 w-screen relative left-1/2 right-1/2 -mx-[50vw]"
         >
           <div className="flex overflow-x-auto snap-x snap-mandatory px-4 scrollbar-hide">
@@ -155,8 +158,9 @@ My name is Joe.
               <motion.div
                 key={index}
                 initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
+                whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.3, delay: index * 0.05 }}
+                viewport={{ once: true }}
                 className="relative w-[calc(100%-2rem)] flex-none snap-center cursor-pointer mx-2"
                 onClick={() => onPhotoClick(photo)}
               >
@@ -201,8 +205,9 @@ My name is Joe.
       <div className="hidden md:block overflow-hidden">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
           className="w-screen relative left-1/2 right-1/2 -mx-[50vw] overflow-hidden"
         >
           <div className="relative mx-[10px] overflow-hidden">
@@ -212,8 +217,9 @@ My name is Joe.
                   <motion.div
                     key={index}
                     initial={{ opacity: 0, scale: 0.95 }}
-                    animate={{ opacity: 1, scale: 1 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.3, delay: index * 0.05 }}
+                    viewport={{ once: true }}
                     className="relative overflow-hidden rounded-2xl group aspect-[4/3] flex-none w-56 md:w-80 cursor-pointer"
                     onClick={() => onPhotoClick(photo)}
                   >
