@@ -69,10 +69,11 @@ export default function ResearchProject({ apps }) {
             {project.date && (
               <>
                 <span className="hidden sm:inline">•</span>
-                <span>{new Date(project.date).toLocaleDateString('en-US', { 
+                <span>{new Date(project.date + 'T00:00:00Z').toLocaleDateString('en-US', { 
                   year: 'numeric', 
                   month: 'long', 
-                  day: 'numeric' 
+                  day: 'numeric',
+                  timeZone: 'UTC'
                 })}</span>
               </>
             )}
