@@ -20,7 +20,7 @@ export default function Footer({ apps, app }) {
               </div>
               <div className="hidden md:block lg:pl-4">
                 {!app && (
-                  <Socials compact={true} />
+                  <Socials size="small" />
                 )}
               </div>
             </div>

@@ -11,6 +11,8 @@ body {
   font-size: 18px;
   position: relative;
   overscroll-behavior: none;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 a {
@@ -30,16 +32,17 @@ article {
   border-radius: 25px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 @media only screen and (max-width: 1000px) {
   article {
-    min-width: 90vw;
+    width: 90vw;
     max-width: 90vw;
   }
 }
 @media only screen and (min-width: 1000px) {
   article {
-    min-width: 900px;
+    width: 900px;
     max-width: 900px;
   }
 }

@@ -25,18 +25,6 @@ export async function getStaticProps() {
 function HomeContent({ apps }) {
   const sections = useRef([]);
   const { setActiveSection, activeSection } = useActiveSection();
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedPhoto, setSelectedPhoto] = useState(null);
-
-  const handlePhotoClick = (photo) => {
-    setSelectedPhoto(photo);
-    setIsModalOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-    setSelectedPhoto(null);
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -350,41 +338,9 @@ function HomeContent({ apps }) {
             </h2>
             <div className={getUnderlineClasses('about')} />
           </div>
-          <About onPhotoClick={handlePhotoClick} />
+          <About />
         </div>
       </section>
-
-      {/* Modal */}
-      {isModalOpen && selectedPhoto && (
-        <div 
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90"
-          onClick={handleCloseModal}
-        >
-          <div className="relative w-full h-full flex items-center justify-center">
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                handleCloseModal();
-              }}
-              className="absolute top-4 right-4 text-white text-4xl font-bold hover:text-gray-300 transition-colors p-4 z-10"
-              aria-label="Close modal"
-            >
-              ×
-            </button>
-            <div className="relative w-[90vw] h-[80vh] max-w-screen-lg max-h-screen-lg">
-              <Image
-                src={selectedPhoto.src}
-                alt={selectedPhoto.alt}
-                fill
-                className="object-contain"
-              />
-            </div>
-            <p className="absolute bottom-4 left-0 right-0 text-center text-white text-sm md:text-base px-4 pb-4">
-              {selectedPhoto.alt}
-            </p>
-          </div>
-        </div>
-      )}
     </Layout>
   );
 }
