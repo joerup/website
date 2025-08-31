@@ -65,10 +65,10 @@ export default function About() {
             </div>
             <div className="pt-5 md:pt-4 border-t border-gray-200 dark:border-gray-700">
               <p className="text-sm md:text-base text-gray-600 dark:text-gray-300">
-                <i>Currently in San Francisco until the end of August!</i> 🌉
+                <i>Currently in Princeton, NJ 🐯</i>
               </p>
               <p className="text-sm md:text-base text-gray-600 dark:text-gray-300 mt-3">
-                <b>Let's meet up ⬇️</b>
+                <b>Let's connect ⬇️</b>
               </p>
             </div>
           </motion.div>

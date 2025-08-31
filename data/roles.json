@@ -3,9 +3,9 @@
     "id": 2,
     "company": "Dedalus Labs",
     "position": "Software Engineering Intern",
-    "description": "",
-    "startDate": "May 2025",
-    "endDate": "Present",
+    "description": "Built an MCP infrastructure platform connecting any AI model to any tool through a unified API. Developed frontend components with React and Next.js and backend services with Python FastAPI. Integrated third-party services including Clerk auth, Stripe billing, and Supabase database management, and contributed to core features enabling developers to deploy and use tool-calling AI agents.",
+    "startDate": "June",
+    "endDate": "Aug 2025",
     "location": "San Francisco, CA",
     "emoji": "🤖"
   },
