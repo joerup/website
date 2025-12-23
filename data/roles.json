@@ -4,20 +4,20 @@
     "company": "Dedalus Labs",
     "position": "Software Engineering Intern",
     "description": "Built an MCP infrastructure platform connecting any AI model to any tool through a unified API. Developed frontend components with React and Next.js and backend services with Python FastAPI. Integrated third-party services including Clerk auth, Stripe billing, and Supabase database management, and contributed to core features enabling developers to deploy and use tool-calling AI agents.",
-    "startDate": "June",
+    "startDate": "Jun",
     "endDate": "Aug 2025",
     "location": "San Francisco, CA",
-    "emoji": "🤖"
+    "icon": "dedalus.jpeg"
   },
   {
     "id": 1,
     "company": "Map My Customers",
     "position": "Product Design Intern",
     "description": "Designed web and mobile interfaces in Figma, completing 32 design tickets and collaborating with cross-functional teams. Led the Mileage Tracking feature from prototype to final design, while maintaining design systems and component libraries.",
-    "startDate": "June",
+    "startDate": "Jun",
     "endDate": "Aug 2024",
     "location": "New York, NY",
-    "emoji": "🗺️"
+    "icon": "mmc.png"
   },
   {
     "id": 0,
@@ -27,6 +27,6 @@
     "startDate": "Apr 2020",
     "endDate": "Present",
     "location": "",
-    "emoji": "📱"
+    "icon": "asc.jpg"
   }
 ] 

@@ -28,7 +28,7 @@ export default function Research() {
                 >
                   <div className="flex items-start justify-between mb-3 px-4 md:px-0">
                     <div>
-                      <h3 className={`text-base md:text-xl font-semibold font-['Clash_Display',sans-serif] text-zinc-900 dark:text-white mb-1 ${project.prominent ? 'md:text-2xl' : ''}`}>
+                      <h3 className={`text-base md:text-xl font-semibold font-host-grotesk text-zinc-900 dark:text-white mb-1 ${project.prominent ? 'md:text-2xl' : ''}`}>
                         {project.title}
                       </h3>
                       <div className="space-y-1 py-1">

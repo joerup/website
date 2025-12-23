@@ -109,7 +109,7 @@ function HomeContent({ apps }) {
   };
 
   const getTitleClasses = (sectionId) => {
-    const baseClasses = "text-2xl md:text-3xl lg:text-4xl font-extrabold text-center font-['Clash_Display',sans-serif] tracking-tight transition-all duration-300 md:pt-12";
+    const baseClasses = "text-2xl md:text-3xl lg:text-4xl font-extrabold text-center font-host-grotesk tracking-tight transition-all duration-300 md:pt-12" + " " + "[font-weight:900]";
     const activeClasses = "scale-110 brightness-110";
     let gradientClasses = "";
     
@@ -154,7 +154,6 @@ function HomeContent({ apps }) {
         <title>{siteTitle}</title>
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap" rel="stylesheet" />
-        <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&display=swap" rel="stylesheet" />
         <style jsx global>{`
           @keyframes fadeIn {
             from {
@@ -194,7 +193,7 @@ function HomeContent({ apps }) {
               alt="Profile"
               className="w-16 h-16 lg:w-24 lg:h-24 rounded-full shadow-2xl"
             />
-            <h1 className="text-2xl md:text-3xl lg:text-6xl font-['Clash_Display',sans-serif] font-extrabold text-gray-900 dark:text-white tracking-tight">
+            <h1 className="text-2xl md:text-3xl lg:text-6xl font-host-grotesk font-extrabold text-gray-900 dark:text-white tracking-tight">
               Joe Rupertus
             </h1>
             <p className="text-sm md:text-lg lg:text-xl text-gray-600 dark:text-gray-300 max-w-2xl">
@@ -222,7 +221,7 @@ function HomeContent({ apps }) {
                 </div>
                 <div className="relative">
                   <div className="flex flex-col items-center text-center mb-2 md:mb-4">
-                    <h3 className="text-base md:text-xl font-bold font-['Clash_Display',sans-serif] text-gray-900 dark:text-white">CS @ Princeton</h3>
+                    <h3 className="text-base md:text-xl font-bold font-host-grotesk text-gray-900 dark:text-white">CS @ Princeton</h3>
                   </div>
                   <p className="text-sm md:text-base text-gray-800 dark:text-gray-100 font-medium leading-relaxed text-center">B.S.E. in Computer Science, Minor in Robotics (Class of 2026)</p>
                 </div>
@@ -234,7 +233,7 @@ function HomeContent({ apps }) {
                 </div>
                 <div className="relative">
                   <div className="flex flex-col items-center text-center mb-2 md:mb-4">
-                    <h3 className="text-base md:text-xl font-bold font-['Clash_Display',sans-serif] text-gray-900 dark:text-white">Indie App Developer</h3>
+                    <h3 className="text-base md:text-xl font-bold font-host-grotesk text-gray-900 dark:text-white">Indie App Developer</h3>
                   </div>
                   <p className="text-sm md:text-base text-gray-800 dark:text-gray-100 font-medium leading-relaxed text-center">Published 4 apps on the App Store, Swift Student Challenge Winner 2021</p>
                 </div>
@@ -246,7 +245,7 @@ function HomeContent({ apps }) {
                 </div>
                 <div className="relative">
                   <div className="flex flex-col items-center text-center mb-2 md:mb-4">
-                    <h3 className="text-base md:text-xl font-bold font-['Clash_Display',sans-serif] text-gray-900 dark:text-white">HCI Researcher</h3>
+                    <h3 className="text-base md:text-xl font-bold font-host-grotesk text-gray-900 dark:text-white">HCI Researcher</h3>
                   </div>
                   <p className="text-sm md:text-base text-gray-800 dark:text-gray-100 font-medium leading-relaxed text-center">Exploring Human-AI collaboration, presented at CHI 2025 LBW in Yokohama, Japan</p>
                 </div>

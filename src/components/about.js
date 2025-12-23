@@ -39,7 +39,7 @@ export default function About() {
             className="space-y-4 md:space-y-6"
           >
             <div className="space-y-2">
-              <h1 className="text-xl md:text-3xl font-bold text-gray-900 dark:text-white">
+              <h1 className="text-xl md:text-3xl font-bold font-host-grotesk text-gray-900 dark:text-white [font-weight:900]">
                 Hello 👋
               </h1>
             </div>

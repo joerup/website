@@ -18,7 +18,7 @@ export default function Skills() {
           className={`bg-white dark:bg-[#18202F] px-0 md:px-6 py-4 md:py-6 rounded-none md:rounded-2xl border-b border-gray-200 dark:border-gray-700 md:border ${index === skills.length - 1 ? 'border-b-0' : ''}`}
         >
           <div className="flex items-center gap-3 pt-2 sm:pt-0 mb-4 px-4 md:px-0">
-            <h3 className="text-base md:text-xl font-bold font-['Clash_Display',sans-serif] text-gray-900 dark:text-white">
+            <h3 className="text-base md:text-xl font-bold font-host-grotesk text-gray-900 dark:text-white">
               {skillGroup.category}
             </h3>
           </div>

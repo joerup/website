@@ -42,7 +42,7 @@ module.exports = {
         'fade-in': 'fade-in 0.5s ease-out forwards'
       },
       fontFamily: {
-        righteous: ["Righteous", "cursive"],
+        'host-grotesk': ["Host Grotesk", "sans-serif"],
       },
     },
   },

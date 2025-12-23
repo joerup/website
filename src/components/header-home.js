@@ -84,7 +84,7 @@ export default function HeaderHome() {
   };
 
   const getButtonClasses = (sectionId) => {
-    const baseClasses = "font-['Clash_Display',sans-serif] font-extrabold text-transparent bg-clip-text hover:scale-105 transition-all duration-300 relative";
+    const baseClasses = "font-host-grotesk font-extrabold text-transparent bg-clip-text hover:scale-105 transition-all duration-300 relative" + " " + "[font-weight:900]";
     let gradientClasses = "";
     
     switch(sectionId) {
@@ -140,7 +140,6 @@ export default function HeaderHome() {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap" rel="stylesheet"/>
-        <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&display=swap" rel="stylesheet"/>
       </Head>
       <header className={`relative md:fixed top-0 left-0 right-0 z-50 md:transition-all md:duration-300 ${
         isScrolled ? 'md:bg-white/80 md:dark:bg-gray-900/80 md:backdrop-blur-md md:shadow-sm' : ''
@@ -162,7 +161,7 @@ export default function HeaderHome() {
                       router.push('/');
                     }
                   }}
-                  className="text-xl font-['Clash_Display',sans-serif] font-extrabold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300 transition-all duration-200 hover:scale-105 transform whitespace-nowrap relative"
+                  className="text-xl font-host-grotesk font-extrabold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300 transition-all duration-200 hover:scale-105 transform whitespace-nowrap relative"
                 >
                   Joe Rupertus
                   <div className={`absolute -bottom-1 left-0 w-full h-0.5 bg-emerald-600 rounded-full transform transition-transform duration-300 ${isHomePage && !activeSection ? 'scale-x-100' : 'scale-x-0'}`}></div>
