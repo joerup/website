@@ -45,7 +45,7 @@ const VersionCard = ({ app, version, theme }) => {
   );
 
   return (
-    <div className={`${wrapperClasses} transition-transform duration-300 hover:scale-[1.02]`}>
+    <div className={wrapperClasses}>
       <div 
         className={cardClasses}
         style={{ 

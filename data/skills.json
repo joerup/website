@@ -1,56 +1,54 @@
 {
   "skills": [
     {
-      "category": "Mobile Development",
-      "icon": "📱",
-      "items": [
-        "SwiftUI",
-        "UIKit",
-        "RealityKit",
-        "Core Data",
-        "SwiftData",
-        "CloudKit",
-        "React Native"
-      ]
-    },
-    {
-      "category": "Web Development",
-      "icon": "🌐",
-      "items": [
-        "React.js",
-        "Next.js",
-        "Tailwind CSS",
-        "JavaScript/TypeScript",
-        "HTML/CSS",
-        "Node.js"
-      ]
-    },
-    {
       "category": "Programming Languages",
       "icon": "💻",
       "items": [
         "Swift",
-        "Python",
+        "Java",
         "JavaScript",
         "TypeScript",
-        "Java",
+        "Python",
         "C",
-        "C++",
-        "HTML",
-        "CSS"
+        "C#",
+        "C++"
       ]
     },
     {
-      "category": "Tools & Technologies",
+      "category": "App/Web Development",
+      "icon": "📱",
+      "items": [
+        "SwiftUI",
+        "UIKit",
+        "React",
+        "Next.js",
+        "React Native",
+        "RealityKit",
+        "Core Data",
+        "SwiftData"
+      ]
+    },
+    {
+      "category": "Backend & Infrastructure",
       "icon": "🛠",
       "items": [
-        "Git",
-        "Xcode",
+        "Python FastAPI",
+        "Supabase",
+        "Stripe",
+        "Clerk Auth",
+        "Model Context Protocol (MCP)"
+      ]
+    },
+    {
+      "category": "Product Design",
+      "icon": "🎨",
+      "items": [
         "Figma",
-        "TestFlight",
-        "App Store Connect",
-        "Reality Composer Pro",
-        "Vercel"
+        "UX Research",
+        "Graphic Design",
+        "Design Systems",
+        "User Testing",
+        "AR/VR"
       ]
     }
   ]

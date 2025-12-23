@@ -192,9 +192,9 @@ function HomeContent({ apps }) {
             <img
               src="/images/Profile.png"
               alt="Profile"
-              className="w-16 h-16 lg:w-24 lg:h-24 rounded-full shadow-2xl transform transition-transform duration-300 md:hover:scale-110"
+              className="w-16 h-16 lg:w-24 lg:h-24 rounded-full shadow-2xl"
             />
-            <h1 className="text-2xl md:text-3xl lg:text-6xl font-['Clash_Display',sans-serif] font-extrabold text-gray-900 dark:text-white tracking-tight transition-transform duration-300 md:hover:scale-105">
+            <h1 className="text-2xl md:text-3xl lg:text-6xl font-['Clash_Display',sans-serif] font-extrabold text-gray-900 dark:text-white tracking-tight">
               Joe Rupertus
             </h1>
             <p className="text-sm md:text-lg lg:text-xl text-gray-600 dark:text-gray-300 max-w-2xl">
@@ -204,33 +204,49 @@ function HomeContent({ apps }) {
             <div className="pt-2">
               <Socials/>
             </div>
+            <style jsx>{`
+              @keyframes shimmer {
+                0% {
+                  transform: translateX(-100%);
+                }
+                100% {
+                  transform: translateX(100%);
+                }
+              }
+            `}</style>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mt-12 md:mt-16 pt-4 md:pt-8 pb-0 md:pb-8 w-full max-w-5xl md:px-8 lg:px-12">
-              <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#40E0D0]/5 to-[#20B2AA]/5 dark:from-[#40E0D0]/8 dark:to-[#20B2AA]/8 p-4 md:p-8 transition-all duration-300 md:hover:scale-[1.02] border border-gray-200 dark:border-gray-700">
+              <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#40E0D0]/5 to-[#20B2AA]/5 dark:from-[#40E0D0]/8 dark:to-[#20B2AA]/8 p-4 md:p-8 border border-gray-200 dark:border-gray-700 transition-all duration-300 md:hover:border-[#40E0D0]/50 dark:md:hover:border-[#40E0D0]/40">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#40E0D0]/3 to-[#20B2AA]/3 dark:from-[#40E0D0]/5 dark:to-[#20B2AA]/5 backdrop-blur-sm"></div>
+                <div className="absolute inset-0 opacity-0 md:group-hover:opacity-100 transition-opacity duration-500">
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent" style={{ animation: 'shimmer 2s infinite' }}></div>
+                </div>
                 <div className="relative">
                   <div className="flex flex-col items-center text-center mb-2 md:mb-4">
-                    <span className="text-2xl md:text-3xl mb-2 md:mb-3">🎓</span>
-                    <h3 className="text-base md:text-xl font-bold text-gray-900 dark:text-white">CS @ Princeton</h3>
+                    <h3 className="text-base md:text-xl font-bold font-['Clash_Display',sans-serif] text-gray-900 dark:text-white">CS @ Princeton</h3>
                   </div>
                   <p className="text-sm md:text-base text-gray-800 dark:text-gray-100 font-medium leading-relaxed text-center">B.S.E. in Computer Science, Minor in Robotics (Class of 2026)</p>
                 </div>
               </div>
-              <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#40E0D0]/5 to-[#20B2AA]/5 dark:from-[#40E0D0]/8 dark:to-[#20B2AA]/8 p-4 md:p-8 transition-all duration-300 md:hover:scale-[1.02] border border-gray-200 dark:border-gray-700">
+              <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#40E0D0]/5 to-[#20B2AA]/5 dark:from-[#40E0D0]/8 dark:to-[#20B2AA]/8 p-4 md:p-8 border border-gray-200 dark:border-gray-700 transition-all duration-300 md:hover:border-[#40E0D0]/50 dark:md:hover:border-[#40E0D0]/40">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#40E0D0]/3 to-[#20B2AA]/3 dark:from-[#40E0D0]/5 dark:to-[#20B2AA]/5 backdrop-blur-sm"></div>
+                <div className="absolute inset-0 opacity-0 md:group-hover:opacity-100 transition-opacity duration-500">
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent" style={{ animation: 'shimmer 2s infinite' }}></div>
+                </div>
                 <div className="relative">
                   <div className="flex flex-col items-center text-center mb-2 md:mb-4">
-                    <span className="text-2xl md:text-3xl mb-2 md:mb-3">📱</span>
-                    <h3 className="text-base md:text-xl font-bold text-gray-900 dark:text-white">Indie App Developer</h3>
+                    <h3 className="text-base md:text-xl font-bold font-['Clash_Display',sans-serif] text-gray-900 dark:text-white">Indie App Developer</h3>
                   </div>
                   <p className="text-sm md:text-base text-gray-800 dark:text-gray-100 font-medium leading-relaxed text-center">Published 4 apps on the App Store, Swift Student Challenge Winner 2021</p>
                 </div>
               </div>
-              <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#40E0D0]/5 to-[#20B2AA]/5 dark:from-[#40E0D0]/8 dark:to-[#20B2AA]/8 p-4 md:p-8 transition-all duration-300 md:hover:scale-[1.02] border border-gray-200 dark:border-gray-700">
+              <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#40E0D0]/5 to-[#20B2AA]/5 dark:from-[#40E0D0]/8 dark:to-[#20B2AA]/8 p-4 md:p-8 border border-gray-200 dark:border-gray-700 transition-all duration-300 md:hover:border-[#40E0D0]/50 dark:md:hover:border-[#40E0D0]/40">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#40E0D0]/3 to-[#20B2AA]/3 dark:from-[#40E0D0]/5 dark:to-[#20B2AA]/5 backdrop-blur-sm"></div>
+                <div className="absolute inset-0 opacity-0 md:group-hover:opacity-100 transition-opacity duration-500">
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent" style={{ animation: 'shimmer 2s infinite' }}></div>
+                </div>
                 <div className="relative">
                   <div className="flex flex-col items-center text-center mb-2 md:mb-4">
-                    <span className="text-2xl md:text-3xl mb-2 md:mb-3">🤖</span>
-                    <h3 className="text-base md:text-xl font-bold text-gray-900 dark:text-white">HCI Researcher</h3>
+                    <h3 className="text-base md:text-xl font-bold font-['Clash_Display',sans-serif] text-gray-900 dark:text-white">HCI Researcher</h3>
                   </div>
                   <p className="text-sm md:text-base text-gray-800 dark:text-gray-100 font-medium leading-relaxed text-center">Exploring Human-AI collaboration, presented at CHI 2025 LBW in Yokohama, Japan</p>
                 </div>

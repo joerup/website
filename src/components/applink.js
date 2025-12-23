@@ -25,7 +25,7 @@ export default function AppLink({ app }) {
                 alt={`${app.name} Icon`}
               />
               <div className="flex flex-col items-center md:items-start">
-                <h2 className="text-lg md:text-lg lg:text-xl font-semibold text-gray-900 dark:text-white">
+                <h2 className="text-lg md:text-lg lg:text-xl font-semibold font-['Clash_Display',sans-serif] text-gray-900 dark:text-white">
                   {app.name}
                 </h2>
                 <div className="flex gap-2 text-[11px] md:text-xs text-gray-500 dark:text-gray-400 mt-0 md:mt-0.5">

@@ -15,13 +15,10 @@ export default function Skills() {
       {skills.map((skillGroup, index) => (
         <div
           key={index}
-          className={`bg-white dark:bg-[#18202F] px-0 md:px-6 py-4 md:py-6 rounded-none md:rounded-2xl border-b border-gray-200 dark:border-gray-700 md:border transition-all duration-300 md:hover:scale-[1.02] ${index === skills.length - 1 ? 'border-b-0' : ''}`}
+          className={`bg-white dark:bg-[#18202F] px-0 md:px-6 py-4 md:py-6 rounded-none md:rounded-2xl border-b border-gray-200 dark:border-gray-700 md:border ${index === skills.length - 1 ? 'border-b-0' : ''}`}
         >
           <div className="flex items-center gap-3 pt-2 sm:pt-0 mb-4 px-4 md:px-0">
-            <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-br from-sky-500 to-blue-600 flex items-center justify-center text-lg sm:text-2xl">
-              {skillGroup.icon}
-            </div>
-            <h3 className="text-base md:text-xl font-bold text-gray-900 dark:text-white">
+            <h3 className="text-base md:text-xl font-bold font-['Clash_Display',sans-serif] text-gray-900 dark:text-white">
               {skillGroup.category}
             </h3>
           </div>
