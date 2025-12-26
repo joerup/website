@@ -1,29 +1,29 @@
 [
   {
-    "id": 2,
-    "company": "Dedalus Labs",
+    "id": "dedalus",
+    "company": "Dedalus Labs (YC S25)",
     "position": "Software Engineering Intern",
-    "description": "Built an MCP infrastructure platform connecting any AI model to any tool through a unified API. Developed frontend components with React and Next.js and backend services with Python FastAPI. Integrated third-party services including Clerk auth, Stripe billing, and Supabase database management, and contributed to core features enabling developers to deploy and use tool-calling AI agents.",
+    "description": "I was the first hire at Dedalus Labs, a pre-seed YC-backed startup building unified MCP infrastructure for AI agent deployment. I contributed to the core platform enabling any LLM to connect with any MCP server through a single API endpoint. My work involved developing a React/Next.js frontend and Python FastAPI backend for Model Context Protocol integration. I also integrated authentication, billing, and database services, supporting the onboarding of early beta users.",
     "startDate": "Jun",
     "endDate": "Aug 2025",
     "location": "San Francisco, CA",
     "icon": "dedalus.jpeg"
   },
   {
-    "id": 1,
+    "id": "mapmycustomers",
     "company": "Map My Customers",
     "position": "Product Design Intern",
-    "description": "Designed web and mobile interfaces in Figma, completing 32 design tickets and collaborating with cross-functional teams. Led the Mileage Tracking feature from prototype to final design, while maintaining design systems and component libraries.",
+    "description": "I designed web and mobile interfaces in Figma, with 32 design tickets resulting in 250+ hours of dev work. I collaborated with engineering, product, and sales teams to align design decisions with business needs. I streamlined design processes by helping develop and maintain design systems and component libraries. I also guided the Mileage Tracking project from initial prototypes to final designs through the full UX research process.",
     "startDate": "Jun",
     "endDate": "Aug 2024",
     "location": "New York, NY",
     "icon": "mmc.png"
   },
   {
-    "id": 0,
+    "id": "appledeveloper",
     "company": "Apple Developer Program (Self-employed)",
     "position": "Indie iOS & visionOS Developer",
-    "description": "Through the Apple Developer Program, I have designed and developed four apps available on the App Store with over 20,000 downloads combined. I use Swift and SwiftUI to build robust and scalable architectures, ensuring high performance and reliability. I have created intuitive interfaces for each app, focusing on user-friendly navigation and engaging interactions. I have also leveraged emerging technologies like spatial computing through RealityKit to build innovative and immersive experiences.",
+    "description": "I have published 4 apps on the App Store with 25K+ cumulative downloads, ranging from productivity tools to interactive simulations. I developed Planetaria, an AR/VR Solar System simulator using SwiftUI and RealityKit, which is available on Vision Pro. I open-sourced SwiftSPICE, a Swift package using NASA's SPICE Toolkit for accurate planetary ephemerides. I was selected as one of ~350 global winners of Apple's Swift Student Challenge in 2021 and attended WWDC23.",
     "startDate": "Apr 2020",
     "endDate": "Present",
     "location": "",

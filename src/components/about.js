@@ -36,7 +36,7 @@ export default function About() {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="space-y-4 md:space-y-6"
+            className="space-y-4 md:space-y-6 px-4 md:px-0"
           >
             <div className="space-y-2">
               <h1 className="text-xl md:text-3xl font-bold font-host-grotesk text-gray-900 dark:text-white [font-weight:900]">
@@ -44,20 +44,17 @@ export default function About() {
               </h1>
             </div>
             <div className="space-y-3 md:space-y-4">
-              <div className="flex items-center gap-3">
-                <span className="text-xl md:text-2xl">🏡</span>
+              <div>
                 <p className="text-sm md:text-base text-gray-600 dark:text-gray-300">
                   I grew up in South Jersey in the Philly area
                 </p>
               </div>
-              <div className="flex items-center gap-3">
-                <span className="text-xl md:text-2xl">🏃</span>
+              <div>
                 <p className="text-sm md:text-base text-gray-600 dark:text-gray-300">
                   I love running and exploring new places
                 </p>
               </div>
-              <div className="flex items-center gap-3">
-                <span className="text-xl md:text-2xl">🎥</span>
+              <div>
                 <p className="text-sm md:text-base text-gray-600 dark:text-gray-300">
                   I also like photography and making videos
                 </p>

@@ -11,7 +11,7 @@ export default function Apps({ apps }) {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="grid grid-cols-1 xl:grid-cols-2 gap-0 xl:gap-8 space-y-4 md:space-y-0 pb-4"
+          className="grid grid-cols-1 xl:grid-cols-2 gap-0 xl:gap-8 space-y-4 md:space-y-0 pb-6 md:pb-4"
         >
           {apps.map((app, idx) => {
             const isLastOdd = idx === apps.length - 1 && apps.length % 2 !== 0;

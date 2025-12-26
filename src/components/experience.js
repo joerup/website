@@ -1,32 +1,37 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 import rolesData from '../../data/roles.json'
 
 export default function Experience() {
   return (
-    <div className="max-w-4xl mx-auto px-0 md:px-4 lg:px-6">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-      >
-        <div className="md:space-y-4 border-t border-b border-gray-200 dark:border-gray-700 md:border-0">
-          {rolesData.map((role, index) => (
-            <React.Fragment key={role.id}>
-              <motion.div
+    <motion.section
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
+    >
+      <div className="container mx-auto text-center max-w-2xl xl:max-w-4xl">
+        <div className="p-0 md:p-4 px-0 md:px-4 lg:px-6">
+          <ol className="space-y-0 md:space-y-4 border-t border-b border-gray-200 dark:border-gray-700 md:border-0">
+            {rolesData.map((role, index) => (
+              <motion.li
+                key={role.id}
+                className="text-left"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="relative group"
               >
-                <div className={`bg-white dark:bg-[#18202F] py-6 md:py-6 px-4 md:px-6 rounded-none md:rounded-2xl border-b border-gray-200 dark:border-gray-700 md:border ${index === rolesData.length - 1 ? 'border-b-0 md:border-b' : ''}`}>
-                  <div className="flex items-start gap-4">
+                <Link
+                  href={`/experience/${role.id}`}
+                  className={`block pt-4 pb-5 md:py-6 px-0 md:px-6 rounded-none md:rounded-xl shadow-none md:shadow-sm border-b border-zinc-200 dark:border-gray-600 md:border transition-all duration-300 md:hover:scale-[1.02] md:hover:shadow-lg bg-white dark:bg-[#18202F] md:hover:bg-gray-50 dark:md:hover:bg-gray-700/50 ${index === rolesData.length - 1 ? 'border-b-0' : ''}`}
+                >
+                  <div className="flex items-start gap-4 px-4 md:px-0">
                     {/* Company Logo */}
                     <div className="flex-shrink-0">
-                      <div className="w-12 h-12 md:w-14 md:h-14 relative rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-md">
+                      <div className="w-10 h-10 md:w-14 md:h-14 relative rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-md mt-1 md:mt-0">
                         <Image
                           src={`/images/experience/${role.icon}`}
                           alt={`${role.company} logo`}
@@ -47,21 +52,21 @@ export default function Experience() {
                         </div>
                       </div>
                       <div className="w-full md:w-auto text-left md:text-right">
-                        <div className="text-sm md:text-base font-semibold text-gray-700 dark:text-gray-300 mb-2 md:mb-2">
+                        <div className="text-sm md:text-base font-semibold text-gray-700 dark:text-gray-300 mb-1 md:mb-2">
                           {role.startDate} - {role.endDate}
                         </div>
-                        <div className="text-xs md:text-sm text-gray-500 dark:text-gray-400">
+                        <div className="text-xs md:text-sm text-gray-500 dark:text-gray-400 -mb-1 md:mb-0">
                           {role.location}
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </motion.div>
-            </React.Fragment>
-          ))}
+                </Link>
+              </motion.li>
+            ))}
+          </ol>
         </div>
-      </motion.div>
-    </div>
+      </div>
+    </motion.section>
   );
 }

@@ -39,7 +39,7 @@ export default function ResearchProject({ apps }) {
     <Layout apps={apps}>
       <div className="container mx-auto px-4 md:py-16 max-w-4xl md:pt-24">
         {/* Title */}
-        <h1 className="text-2xl md:text-4xl font-bold mb-3 md:mb-4 text-gray-900 dark:text-white">
+        <h1 className="text-2xl md:text-4xl font-bold mb-3 md:mb-4 text-gray-900 dark:text-white font-host-grotesk">
           {project.title}
         </h1>
 
@@ -83,7 +83,7 @@ export default function ResearchProject({ apps }) {
         {/* Abstract */}
         <div className="mb-8">
           <div className="border-t border-gray-200 dark:border-gray-700 pt-6">
-            <h2 className="text-sm md:text-base font-semibold text-gray-800 dark:text-gray-200 mb-2">Abstract</h2>
+            <h2 className="text-sm md:text-base font-semibold text-gray-800 dark:text-gray-200 mb-2 font-host-grotesk">Abstract</h2>
             <p className="text-xs md:text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
               {project.abstract}
             </p>

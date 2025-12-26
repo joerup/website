@@ -24,7 +24,7 @@ export default function Research() {
               >
                 <Link
                   href={`/research/${project.id}`}
-                  className={`block py-6 px-0 md:px-6 rounded-none md:rounded-xl shadow-none md:shadow-sm border-b border-zinc-200 dark:border-gray-600 md:border transition-all duration-300 md:hover:scale-[1.02] md:hover:shadow-lg ${index === researchData.length - 1 ? 'border-b-0' : ''} ${project.prominent ? 'bg-orange-50/50 dark:bg-amber-900/20 md:border-orange-200 dark:md:border-amber-800/50 md:shadow-md md:hover:bg-orange-50/70 dark:md:hover:bg-amber-900/30' : 'bg-white dark:bg-[#18202F] md:hover:bg-gray-50 dark:md:hover:bg-gray-700/50'}`}
+                  className={`block py-5 px-0 md:px-6 rounded-none md:rounded-xl shadow-none md:shadow-sm border-b border-zinc-200 dark:border-gray-600 md:border transition-all duration-300 md:hover:scale-[1.02] md:hover:shadow-lg ${index === researchData.length - 1 ? 'border-b-0' : ''} ${project.prominent ? 'bg-orange-50/50 dark:bg-amber-900/20 md:border-orange-200 dark:md:border-amber-800/50 md:shadow-md md:hover:bg-orange-50/70 dark:md:hover:bg-amber-900/30' : 'bg-white dark:bg-[#18202F] md:hover:bg-gray-50 dark:md:hover:bg-gray-700/50'}`}
                 >
                   <div className="flex items-start justify-between mb-3 px-4 md:px-0">
                     <div>

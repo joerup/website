@@ -9,6 +9,8 @@ export default function HeaderHome() {
   const [isScrolled, setIsScrolled] = useState(false);
   const router = useRouter();
   const isHomePage = router.pathname === '/';
+  const isResearchPage = router.pathname === '/research/[id]';
+  const isExperiencePage = router.pathname === '/experience/[id]';
   const { activeSection } = isHomePage ? useActiveSection() : { activeSection: null };
 
   useEffect(() => {
@@ -130,7 +132,11 @@ export default function HeaderHome() {
         break;
     }
 
-    return `${baseClasses} ${gradientClasses} ${isHomePage && activeSection === sectionId ? 'scale-x-100' : ''}`;
+    // Show underline if: on homepage and section is active, OR on research page and this is research tab, OR on experience page and this is experience tab
+    const shouldShowUnderline = (isHomePage && activeSection === sectionId) || 
+                                 (isResearchPage && sectionId === 'research') || 
+                                 (isExperiencePage && sectionId === 'experience');
+    return `${baseClasses} ${gradientClasses} ${shouldShowUnderline ? 'scale-x-100' : ''}`;
   };
 
   return (
