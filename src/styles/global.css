@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  overscroll-behavior: none;
+}
+
 html,
 body {
   padding: 0;
@@ -9,6 +13,9 @@ body {
   font-family: system-ui, sans-serif;
   line-height: 1.6;
   font-size: 18px;
+}
+
+body {
   position: relative;
   overscroll-behavior: none;
   overflow-x: hidden;

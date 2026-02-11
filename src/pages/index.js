@@ -177,10 +177,6 @@ function HomeContent({ apps }) {
             opacity: 1;
             transform: translateY(0);
           }
-          /* Prevent horizontal scrollbar flicker */
-          html, body {
-            overflow-x: hidden;
-          }
         `}</style>
       </Head>
 
